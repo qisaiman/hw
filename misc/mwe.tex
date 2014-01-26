@@ -1,0 +1,67 @@
+\documentclass[12pt,oneside]{book}
+ %
+   \usepackage{uncc-thesis} % some format specifications define page number in up right corner
+   \input{package.tex} % additonal packages and tweaking
+
+   \newacronym{cvd}{CVD}{chemical vapor deposition}
+   \newacronym{cft}{CFT}{crystal-field theory}
+
+   \makeglossaries
+
+\begin{document}
+
+  \title{\LaTeX is great}
+  \author{me}
+  \maketitle
+
+    \clearpage
+    \tableofcontents
+    \clearpage
+    \listoftables
+    \clearpage
+    \listoffigures
+
+    \begin{singlespace}
+    %\thispagestyle{myheadings} % before, this does not work
+    \renewcommand{\glossarypreamble}{\thispagestyle{myheadings}} % after, this works.
+    \printglossary[type=\acronymtype]
+    \clearpage
+    \end{singlespace}
+
+ %   \include{./ch-intro/ch-intro}
+
+After 20 minutes sonication, the dispersion is milky. We measured the transmission spectra of this dispersion immediately upon sonication and after 40 hrs for gravity sedimentation, as illustrated in Fig.~\ref{fig:moabs}. The t0 line mainly arises from the scattering of flakes in the dispersion. There are two scattering mechanisms: Rayleigh scattering and Tyndall scattering. Rayleigh scattering, which occurs when particles are comparable to wavelength, is inversely proportional to the fourth power of wavelength; While Tyndall scattering, which occurs when the particles are larger, is inversely proportional to the square of the wavelength. To fully evaluate the true absorbance of the sample itself, one needs to decouple the scattering part from apparent absorbance. Generally we select one part of spectrum and assume it is only caused by scattering. Then a empirical dependence shown in Eq.~\ref{eq:sca2} is used as polynomial fitting model.
+
+\begin{align}
+Abs_{sca}  & = a\times \lambda^{n}  \label{eq:sca1}\\
+\log{Abs_{sca}} & = \log{a} + n*\log{\lambda} \label{eq:sca2}
+\end{align}
+
+After least-squares fitting, the coefficients $a$ and $n$ can be used to estimated the scattering in other wavelengths. The fitting of n usually falls between -2 and -4. We examined the t40h line in Fig.~\ref{fig:moabs} and found the scattering part is almost zero. Therefore we did not perform aforementioned fitting. This is not always the case. In chapter on the \ce{WS2} section, we do need to do so.
+
+\begin{itemize}
+\item s inversely proportional to the fourth
+\item  inversely proportional to the fourth
+\item s inversely proportional to the fourth
+\end{itemize}
+
+\begin{figure}[htb]
+\centering
+\subcaptionbox{\label{fig:moind}}{\includegraphics[width=0.35\linewidth]{n_MoO3}}%
+\subcaptionbox{\label{fig:mocon}}{\includegraphics[width=0.55\linewidth]{Graph20}}
+\caption[Refractive indices of \ce{MoO3}]{(a) Refractive indices of \ce{MoO3} Dashed line is n along $a$ axis while solid line is along $c$ axis. (b) optical contrast mapping of 1L \ce{MoO3} on \ce{SiO2}-Si. The x axis is \ce{SiO2} thickness, y axis is wavelength.It is assumed that the incident light is polarized along c axis of \ce{MoO3}.}
+\label{fig:mofl}
+\end{figure}
+%[width=0.45\textwidth] 
+
+Rayleigh scattering and Tyndall scattering. Rayleigh scattering, which occurs when particles are comparable to wavelength, is inversely proportional to the fourth power of wavelength; While Tyndall scattering, which occurs when the particles are larger, is inversely proportional to the square of the wavelength. To fully evaluate the true absorbance of the sample itself, one needs to decouple the scattering part from apparent absorbance. Generally we select one part of spectrum and assume it is only caused by scattering. Then a empirical dependence shown in Eq.~\ref{eq:sca2} is used as polynomial fitting model.
+
+   %\glsaddallunused
+    \appendix
+    \chapter{math}
+    \renewcommand{\bibname}{REFERENCES}
+    \begin{singlespace}
+    \printbibliography
+    \end{singlespace}
+
+\end{document} 

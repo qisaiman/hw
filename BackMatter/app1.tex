@@ -1,0 +1,88 @@
+
+\chapter{Source code for contrast}
+
+The following codes calculated monolayer \ce{MoO3} contrast on \ce{SiO2}-Si substrate with respect to varying \ce{SiO2} thickness within visible wavelength region. 
+\begin{singlespace}
+\begin{lstlisting}
+
+hv = linspace(1.65,3.1,100);% eV
+% refractive index of MoO3 along c
+epsl_c = 6.83142 - 0.89876*hv + 0.31211*hv.^2;
+% along a direction
+epsl_a = 5.27613 - 1.42197*hv + 1.62433*hv.^2 - ...
+    0.65474*hv.^3 + 0.09216*hv.^4;
+n_c = sqrt(epsl_c);
+n_a = sqrt(epsl_a);
+d_fl = 1.3858; % monolayer MoO3: nm
+
+d2 = linspace(50,300,100); % SiO2/Si thickness
+lambda = 1.2398./hv;% in unit of um
+
+% fused silica 0.21~3.71 um
+n_SiO2 = sqrt( 1 + 0.6961663*lambda.^2./(lambda.^2-0.0684043^2) + ...
+    0.4079426*lambda.^2./(lambda.^2-0.1162414^2) + ...
+    0.8974794*lambda.^2./(lambda.^2-9.896161^2) );
+n_2 = n_SiO2;
+% for Si valid from 400 to 780 nm
+P1 = [358.370854235646,-929.730598395864,...
+902.283058938096,-390.016790281725,67.5147263898247;];
+n_si = polyval(P1,lambda);
+P2 = [126.723254169127,-321.724727403874,...
+303.571928160301,-126.259081591924,19.5651256513963;];
+k_si = polyval(P2, lambda);
+
+n_3 = n_si - 1i*k_si;
+
+
+p = length(lambda);
+q = length(d2);
+Con_c = zeros(p,q);
+
+% n_1: refractive index of FL in lambda range
+% d1: thickness of FL
+% d2: thickness of SiO2 layer on Si;
+for m = 1:q
+    Con_c(:,m) = Few_layers(lambda,n_c,n_2,n_3,d_fl,d2(m));
+end
+
+contourf(d2,lambda,Con_c);
+xlabel('SiO_2 thickness:nm');
+ylabel('Wavelength:\mu m');
+colorbar;
+title('1L MoO_3 contrast along c direction');
+\end{lstlisting}
+
+% The function ''Few_layers" returns optical contrast at specified wavelength and layer configuration. 
+\begin{lstlisting}
+function con = Few_layers(lambda,n_1,n_2,n_3,d1,d2)
+% FL contrast on SiO2/Si
+% lambda:
+% n_1: refractive index of FL in lambda range
+% d1: thickness of FL
+% d2: thickness of SiO2 layer on Si;
+
+n_0 = 1;  % air or vacuum
+lambda = 1000*lambda;
+phi_1 = 2*pi*d1*n_1./lambda;
+phi_2 = 2*pi*d2*n_2./lambda;
+
+r1 = (n_0 - n_1)./(n_0 + n_1);
+r2 = (n_1 - n_2)./(n_1 +n_2);
+r3 = (n_2 - n_3)./(n_2 +n_3);
+r2_p = (n_0 - n_2)./(n_0 + n_2);
+
+up = r1.*exp(1i*(phi_1 + phi_2)) + r2.*exp(1i*(phi_2-phi_1)) + ...
+r3.*exp(-1i*(phi_1 + phi_2))+r1.*r2.*r3.*exp(1i*(phi_1 - phi_2));
+
+down = exp(1i*(phi_1 + phi_2)) + r1.*r2.*exp(1i*(phi_2-phi_1)) + ...
+    r1.*r3.*exp(-1i*(phi_1 + phi_2))+ r2.*r3.*exp(1i*(phi_1 - phi_2));
+
+R_n1 = abs(up./down).^2;
+R_1 = abs((r2_p.*exp(1i*phi_2) + r3.*exp(-1i*phi_2))./(exp(1i*phi_2)+ ...
+    r2_p.*r3.*exp(-1i*phi_2))).^2;
+
+con = (R_1 - R_n1)./R_1;
+
+\end{lstlisting}
+
+\end{singlespace} 

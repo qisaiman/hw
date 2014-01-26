@@ -1,0 +1,55 @@
+
+  \title{Controlled Growth and Properties Measurement of One-Dimensional Nanostructures: Nanowires and Hybrids}
+  \author{Tao Sheng}
+  \university{The University of North Carolina at Charlotte}
+  \location{Charlotte}
+  \thesisyear{\the\year}
+  \degree{Doctor of Philosophy}
+  \department{Physics and Optical Science}
+
+  \committeemember{Dr. Haitao Zhang} % First sets the \advisor default.
+  \committeemember{Dr. Tsinghua Her}
+  \committeemember{Dr. Michael Fiddy}
+  \committeemember{Dr. Stuart Smith}
+  \committeemember{Last  person} % Maximum of 10 can be specified.
+
+%  \advisor{Dr. Haitao Zhang}
+
+\maketitle
+
+\input{./FrontMatter/Abstract}
+
+
+\begin{dedication}
+This mis my appear in the named sectional unit, otherwise each glossary will
+appear in a chapter, if chapters exist, otherwise in a section. Unnumbered
+sectional units will be used by default.
+\end{dedication}
+
+%\pagebreak{}
+
+\begin{ackn}
+This work is supported by National Science Foundation (DMR-1006547) and the start-up fund from the Department of Mechanical Engineering and Engineering Science(MEES) and Charlotte Research Institute at the University of North Carolina at Charlotte (UNC Charlotte). We appreciate the Department of MEES and the Center for Optoelectronics and Optical Communications at UNC Charlotte for the support of multiuser facilities.
+\end{ackn}
+%\pagebreak{}
+%% --- Work around some bugs due to babel package---
+% for more, see http://tex.stackexchange.com/questions/82993/how-to-change-the-name-of-document-elements-like-figure-contents-bibliogr?lq=1
+\setcounter{tocdepth}{1}
+% ----- end of work around--------
+
+\clearpage
+\tableofcontents
+\clearpage
+\listoftables
+\clearpage
+\listoffigures
+\begin{singlespace}
+%\thispagestyle{myheadings}
+\renewcommand{\glossarypreamble}{\thispagestyle{myheadings}}
+\printglossary[type=\acronymtype]
+\clearpage
+\end{singlespace}
+%\listofabbre
+
+
+\pagebreak{} 
