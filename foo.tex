@@ -1,4 +1,6 @@
 \documentclass[12pt,letterpaper]{article}
+\usepackage{booktabs}
+\usepackage{xcolor}
 \usepackage{listings}
 \lstset{
 frame = single,
@@ -35,16 +37,27 @@ ssh-keygen -t rsa -C "qisaiman@gmail.com"
 git add remote hw https://github.com/qisaiman/hw.git
 git fetch hw master or develop 
 git push hw master
+
+%create a branch develop and switch to it
+git checkout -b develop
+{some editing }
+git commit -m ''
+git checkout master 
+git merge develop % into current branch 
+% delete a branch
+git branch -d develop 
+
+
 \end{lstlisting}
 
 Git protocol 9148 port. 
 
 \section{Commands}
 
-\begin{table}
-  \caption{Commands}
-  \label{tbl:notes}
-  \begin{tabular}{ll}
+\begin{table}[htb]
+  \caption{Commands}\label{tbl:notes}
+  \centering
+  \begin{tabular}{lr}
     \toprule
     Command                            & Function \\
     \midrule
