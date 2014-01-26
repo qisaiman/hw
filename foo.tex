@@ -1,0 +1,55 @@
+\documentclass[12pt,letterpaper]{article}
+\usepackage{listings}
+\lstset{
+frame = single,
+language = bash,
+breaklines = true,
+postbreak=\raisebox{0ex}[0ex][0ex]{\ensuremath{\color{red}\hookrightarrow\space}}
+}
+
+
+\title{Git Learning Notes}
+\author{tao}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+\section{New tracking project}
+Minimum working sample is:
+\begin{lstlisting}
+Git init
+Git add */*.tex
+Git add *.tex
+Git add readme
+Git commit -m 'comments'
+% on a specific file after editing
+ git add xx.tex
+
+% to Reset a staged file
+Git reset HEAD xxx.tex
+
+\end{lstlisting}
+
+
+\section{Commands}
+
+\begin{table}
+  \caption{Commands}
+  \label{tbl:notes}
+  \begin{tabular}{ll}
+    \toprule
+    Command                            & Function \\
+    \midrule
+    gitk\textsuperscript{\emph{a}}   & Visualization versioning history  \\
+    git status\textsuperscript{\emph{b}} & current working flow state \\
+    
+    \bottomrule
+  \end{tabular}
+
+  \textsuperscript{\emph{a}} Some text;
+  \textsuperscript{\emph{b}} Some more text.
+\end{table}
+
+
+\end{document} 
