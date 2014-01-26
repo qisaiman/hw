@@ -29,8 +29,15 @@ Git commit -m 'comments'
 % to Reset a staged file
 Git reset HEAD xxx.tex
 
+ssh-keygen -t rsa -C "qisaiman@gmail.com"
+
+% checkout from github 
+git add remote hw https://github.com/qisaiman/hw.git
+git fetch hw master or develop 
+git push hw master
 \end{lstlisting}
 
+Git protocol 9148 port. 
 
 \section{Commands}
 
@@ -43,6 +50,7 @@ Git reset HEAD xxx.tex
     \midrule
     gitk\textsuperscript{\emph{a}}   & Visualization versioning history  \\
     git status\textsuperscript{\emph{b}} & current working flow state \\
+    ssh key   & zgcss627\\
     
     \bottomrule
   \end{tabular}
