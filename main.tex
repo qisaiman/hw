@@ -1,0 +1,30 @@
+\documentclass[12pt,oneside]{book}
+ %
+   \usepackage{uncc-thesis} % uncc format specification seems this style should be loaded before other packages
+
+   \input{package.tex} % additonal packages and tweaking
+   \input{./FrontMatter/abbre}
+
+   \makeglossaries
+
+   \begin{document}
+
+%    \input{./FrontMatter/FrontMatter}
+
+
+%   \include{./ch-intro/ch-intro}
+%   \include{./ch-wox/ch-wox}
+   \include{./ch-moox/moox}
+
+\appendix
+   %\glsaddallunused
+%    \include{./BackMatter/app1}
+
+
+\renewcommand{\bibname}{REFERENCES}
+   \begin{singlespace}
+   \printbibliography
+   \end{singlespace}
+
+
+\end{document} 

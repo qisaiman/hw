@@ -1,0 +1,151 @@
+%-------page layout--------%
+% adapted from <http://www.khirevich.com/latex/page_layout/>
+%\usepackage[DIV=14,BCOR=2mm,headinclude=true,footinclude=false]{typearea}
+
+%\makeatletter
+%\if@twoside % commands below work only for twoside option of \documentclass
+%    \newlength{\textblockoffset}
+%    \setlength{\textblockoffset}{12mm}
+%    \addtolength{\hoffset}{\textblockoffset}
+%    \addtolength{\evensidemargin}{-2.0\textblockoffset}
+%\fi
+%\makeatother
+
+% packages used in uncc-thesis
+
+%\RequirePackage{ifthen}
+%\RequirePackage{setspace} % for double spacing
+%\RequirePackage{comment}
+%\RequirePackage{epsfig}
+%\usepackage{sectsty} % for sectional header style. Alternative: titlesec package
+% \usepackage{tocloft}
+%\usepackage{geometry}
+
+\usepackage{microtype} % better layout
+%----inherent of article class-------%
+\usepackage[utf8]{inputenc} % set input encoding (not needed with XeLaTeX)
+
+%--- for font ----
+% \usepackage[T1]{fontenc}
+% \usepackage{textcomp}
+
+%\usepackage{mathptmx} % fine but not truetype
+% \usepackage{newtxtext}
+ \usepackage{pslatex} % not bad
+
+%\usepackage{fontspec} % to compile with LuaLatex
+%\setmainfont{Times New Roman} % to compile with LuaLatex
+
+ %-- end of font adaption
+
+\usepackage{graphicx} % support the \includegraphics command and options
+% check pdftex option
+\usepackage{placeins} %
+
+\usepackage{subfig}
+\usepackage{float} % for images
+ \graphicspath{{./gallery/}} %--added by author
+
+\usepackage[font=small, labelfont=bf]{caption}
+%\usepackage{subcaption}
+
+
+% It supplies a landscape environment, and anything inside is basically rotated.(http://en.wikibooks.org/wiki/LaTeX/Page_Layout)
+%\usepackage{lscape}
+\usepackage{pdflscape}
+%\usepackage{rotating} % use \begin{sidewaystable}
+
+% Helps format tables using the \toprule, \midrule, and \bottomrule commands (http://en.wikibooks.org/wiki/LaTeX/Tables#Using_booktabs)
+\usepackage{booktabs}
+%\usepackage{multirow} for multirow in tables
+%  Helps format tables (http://en.wikibooks.org/wiki/LaTeX/Tables#Using_array)
+%\usepackage{array}
+
+%%-- Additional style---- modified by Tao Sheng 12/20/12
+% for chemical formula, subscripts etc
+\usepackage[version=3]{mhchem}
+\usepackage{siunitx}
+  \DeclareSIUnit \torr{Torr}
+%%-- mathmatical symbols and equations-----
+\usepackage{amsmath}
+\usepackage{amssymb}
+ %\numberwithin{equation}{section}
+ %\numberwithin{figure}{section}
+ \providecommand*{\ud}{\mathrm{d}}
+
+%------- bibliography and citation ------
+\usepackage[english]{babel}% Recommended
+\usepackage{csquotes}% Recommended
+\usepackage[style=numeric-comp,
+		    sorting=nty,
+            hyperref=true,
+            url=false,
+            isbn=false,
+            backref=true,
+            maxcitenames=2,
+            maxbibnames=4,
+            block=none,
+            backend=bibtex,
+            natbib=true]{biblatex}
+% \usepackage[bibencoding=latin1]{biblatex}
+
+\DefineBibliographyStrings{english}{%
+    backrefpage  = {see p.}, % for single page number
+    backrefpages = {see pp.} % for multiple page numbers
+}
+% suppress 'in:'
+\renewbibmacro{in:}{%
+  \ifentrytype{article}{}{\printtext{\bibstring{in}\intitlepunct}}}
+% document preamble
+% removes period at the very end of bibliographic record
+\renewcommand{\finentrypunct}{}
+% removes pagination (p./pp.) before page numbers
+\DeclareFieldFormat{pages}{#1}
+
+
+\providecommand*{\bibpath}{E:/spring2012/Ubuntu/Latex/Mendeley_Bib_lib}
+\bibliography{\bibpath/ECD.bib,\bibpath/tungsten_newandgood.bib,\bibpath/ACSnano.bib,%
+\bibpath/tungsten_old.bib,\bibpath/Raman.bib,\bibpath/Molybdenum.bib,%
+\bibpath/tungsten_cl.bib,\bibpath/optics,\bibpath/CVD.bib,\bibpath/sodium.bib,\bibpath/VLS.bib}
+
+%-- for works around, packages conflicts----
+
+%-- redefine toc macros ------
+\addto\captionsenglish{%
+\renewcommand\chaptername{CHAPTER}%
+\renewcommand\appendixname{APPENDIX}%
+\renewcommand\indexname{INDEX}%
+\renewcommand{\contentsname}{TABLE OF CONTENTS}%
+\renewcommand{\listfigurename}{LIST OF FIGURES}%
+\renewcommand{\listtablename}{LIST OF TABLES}%
+}
+
+%-- misc---
+\usepackage{lipsum}
+\usepackage{latexsym}
+ \providecommand*{\thefootnote}{\fnsumbol{footnote}}
+
+\usepackage{xcolor}
+\usepackage{listings}
+\lstset{
+ frame = single,
+ language = matlab,
+ breaklines = true,
+postbreak=\raisebox{0ex}[0ex][0ex]{\ensuremath{\color{red}\hookrightarrow\space}}
+}
+
+\usepackage{enumitem}
+\setlist{nolistsep}
+
+%% -- links ---
+\usepackage{hyperref}
+\hypersetup{
+colorlinks,%
+citecolor=black,%
+filecolor=black,%
+linkcolor=black,%
+urlcolor=black
+} % make all links black
+
+\usepackage[acronym,toc]{glossaries} % loaded after hyperref
+
