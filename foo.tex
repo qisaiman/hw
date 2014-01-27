@@ -36,7 +36,16 @@ ssh-keygen -t rsa -C "qisaiman@gmail.com"
 % checkout from github 
 git add remote hw https://github.com/qisaiman/hw.git
 git fetch hw master or develop 
-git push hw master
+git merge hw/master
+git push hw master:master
+% or 
+git push hw master:hw/master % use my master branch to update remote 
+
+% view current remote
+git remote -v
+% remove origin remote
+git remote rm origin 
+
 
 %create a branch develop and switch to it
 git checkout -b develop
@@ -44,12 +53,35 @@ git checkout -b develop
 git commit -m ''
 git checkout master 
 git merge develop % into current branch 
+% inspect the branch status 
+git branch --merged % show merged branch 
+git branch --no-merge % show unmerged works
+
 % delete a branch
 git branch -d develop 
 
 
 \end{lstlisting}
 
+\begin{lstlisting}
+% initialization
+touch README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin git@github.com:qisaiman/cv.git
+git push -u origin master
+
+% view current remote 
+git remote -v 
+% remove origin remote 
+git remote rm origin 
+
+% to view current config
+git config --list 
+
+
+\end{lstlisting}
 Git protocol 9148 port. 
 
 \section{Commands}
