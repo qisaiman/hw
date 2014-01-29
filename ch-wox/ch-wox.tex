@@ -2,236 +2,248 @@
 
 \chapter{tungsten oxides}
 
-\section{Introduction}
-
-Tungsten oxide (\ce{WO_x}) is an important functional materials with distinctive properties and technology applications. Intense research interest was rekindled by the discovery of \gls{ec} effect in \citeyear{Granqvist1993}.\cite{Granqvist1993}  Nano-engineering \ce{WO_x} bring more possibility and flexibility to its already rich characteristics, therefore resulting research efforts spanning multiple fields of scientific community. Besides smart window based on EC effect, \ce{WO_x} is also well investigated for several other significant applications: photoelectrochemical cell for solar energy conversion and storage, photocatalysis for hydrogen evolution reaction, chemical and biological sensing based on gasochromic effect. In addition, a few young fields are not thoroughly explored: field emission, optical storage, thermoelectrcity, ferroelectricity, and superconductivity.
-
-In this chapter, we will first review the literature to date for both \ce{WO_x} and \ce{Na_xWO3}, then divide the summaries into a) technological application, b) crystal structure and electronic properties and c) synthesis approaches. Then we present our growth methods and results. And we conclude with a brief summary.
-
-\subsection{Rich and useful technological appeals}
-
-Electrochromic effect of tungsten oxide means the coloration (deep blue) and bleaching (transparent) states of \ce{WO3} are reversibly switched upon forward and backward voltage, and the coloration or bleached states remain after disconnecting the voltage. On basis of this property, \gls{ecd} of tremendous energy saving potential is conceptualized and some products have already been commercialized (i.e. smart window\footnote{``We did a case study in five cities, and the average savings in commercial buildings are about 25 percent of the heating, ventilation, and air-conditioning energy use annually," says CEO of View, Inc.}).
-
-In the past decades, tons of works have been devoted to understanding the chromogenic phenomena in \ce{WO3}. We highlight several key results as reviewed by ,
-\begin{itemize}
-    \item coloration and bleaching can also be stimulated by other routes, such as by UV irradiation, thermal treating, heating in vacuum, reducing atmosphere etc
-    \item no electrical coloration occurs in vacuum, but other routes still works
-    \item coloration is associated with a proportional increase in conductivity
-    \item coloration spectrum is essentially similar in all cases except small variation in peak position and FWHM
-    \item coloration is structure sensitive and most efficient in amorphous films
-\end{itemize}
-
-Sofar there is no unifying model that could reconcile these contradictory experimental observations. Among all the developed models, polaronic absorption is the most widely accepted mechanism for coloration. In polaron model\footnote{When a free electron travels through a polar solid, it creates a local lattice displacement (longitudinal optical phonon clouds) due to the coulombic interaction with neighboring ions. This local distortion and the electron together is equivalent to a new elementary exciton of the crystal, and is named as polaron}, the intercalation of \ce{M^+} (M = H, \ce{Li}, or Na) ions into \ce{WO3} films is accompanied with the formation of small polarons ($r_p$ comparable to unit cell size) and formal reduction of some \ce{W^{6+}} sites to \ce{W^{5+}}, as depicted in Eq.~\ref{eq:ec}. During the intercalation process, the \ce{M^+} ions enter into these vacant sites.\cite{Hepel2008} Coloration occurs when the polaron band .
-
-\begin{align}\label{eq:ec}
-x\ce{M+} + x\ce{e-} +  \ce{$\alpha \hyphen$WO$_{3-y}$}= \ce{$\alpha \hyphen$M$_x$WO$_{3-y}$},
-\end{align}
-
-And the polaron binding energy ($E_p$) is given by
-\begin{align}
-E_p = - \frac{e^2}{2r_p} (\epsilon_\infty^{-1} - \epsilon_{st}^{-1}),
-\end{align}
-
-where $\epsilon_\infty$ and $\epsilon_{st}$ are optical and static dielectric constants respectively, and polaron radius $r_p$, which specifies how far the lattice distortion extends, is related to polaron density $N_p$ by $r_p = \frac{1}{2}\sqrt[3]{\pi/6N_p}$. However, the polaron model has difficulty in estimating $r_p$. The asymmetric optical absorption spectrum are often characteristic of large polarons, and dielectric constants ($\epsilon_\infty = 6.52,\epsilon_{st} > 50$,\cite{Deb2008}) suggests the formation of bipolaron. Moreover, polaron model does not take oxygen vacancy into account, which plays a vital role in the nonstoichiometric tungsten oxides. For instance, it is observed that \ce{WO_{3-y}} films are metallic and conductive for $y > 0.5$, blue and conductive for $y = 0.3 \sim 0.5$, and transparent and resistive when $y < 0.3$, regardless of the preparation methods.\cite{Chatten2005}
-
-Therefore another model in analogy to the F-color center is proposed. Color center model assumes the presence of oxygen vacancy $V_O^0$ is associated with \ce{W^{4+}} or 2\ce{W^{5+}} states. This defect level is expected to be inside or near the valence band. When one electron is removed from this level, $V_O^0$ is converted to $V_O^+$.The positively charged vacancy exerts coulombic repulsion to the nearest W-ions, which results in a displacement of the neighboring W-ions and an upward shift of the defect level into the bandgap, thereby creating a color center. The optical transition from $V_O^+$ to $V_O^{2+}$ (a state within the conduction band)
-contributes to coloration.\cite{Deb2008}
-
-So the polaron and color center models both agree on that \ce{W^{5+}} and its transition is responsible for the coloration, but disagree on how this \ce{W^{5+}} state is created (foreign ion reduction in polaron model and oxygen vacancy in color center model) and the corresponding energy levels. A modified polaron model is proposed to include \ce{W^{4+}} states in host lattice. Coloration mechanism is represented by Eq.~\ref{eq:cl_bl1} and \ref{eq:cl_bl2}, which described the polaron hopping from one site to another.\cite{Chatten2005}
-
-\begin{align}
-h\nu +\ce{W^{5+}(A)} +  \ce{W^{6+}(B)} &\rightarrow \ce{W^{5+}(B)} + \ce{W^{6+}(A) + E_{phonon}} \label{eq:cl_bl1}\\
-h\nu +\ce{W^{5+}(A)} +  \ce{W^{4+}(B)} &\rightarrow \ce{W^{5+}(B)} + \ce{W^{4+}(A) + E_{phonon}} \label{eq:cl_bl2}
-\end{align}
-
-Similar scenarios occurs in the gasochromic effect. Two models, double injection and color center, arise to account for the coloration upon exposure to certain gases. Both consents to Eq.~\ref{eq:cl_bl1}. But there is a disagreement on the final states. Double injection supports the formation of tungsten bronze \ce{H_xWO3} while color center insists on the inward diffusion of oxygen vacancy and outward diffusion of water molecules. Both have been substantiated experimentally. Therefore the exact mechanism in \ce{WO_x} still requires further investigation. The author believes the resolution to a large extent depends on the phase transitions, as discussed in Section.~\ref{sec:wonawo}.
-
-photocatalytic applications in solar hydrogen generation and organic pollutant degradation.
-
-photocatalyst\cite{Macphee2010}, photoelectrochemical energy application \cite{Su2010}
-
-Photocatalytic activity occurs when a semiconductor in aqueous solution is illuminated by photons of energy larger than the band gap, then electron-hole pairs generate free radicals, (i.e. \ce{OH.}) which enable further reactions. For water splitting using solar energy, the band gap should be within $2.0 \sim 3.0 $ eV, and CB edge should be more negative than reduction potential of \ce{H^+/H2}, whereas the VB top should be more positive than the oxidation potential of \ce{H2O/O2)}.\cite{Wang2012} The valence band holes (\ce{h^+}) oxidize water to oxygen and conduction band electrons propel hydrogen generation, as depicted in Eq.~\ref{eq:hervb} and \ref{eq:hercb}.
-
-\begin{align}
-4\ce{h^+} +  \ce{H2O} &\rightarrow \ce{O2} + 4\ce{H^+} \label{eq:hervb}\\
-4\ce{H^+} +  4e^- &\rightarrow 2\ce{H2} \label{eq:hercb}
-\end{align}
-
-As shown in Fig.~\ref{fig:woxnhe}, \ce{WO3} has CB edge positioned slightly more positive than reduction potential of \ce{H^+/H2}(versus \gls{nhe}), and VB edge much more positive than the oxidation potential of \ce{H2O/O2}. So the photo-cleavage of water cannot be accomplished by \ce{WO3} alone. Nevertheless, a tandem cell approach by \ce{WO3} film and dye-sensitized \ce{TiO2} has been demonstrated with an efficiency of 4.5\%.\cite{Michael1999} It is worth noting that green plants also have two photosynthetic systems connected in series, one for oxidation of water into oxygen and the other for fixation of carbon dioxide.
-
-% wo3 vs NHE 
-\begin{figure}[htb]
-\centering
-\includegraphics[width=0.7\textwidth]{woxnhe.jpg}
-\caption[Bands positions of \ce{WO3} versus NHE]{Bands positions of \ce{WO3} in contact with aqueous electolyte at pH 1. adapted from Ref\cite{Gratzel2001}}
-\label{fig:woxnhe}
-\end{figure}
-
-Moreover, favorable oxygen evolution of \ce{WO3} brings good performance in degradation of organic compounds\cite{Hepel2001,Luo2001,Watcharenwong2008}. The formation of long-lived holes is recognized as a key requirement.\cite{Pesci2011} Besides, \ce{WO3} is remarkably stable in acid, making it a significant candidate for treating water pollutant caused by organic acids.\cite{Monllor-Satoca2006} 
-
-
-
-the ubiquity of \ce{WO6} octahedra is essential for not only the optical properties but the ability to insert and extract ions in the EC oxides, due to the tunnels in three dimensions serving as path for transport of small ions.
-The intercalation of hydrogen or alkali ions into \ce{WO3} created electron donor level. By absorbing the red part of incident spectrum, electrons at donor level make transition to the conduction band, causing the blue coloration in \ce{H_xWO3}.
-
-\citeauthor{Wang2009a} mentioned that amorphous \ce{WO3} can only be used in lithium-based electrolytes due to its
-in-compact structure and high dissolution rate in acidic electrolyte solutions. Electrochromic materials that can endure acidic electrolytes without degradation should be developed. Crystalline \ce{WO3} nanostructures with their much denser structures and small particle sizes are promising to be used as suitable electrochromic material in acidic electrolytes.
-
-Characterization of ECD (work like a thin-film batteries) includes transmission measurement and associated EC calculation, charge-discharge time, current-time curve and the fitting of obtained data.
-
-The coloration efficiency (CE) represents the change in the optical density (OD) per unit charge density ($Q/A$, in units of \si{\cm^2\per\coulomb}) during switching and can be calculated according to the formula:
-\begin{equation}
-CE = \frac{\Delta~OD}{(Q/A)} [cm^2/C],
-\end{equation}
-where OD = $log(T_{bleach}/T_{color})$. The EC and optical density depend on the wavelength and are usually higher in the near IR than in the visible region.
-Using Ohm's law($U_s = IR = RQ/t_s$) with switch voltage $U_s$, resistance R and surface area A, switching time $t_s$ could be estimated as
-\begin{equation}
-t_s = \Delta~OD\cdot A \cdot R /(CE\cdot U_s).
-\end{equation}
-
-its one dimensional (1D) nanostructure has attained intensive research efforts in recent years due to the potential applications in advanced nano-electric and nano-optoelectronic devices.
-
-\begin{quote}
-a viable electrochromic smart window must exhibit a cycling life time \textgreater $10^5$ cycles, corresponding to an operation life at 10 - 20 years.
-\end{quote}
-
-
-
-
-
-
-\subsection{Crystal structures and properties of tungsten oxides and sodium tungsten oxides}\label{sec:wonawo}
-
-\textbf{\ce{WO3}} Tungsten trioxides crystalize in multiple phases. The basic building block is \ce{WO6} octahedra.\footnote{Tungsten, with its electronic configuration as \ce{(Xe)4f^{14}5d^{4}6s^{2}}, has empty 5d and 6s orbitals in its +6 oxidation state.} \ce{WO3} crystal structure consists of \ce{WO6} octahedra joined at their corners, which may be considered as a perovskite structure of \ce{CaTiO3} with all \ce{Ca^{2+}} sites vacant. A representative lattice structures is illustrated in Fig.~\ref{fig:wo3oct}. These distorted \ce{WO6} octahedra adapts different tilting angles in different phases and edge-sharing octahedra also arises. The temperature-dependent phase transition and corresponding lattice constants in bulk form is summarized in Table.~\ref{tab:wo3phase}.\cite{Zheng2011} And a firm assignation of space group to monoclinic phases are still in debate.\cite{Chatten2005} It is noticed that the lattice parameters obtained via \emph{ab initio} calculation closely match the experimental values.\cite{Migas2010a} The phase transition scenarios in nanostructured \ce{WO3} are supposed to be much more sophisticated. Within Gibbs-Thomson frame work, one can generally expect lower transition temperature than their bulk counterparts due to enhanced surface energy. Temperature-dependent Raman spectroscopy provided support for this deduction.\cite{Boulova2002}
-
-% wo3 phases
-\begin{table}[htb]
-\centering
-\caption{\ce{WO3} phases}\label{tab:wo3phase}
-\begin{tabular}{lccccc}
-\toprule
-\multicolumn{5}{c}{Lattice constants \AA} \\
-\cmidrule(l){4-6}
- Symbol    & Temperature (\si{\degreeCelsius}) & Phase & a & b & c   \\
-\midrule
-$\epsilon$-\ce{WO3} & $ -140 \sim -50$  & monoclinic II & 7.378 & 7.378 & 7.664  \\
-$\delta$-\ce{WO3} & $-50 \sim 17$  & triclinic & 7.309 & 7.522 & 7.686  \\
-$\gamma$-\ce{WO3} & $17 \sim 330$  & monoclinic I & 7.306 & 7.540 & 7.692  \\
-$\beta$-\ce{WO3} & $330 \sim 740$  & orthorhombic & 7.384 & 7.512 & 3.846  \\
-$\alpha$-\ce{WO3} & $> 740$  & tetragonal & 5.25 & NA & 3.91  \\
-$h$-\ce{WO3} &  $<400$  & hexagonal & 7.298 & NA & 3.899  \\
-\bottomrule
-\end{tabular}
-\end{table}
-
-\begin{figure}[htb]
-\centering
-\includegraphics[width=0.4\textwidth]{octwo3.jpg}
-\caption[Octahedra model of \ce{WO3}]{Octahedra model of \ce{WO3}}
-\label{fig:wo3oct}
-\end{figure}
-
-
-\ce{WO3} is wide gap n-type semiconductor with valence band top featuring $2p$ states of oxygen and conduction band bottom arising primarily from $5d$ states of tungsten with some mixing of oxygen $2p$ states.\cite{Gillet2004} \citeauthor{Migas2010a} maintained there is essentially identical band dispersion near the gap region in case of $\epsilon$-\ce{WO3}, $\delta$-\ce{WO3}, $\gamma$-\ce{WO3} and $\beta$-\ce{WO3}.\cite{Migas2010a} When there is oxygen vacancy, the Fermi level moves into the conduction band and the gap shrinks by about 0.5 eV. \citeauthor{Migas2010a} also pointed out the flat bands at VBM and CBM could lead to poor transport of holes and electrons, thus may compromising the function in photoelectrochemical cells.
-
- \citeauthor{Chatten2005} also studied the oxygen vacancy in different phases of \ce{WO3}.\cite{Chatten2005}
-
-Nonstoichiometric tungsten oxides \ce{WO_x} (i.e. \ce{WO_{2.92}}, \ce{WO_{2.87}}) are known as Magn$\acute{e}$li phases.
-
-We do not discuss tungsten oxide hydrates (\ce{WO3.nH2O}) in this work since the product of thermal CVD approach is not plagued with this complexity. It's necessary, however, to deal with hydrated \ce{WO3} in the liquid synthesis routes, as indicated in Section.~\ref{sec:woxgrowth}.
-
-Theoretical computation of electronic band structures for \ce{WO_x} proves difficult due to the aforementioned phase transition.
-
- oxygen deficiency, structure change, electronic properties vary according.
-
-% band gap table
-\begin{table}[htb]
-\centering
-\caption{Tungsten oxides band gap }\label{tab:wo3eg}
-\begin{tabular}{lccr}
-\toprule
-Phase & Experimental (eV) & Theory (eV) & Remarks  \\
-\midrule
-amorphous \ce{WO3} & 3.2  & NA &    \\
-monoclinic bulk \ce{WO3} &  2.6   & 1.73\cite{Migas2010a}  &    \\
-tetragonal bulk \ce{WO3} &     & 0.66 \cite{Migas2010a}&    \\
-nano-\ce{WO3} & 2.6$\sim$3.2  & NA &    \\
-nano-\ce{WO_{3-x}} & NA  & NA &    \\
-\bottomrule
-\end{tabular}
-\end{table}
-
-Tungsten bronzes was coined by Wohler in 1837.\cite{Deb2008} \ce{Na_{x}WO3}
-
-\subsection{Synthesis strategies}\label{sec:woxgrowth}
-
-We will first give a brief review on the synthesis of \ce{WO3}. As the chemical formula suggested, the most straightforward way is heating metallic tungsten in various forms (i.e. powders,\cite{Zhou2005a,Cao2009,Hsieh2010} foils and wires). Actually \ce{WO_x}\footnote{$x$ is between 2 and 3.} NWs was observed when directly heating W wires.\cite{Gu2002a} Due to the extreme high melting point of W, it requires very high temperature (say, above 1100 \si{\degreeCelsius}) to produce large amount of growth species. Therefore scalable growth seems difficult. The DC current heating proved to be a route with potential large yield. Tungsten wire or filament is connected to a voltage source, and substrate is positioned in proximity to the heated W wire. \cite{Lingfei2006,Thangala2007,Chang2007}
-
-Tungsten oxides powder can also been used as precursor to prepare \ce{WO_{x}} \glspl{nw}.\cite{Huang2008a,Wang2009} Hydrogen-containing agents (i.e. water, \ce{H2},or methane\cite{Klinke2005}) were often involved into the reaction.\cite{Baek2007,Karuppanan2007} The potential benefit is \ce{WO3} has a much lower melting point ($\approx 1470$\si{\degreeCelsius}) than that of W.
-
-Direct oxidation and \ce{WO3} conversion could be grouped as addition approach. In contrast, decomposition method is also feasible.
-\citeauthor{Pol2005} obtained \ce{W18O49} nanorods by thermal dissociation of \ce{WO(OMe)4} at 700 \si{\degreeCelsius}, and \ce{WO3} by the annealing at 500 \si{\degreeCelsius} at air atmosphere.\cite{Pol2005}
-
-Spray pyrolysis is a typical aerosol-assisted CVD technique. Typical process flow is: the precursor solution is pumped to an atomizer, and then sprayed through the carrier gas as a fine mist of very small droplets onto heated substrates. Subsequently the droplets undergo evaporation, solute condensation, and thermal decomposition, which then result in film formation.\cite{Zheng2011}
-
-Main reactions include: \cee{W + O2 -> WO_{3-x}} \cee{W + H2O -> W_{3-x} + H2}
-
-the energetic sources are ion bombardment, electron beam, laser ablation, and combustion flame\cite{Rao2011}.
-
-The sol–gel process is a well-known, intensively studied wetchemical technique that is widely used in materials synthesis. This method generally starts with a precursor solution (the ``sol") to form discrete particles or a networked gel structure. During the course of gelation (aging process), various forms of hydrolysis and polycondensation take place.
-
-Hydrothermal method has been an important route to synthesize a diversity of nanomaterials (i.e. ). Preparation of \ce{WO_{3-x}} has also been demonstrated hydrothermally.\cite{Lee2003,Gu2007} Usually, the precursor (\ce{H2WO4}) is mixed with other reactants (sulfides or certain organic acid) in solution and pH value is adjusted as another control degree of freedom. Then the solution is transferred into a sealed container (i.e. Teflon autoclave) and maintained at elevated temperature ($120 \sim 300$ \si{\degreeCelsius}) for tens of hours. Finally the product is separated from the solution and dried, layered \ce{WO3.nH2O} flakes are usual products.
-
-In addition, doped \ce{WO3} was also demonstrated
-
- The composition and phase of final product highly depend on the synthesis conditions.
-
-%\newgeometry{margin=1in}
-\begin{landscape}
-\begin{table}[htb]
-\centering
-\caption{Tungsten Oxides Growth and Application}\label{tab:wox}
-{\footnotesize
-\begin{tabular}{lp{3.5in}p{2.5in}c}
-\toprule
-composition  &  methods & highlights &  reference  \\
-\midrule
-\ce{WO3} & hot W filament (above 1500 \si{\degreeCelsius}) in Ar/\ce{O2} flow  & Cubic phase, PL, resistivity measured & \cite{Thangala2007} \\
-\addlinespace[0.5em]
-& W filament DC heating in \ce{NH3} or \ce{N2}/\ce{H2} flow  & multi phases, 100mg per batch, stable dispersion in both organic and aqueous solvents & \cite{Chang2007} \\
-\addlinespace[0.5em]
-& W powder heating Ar/\ce{O2} flow  & triclinic phase, CL at 370,415nm, UV-Vis, 3eV & \cite{Hsieh2010} \\
-\cmidrule(l){2-4}
-& \ce{WOx} film in \ce{H2} and \ce{CH4} flow  & monoclinic phase, tungsten carbide is the key & \cite{Klinke2005} \\
-\cmidrule(l){2-4}
-& \ce{Na2WO4.2H2O} by hydrothermal heating to test for line break & 3 different morphologies and photodegradation & \cite{Rajagopal2009}  \\
-& \ce{H2WO4.2H2O}, \ce{H2O2} and poly(vinyl alcohol) etc by solvothermal  & multi phases deposition of FTO with varied bandgaps  & \cite{Su2010}  \\
-
-\midrule
-\ce{W18O49} & \ce{KOH} etching of W tips followed by heating in Ar flow  & oxygen from leakage, VS process& \textcite{Gu2002a} \\
-\addlinespace[0.5em]
-& \ce{NW(CO)6}, \ce{Me3NO.2H2O} and oleylamine by hydrothermal  &  RT PL at 350nm and 440nm & \cite{Lee2003}  \\
-\bottomrule
-\end{tabular}
-}
-\end{table}
-\end{landscape}
-%\restoregeometry
-
+% \input{./ch-wox/part1}
 
 
 \section{growth method and results discussion}
 
-Tungsten powder were used as source material, and named as W3N (Alfa, -325 mesh, 99.9\%, metal basis) by the author. The sodium concentration was 20ppm.\footnote{detection of sodium by EDS is possible although the concentration is below the limit of typical EDS capacity due to the non-uniform distribution of foreign elements} The substrates were p-type, boron-doped and [100]-orientated silicon with about 1 $\mu$m thermally-grown silicon oxide layer on the polished side (U.Wafer). The one-side polished substrates were first cut into rectangular pieces of 10mm by 35mm, and then ultrasonically cleaned with acetone and alcohol for about ten minutes, each followed by the blow drying with nitrogen.
+Tungsten powders were used as source in this work. We used four kinds of W powder in total, as summarized in Table.~\ref{tab:powder}. Three growth configurations were explored, namely ordinary transport (OT), seeded growth (SG) and flow growth (FG).
+% Tungsten powders size and purity
+\begin{table}[htb]
+\centering
+\caption{Tungsten powders size and purity}\label{tab:powder}
+\begin{tabular}{lccr}
+\toprule
+Name & purity & average size & vendor info\\
+\midrule
+3N   &  99.9\% & 17 $\mu$m & Alfa Aesar \#39749\\
+3N5   &  99.95\% & 32 $\mu$m  & Alfa Aesar \#42477\\
+4N5   &  99.995\% & 3.3 $\mu$m  & Materion T-2049 \\
+5N   &  99.999\% & 1.5 $\mu$m & Alfa Aesar \#12973\\
+\bottomrule
+\end{tabular}
+\end{table}
 
-In a typical growth experiment, about 2g tungsten powder was positioned in the upstream of the quartz boat and downstream about 2.5 inches the substrate was stationed. The boat was then loaded into a 1-inch diameter quartz tube in a way that the powder source was placed in the middle, and the substrate low temperature end was aligned with tube edge. After pumping down, 1 \gls{sccm} (SCCM denotes cubic centimeter per minute at STP) \ce{O2} and 10 sccm Ar were admitted into the tube respectively, after which the overall pressure read approximately 110 mTorr. The temperature ramped to 1000 \si{\degreeCelsius} in half an hour and lasted for 4 hours, and subsequently the system was allowed to naturally cool down to room temperature.
+In a typical OT experiment (Fig.~\ref{fig:wogrow}), about 2g tungsten powder was positioned in the upstream end of a quartz boat and downstream about 2.5 inches the substrate was stationed. The substrates were p-type, boron-doped and [100]-orientated silicon with about 1 $\mu m$ thermally-grown silicon oxide layer on the polished side. The cleaning procedures have been elucidated in Chapter 1 section. The boat was then loaded into reaction chamber in a way that the powder source was placed in the center of heating zone, and the substrate upstream end was aligned at 6.5in.\footnote{As defined in Fig.~\ref{fig:wogrow}} After pumping down, 1 sccm \ce{O2} and 10 sccm Ar were admitted into the chamber, respectively, after which the overall pressure read approximately 110 mTorr. The temperature ramped up to 1000 \si{\degreeCelsius} in 30 minutes and lasted for 4 hours, and subsequently the apparatus was allowed to naturally cool down to room temperature. 
+% cvd NW growth
+\begin{figure}[htb]
+\centering
+\includegraphics[width=0.7\textwidth]{CVD_and_temp.jpg}
+\caption[\ce{WO3} NW growth: OT]{Chemical vapor system and its temperature profile. The nominal NWs growth temperature were estimated according to the interpolation data. The zero inch location is defined at the upstream edge of furnace.}
+\label{fig:wogrow}
+\end{figure}
 
-\subsection{Results on Sodium Tungsten Oxides}
+SG and FG experiments remain essentially the same as that of OT growth, except that in SG additional tungsten powders were distributed onto the receiving substrate, and in FG more than one piece of substrate was employed. The modification is schematically illustrated in Fig.~\ref{fig:wogrowsf}. More details will be provided when it comes to the discussion.
+% sg fg 
+\begin{figure}[htb]
+\centering
+\includegraphics[width=0.5\textwidth]{sg_and_fg.jpg}
+\caption[\ce{WO3} NW growth: SG and FG]{\ce{WO3} NW growth: SG and FG. (a) Seeded growth with additional powders on substrate (b) Flow growth with multiple substrates}
+\label{fig:wogrowsf}
+\end{figure}
+
+With four kinds of W powders and three layouts, we designed the experimental matrix as illustrated in Table.~\ref{tab:matrix}. The symbol $\times$ means this combination is covered in this work, and NA means otherwise.
+% Tungsten powders growth design
+\begin{table}[htb]
+\centering
+\caption{Tungsten powders growth design}\label{tab:matrix}
+\begin{tabular}{lccr}
+\toprule
+ & Ordinary Transport & Seeded growth & Flow growth \\
+\midrule
+3N   &  $\times$ & NA &  NA   \\
+3N5  &  $\times$ & NA &  NA   \\
+4N5  &  $\times$ & $\times$ & $\times$ \\
+5N   &  $\times$ & $\times$ &  $\times$ \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+We will first present the OT growth results in section~\ref{sec:nawox}, and discuss the other two in section~\ref{sec:sgfg}.
+
+\subsection{Tungsten Oxides by OT}\label{sec:nawox}
+
+We have investigated the growth dynamics of each source in OT configuration. In each experiments, we control the temperature, flow rate and source and substrate locations. Another parameter we found important is the growth number\footnote{Defined as the order of growth performed in the same reaction chamber} in the same reaction chamber. Usually one will conduct several runs in the same chamber, and different results may arise with respect to the growth number. With this degree of freedom included, we first summarized the primary features of deposition and the associated parameters in Table~\ref{tab:wot}.
+% \ce{WO_x} ordinary transport results
+\begin{table}[htb]
+\centering
+\caption{\ce{WO_x} ordinary transport results}\label{tab:wot}
+\begin{tabular}{lp{2in}p{2in}r}
+\toprule
+\multicolumn{2}{c}{Growth Number} \\
+\cmidrule(l){2-3}
+ Source   & First & Second and more & Sodium(ppm)   \\
+\midrule
+3N      & Morphology from high to low temperature: islands, dense layer and a few NWs & Dense wires become more and more, \ce{NaxWO3} phase dominates & 20  \\
+3N5     & $\pm1$  & correlated to flow &      NA\\
+4N5  & dense islands, some tiny wires in low temperature end & NA & 0.065 \\
+5N  & dense islands, some tiny wires in low temperature end  & NA & 0.05\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+We found the growth using 3N source show distinctive features in comparison to the rest. This mainly arise from the higher sodium concentration in 3N source than that in others. Therefore we focus on 3N source first, and move on to other latter.
+
+Before diving into the complex interaction of \ce{WO3} and \ce{Na_xWO3} nanostructures, we would like to examine the metallic W source itself and its changes after growth. The SEM images of all powders before and  after growth are shown in Fig.~\ref{fig:pdbefore} and Fig.~\ref{fig:pdafter}, respectively.
+% powder before growth
+\begin{figure}[htb]
+\centering
+\includegraphics[width=0.7\textwidth]{pd_before.jpg}
+\caption[SEM images of W powder before growth]{SEM images of W powder before growth.(a) 3N, (b) 3N5, (c) 4N5 and (d) 5N. }
+\label{fig:pdbefore}
+\end{figure}
+
+% powder after growth
+\begin{figure}[htb]
+\centering
+\includegraphics[width=0.7\textwidth]{pd_after.jpg}
+\caption[SEM images of W powder after growth]{SEM images of W powder after growth.(a) 3N, (b) 3N5, (c) 4N5 and (d) 5N. }
+\label{fig:pdafter}
+\end{figure}
+
+Typical morphologies of the as-synthesized nanostructures grown on a \ce{SiO2}-Si substrate was shown in Fig.~\ref{fig:nawoxsemedx}(a). The nanostructures are NWs with lengths from tens microns up to several hundred microns and diameters about 40 to 500 nm. The deposition of nanowires was generally located on the substrates with a growth temperature range from 660 to 420 \si{\degreeCelsius}. Close-up observations at high magnification revealed some nanowires were cylinder-shaped and some were belt-shaped. At some locations, microplate structures with a regular rectangular shape grew among the nanowires as demonstrated in Fig.~\ref{fig:nawoxsemedx}(b) and its inset. The chemical compositions of the deposition were identified by EDX. A representative EDX spectrum in Fig.~\ref{fig:nawoxsemedx}(c) shows the existence of W, Na, O, and Si signals in the specimen, where the Si signal is from the substrate. The crystal structures of the as-synthesized specimens were examined using XRD. The diffraction peaks were carefully indexed and the deposition was identified as two phases of sodium tungsten oxides and one phase of tungsten oxide as indicated on Fig.~\ref{fig:nawoxsemedx}(d). The two sodium tungsten oxide phases are the triclinic \ce{Na5W_{14}O_{44}} phase\footnote{ICDD PDF 04-012-4449,\emph{a}=7.2740\AA, \emph{b}=7.2911\AA, \emph{c}=18.5510\AA, $\alpha$=96.3750$^\circ$, $\beta$=90.8920$^\circ$, $\gamma$=119.6560$^\circ$} and the triclinic \ce{Na2W4O_{13}} phase.\footnote{ICDD PDF 04-012-7108,\emph{a}=11.1630\AA, \emph{b}=3.8940\AA, \emph{c}=8.2550\AA, $\alpha$=90.60$^\circ$, $\beta$=131.36$^\circ$, $\gamma$=79.70$^\circ$} The tungsten oxide is the monoclinic \ce{WO3} phase.\footnote{ICDD PDF 01-083-0950,\emph{a}=7.30084\AA, \emph{b}=7.53889\AA, \emph{c}=7.6896\AA, $\beta$=90.8920$^\circ$} 
+
+% nawox sem edx
+\begin{figure}[htb]
+\centering
+\includegraphics[width=0.7\textwidth]{nawox_semedx.jpg}
+\caption[SEM and EDX on \ce{Na_xWO3}]{SEM images of (a) dense array of as-synthesized ultra-long nanowires on SiO2-Si substrate and (b) rectangular microplates grow among the nanowires. (c) EDS and (d) XRD spectra showing the chemical compositions and phases of the deposition.}
+\label{fig:nawoxsemedx}
+\end{figure}
+
+The XRD measurements revealed the overall structure of the depositions on the substrates. To obtain detailed information on the crystallinity, composition, and growth direction of the nanostructures, TEM analyses with imaging, electron diffraction, and EDX were performed on more than 20 nanowires. The majority of the nanowires were identified as the \ce{Na5W_{14}O_{44}} phase. (Fig.~\ref{fig:nawoxtem}(a-c)) The HRTEM image in Fig.~\ref{fig:nawoxtem}(b) reveals that the nanowire has a single-crystalline structure. The corresponding diffraction pattern in the inset of Fig.~\ref{fig:nawoxtem}(b) was recorded in $[\bar{1}10]$ axis. Based on the analyses on a series of diffraction patterns and HRTEM images, the nanowire was confirmed as the triclinic \ce{Na5W_{14}O_{44}}. The growth direction of \ce{Na5W_{14}O_{44}} NWs was determined to be parallel to the (001) plane. The chemical composition of the nanowire was revealed by EDX. Fig.~\ref{fig:nawoxtem}(c) shows the nanowire consisted of W, Na, and O. No other impurities were detected.\footnote{The Cu and C signals come from the supporting Cu grid with lacey carbon and the Cr signal from the tip of JEOL double tilt holder. They are not compositions from the nanowires and other structures studied here.} small fraction of nanowires were found to be the monoclinic \ce{WO3} phase. (Fig.~\ref{fig:nawoxtem}(d-f)) The SAED shown in the inset of Fig.~\ref{fig:nawoxtem}(e) was recorded in [100] zone.
+
+\begin{figure}[htb]
+\centering
+\includegraphics[width=0.8\textwidth]{nawox_tem.jpg}
+\caption[SEM images of morphology evolution]{TEM images at low-magnification, HRTEM images, and EDS spectra of a \ce{Na5W_{14}O_{44}} NW (a, b, c), a \ce{WO3} NW (d, e, f), and a \ce{Na2W4O_{13}} microplate (g, h, i). }
+\label{fig:nawoxtem}
+\end{figure}
+
+Using 3N source and with increasing growth number from 1 to 5, we found dramatic morphology variation of as-synthesized nanostructures. The typical morphologies evolution as to the growth numbers is illustrated in Fig.~\ref{fig:nawoxsemall}.
+
+\begin{figure}[htb]
+\centering
+\includegraphics[width=0.8\textwidth]{nawox_sem_series.jpg}
+\caption[SEM images of morphology evolution]{Low magnification SEM images of the NWs at different growth zones showing morphology changes with the increase of growth number. The insets show detailed structures of the NWs.}
+\label{fig:nawoxsemall}
+\end{figure}
 
 
-The SEM images of powder a) before growth and b) after growth.
+The sodium concentration was 20ppm as provided by vendor.\footnote{Due to the non-uniform distribution of foreign elements, detection of sodium by EDX is possible although the concentration is below the limit of typical EDX capacity.}
+% 3N5 powder growth
+\begin{figure}[htb]
+\centering
+\includegraphics[width=0.9\textwidth]{wox3n5.jpg}
+\caption[SEM images of \ce{WO3} growth using 3N5 powder]{SEM images of \ce{WO3} growth using 3N5 powder showing the morphology variation from (a) high temperature and (b) intermediate temperature, to (c) low temperature.}
+\label{fig:wox3n5}
+\end{figure}
 
-\subsection{Results on Seeded Growth}
+% 4N5 powder growth
+\begin{figure}[htb]
+\centering
+\includegraphics[width=0.9\textwidth]{wox4n5.jpg}
+\caption[SEM images of \ce{WO3} growth using 4N5 powder]{SEM images of \ce{WO3} growth using 4N5 powder showing the morphology variation from (a) high temperature and (b) intermediate temperature, to (c) low temperature.}
+\label{fig:wox4n5}
+\end{figure}
+
+
+\subsection{Tungsten Oxides by SG and FG}\label{sec:sgfg}
+
+As mentioned in Section.~\ref{sec:nawox}, growth using higher purity tungsten powders primarily produce dense layer deposition, and growth using 3N powder is plagued with the impurity effect. New growth method is required to obtain \ce{WO3} NWs. Here we figured out two alternatives to address this issue: seeded growth (SG) and flow growth (FG). In seeded growth, additional tungsten powders on the substrate serves as local seed. This approach is essentially the same as previous studies where tungsten foils was used as substrate. The advantage of our method is W powder cost much less than a whole piece of foil, and provide more surface area than W foil in the same volume. The FG method utilizes the flow dynamics of our CVD apparatus. We will discuss both of them in details.
+
+Understanding the oxidation of tungsten powder is the key to obtain high yield in seeded growth. Oxidation of tungsten have been investigated under diverse conditions, such as at elevated temperature (\textgreater 1100 \si{\degreeCelsius} ) and oxygen pressure on the order of Torr,\cite{Base1965} and at temperatures ranging from 20 to 500 \si{\degreeCelsius} under atmosphere pressure.\cite{Warren1996} \ce{WO_x} NWs were readily found when tungsten (foil, wire, or powder) is oxidized under various conditions.\cite{Zhu1999,Karuppanan2007,Hsieh2010} However the study on tungsten powder oxidation behavior between intermediate temperature range and under low pressure is still rare. In this work, we studied the oxidation of tungsten powders with diverse size within temperature range from 500 to 1000 \si{\degreeCelsius} and under several mTorr oxygen partial pressure. Using tungsten powder as seed, we further illustrate an economic approach to obtain large yield of \ce{WO3} nanowires at relatively lower temperature than previous efforts. We also demonstrate that there is an optimal tungsten powder size under our experimental conditions for seeded growth. This will provide some insight on the role of tungsten powder as source material in CVD growth of \ce{WO_x}.
+
+Commercial available tungsten powders with different size are usually associated with purity variation as well. We investigated four kinds of tungsten powder as already summarized in Table~\ref{tab:powder}. The dimensions of tungsten powder were obtained by measuring the average size in SEM graphs.
+
+We performed a systematic investigation on the oxidation behavior of tungsten powder. In a typical oxidation experiment, tungsten powders were loaded into the uniform heating zone and the sealed chamber was first pumped down to 5--8 mTorr. Then oxygen flow varying between 1 sccm to 10 sccm was admitted from upstream inlet. With 10 sccm Ar as carrier gas, the overall pressure was about 100 mTorr. The heating temperature was in the range of 500 to 750 \si{\degreeCelsius}. We present the temperature effect, size-dependence and influence of oxygen partial pressure as following.
+% seed optimal
+\begin{figure}[htb]
+\centering
+\includegraphics[width=0.8\textwidth]{JAP-2column_Fig1.jpg}
+\caption[W powder oxidation: temperature effect]{SEM graphs of 99.9\% (3N) tungsten powder oxidization at different temperatures of a) 500\si{\degreeCelsius}, b) 600\si{\degreeCelsius}, c) 650\si{\degreeCelsius}, d) 750\si{\degreeCelsius}, showing the optimal temperature for local formation of nanowires is between 600--650\si{\degreeCelsius}. Oxygen flow rate is 1 sccm.}
+\label{fig:pdtemp}
+\end{figure}
+
+Fig.~\ref{fig:pdtemp} illustrated the effect of temperature on the morphological change and surface nanowires formation of 3N powder. At 500 \si{\degreeCelsius}, most tungsten powder retained its original shape and a layer of tiny dense NWs begun to grow. When temperature was increased to 600 \si{\degreeCelsius}, 3N powder started to crack with longer NWs on the isolated surface. Further increase of temperature lead to irregular shapes of tungsten power and aggregation of NWs, giving rise to the nanorods and bunched or bundled structures. It could be determined from the morphology variation that the optimal seeded growth temperature for 3N powder was in the range of 600 to 650 \si{\degreeCelsius}.
+% seed optimal
+\begin{figure}[htb]
+\centering
+\includegraphics[width=0.8\textwidth]{JAP-2column_Fig3.jpg}
+\caption[W powder oxidation: size effect]{SEM graphs illustrating the oxidization of four different size of tungsten powders at 600~\si{\degreeCelsius} and 1 sccm oxygen flow. a) $17\mu m$, b) $32\mu m$, c) $3.3\mu m$, d) $1.5\mu m$.}
+\label{fig:pdsize}
+\end{figure}
+
+Fig.~\ref{fig:pdsize} depicted the oxidation of different sizes of tungsten powder under the same experimental conditions. In contrast to the morphology of 3N powder shown in Fig.~\ref{fig:pdtemp}, 3N5 powder surface is primarily covered with sub-micro particles as well as some short tiny NWs, whereas 4N5 and 5N powder were thoroughly oxidized, showing branched flowers feature. This dramatic difference could be explained in terms of surface energy and oxygen diffusion. With smaller dimension, the increased surface-to-volume ratio and short diffusion path both lower the energy barrier of oxidation.\cite{tungsten1999} It was logical to deduce that higher temperature or increased oxygen level might favor the NWs formation on 3N5 powder. When it comes to seeded growth, however, the powder size distribution was an important factor to give uniform NWs deposition. Since the size distribution of 3N powder is more uniform than that of 3N5 powder, we only employed the former as seeds.
+% seed optimal
+\begin{figure}[htb]
+\centering
+\includegraphics[width=0.8\textwidth]{JAP-2column_Fig2.jpg}
+\caption[W powder oxidation: oxygen pressure]{SEM graphs of 3N tungsten powder oxidization at 600 \si{\degreeCelsius} under different rates of oxygen flow: a) 1 sccm, b) 2 sccm, c) 3 sccm, d) 10 sccm. The oxygen partial pressures were 13 mTorr, 23 mTorr, 32 mTorr, and 82 mTorr, respectively with background pressure subtracted.}
+\label{fig:pdoxy}
+\end{figure}
+
+Fig.~\ref{fig:pdoxy} depicted the morphology change of 3N powder with respect to varied oxygen partial pressure. When the oxygen flow is lower than 3 sccm, 3N powder almost stayed as the same, with cracks separating the dense layer of NWs. When oxygen flow is increased to 10 sccm, the 3N powder exemplified an enlarged version of that for 4N5 or 5N powder under 1 sccm oxygen flow. This observation again supported the surface energy explanation.
+
+With all above oxidation experiments, favorable conditions for local growth of NWs were extracted to perform seeded growth. The seeded growth was performed by placing high purity tungsten powders (4N5 or 5N) in heating zone and receiving substrate with 3N tungsten powders in downstream location where the temperature was about 600 \si{\degreeCelsius}. The temperature profile and source and substrate locations remain essentially the same as in Fig.~\ref{fig:wogrow} except the presence of 3N powder on receiving substrate. In all experiments, tungsten powders were uniformly distributed by sliding two pieces of substrates and the growth time was kept at 4 hours.
+% sg sem
+\begin{figure}[htb]
+\centering
+\subfloat[]{\label{fig:sga}\includegraphics[width=0.4\textwidth]{wox_sg_a.jpg}}\hspace{0.04\textwidth}
+\subfloat[]{\label{fig:sgb}\includegraphics[width=0.4\textwidth]{wox_sg_b.jpg}}
+\caption[Characterization of seeded growth \ce{WO3}: SEM]{Characterizations of seeded growth. (a) SEM graphs of \ce{WO3} NWs on \ce{SiO2/Si} substrate. (b) A high magnification view showing uniform NW growth and close-up view of one NW. }
+\label{fig:woseedsem}
+\end{figure}
+
+As shown in Fig.~\ref{fig:sgb}, dense NWs array was obtained on tungsten powder seeds with individual wires of length up to 5 $\mu$m and diameter about 50 to 200 nm, according to the estimation made in the close-up view. Each tungsten powder stood as independent growth site (Fig.~\ref{fig:sga}) with island-layer growth on the substrates, a common feature without using tungsten powder as seed under current experimental conditions. It was occasionally observed that NWs growth was initiated adjacent some tungsten powders. We suspect that this phenomenon was correlated to the local trap of vapor flow since it was more often found among the enclosed area by tungsten powders. We also found that the diameter of NWs decrease as the distance between powders and upstream edge increases. This is a combination effect of lower temperature and reduced \ce{WOx} growth species supply. Similar phenomena were observed in other studies. \citeauthor{Thangala2007} reported that a decrease in NW density with increasing substrate temperature, and an increase of NW density with increasing partial pressure of oxygen.\cite{Thangala2007}
+% sg raman xrd
+\begin{figure}[htb]
+\centering
+\subfloat[]{\label{fig:sgxrd}\includegraphics[width=0.45\textwidth]{wox_xrd_1}}\hspace{0.04\textwidth}
+\subfloat[]{\label{fig:sgram}\includegraphics[width=0.45\textwidth]{wox_raman_1}}
+\caption[Characterization of seeded growth \ce{WO3}: XRD and Raman]{ (a) XRD pattern of as-prepared sample indicating the \ce{WO3} phase and the presence of metallic core. (b) Raman spectrum on NWs region showing the feature of \ce{WO3}.}
+\label{fig:woseedxrd}
+\end{figure}
+
+Fig.~\ref{fig:sgxrd} is the XRD spectrum of one typical sample. The peaks under circular symbol were identified to be the monoclinic \ce{WO3} phase (ICDD PDF 01-083-0950,\emph{a}=7.30084\AA, \emph{b}=7.53889\AA, \emph{c}=7.6896\AA, $\beta$=90.8920$^\circ$), while the peak under the triangular symbol was indexed to cubic tungsten phase (ICDD PDF 04-16-3405, \emph{a}=3.157\AA). This metallic core was anticipated considering the oxygen flow levels in previous oxidation experiment and the seeded growth (Fig.~\ref{fig:pdoxy}). Micro-Raman scattering spectroscopy was performed on as-synthesized sample as well. During Raman examination, the laser spot was carefully focused onto the NWs on powders and several inspections on different positions were observed to ensure the reproductivity of spectra data. As shown in Fig.~\ref{fig:sgram}, five distinct bands were well resolved, with its peaks located at 131, 265, 327, 711 and 803 \si{cm^{-1}}, respectively. This pattern was typical features of \ce{WO3}, consistent with previous study.\cite{Salje1975a,Dixit1986} The high background level probably arise from the metallic core.
+% sg tem
+\begin{figure}[htb]
+\centering
+\includegraphics[width=0.9\textwidth]{JAP-2column_Fig5.jpg}
+\caption[Characterization of \ce{WO3}: TEM]{TEM graphs of as-prepared NWs. Left: TEM image of one nanowire, the diameter is about 40 nm. Right: HRTEM images showing the spacing is 0.38 nm, corresponding to (002) plane distance.}
+\label{fig:woseedtem}
+\end{figure}
+
+We also examine the as-synthesized NWs using TEM. TEM specimen was prepared by using carbon grid to slightly scratch the as-grown sample. One can also disperse the NWs into acetone and then drop cast onto TEM grids. As shown in Fig.~\ref{fig:woseedtem}, the growth direction is determined to be [001], similar to previous reports. The streakings in SEAD pattern presumably arise from stacking defaults.
+
+We would like to discuss a little more on the dispersion of \ce{WO3} NWs, since the stability of \ce{WO3} dispersion is important for its applications. \citeauthor{Kozan2008} studied the stability of \ce{WO3} in various polar solvents such as acetone, isopropanol(IPA), ethanol, 1-methoxy-2-propanol (1M-2P) and N-dimethylformamide(DMF).\cite{Kozan2008} High power ultra-sonication was applied for about 2 minutes followed by a low power ultrasonic bath for 15 minutes. The the solvent was left to sedimentation. Samples was drawn out with pipette and transferred to clean substrate for observation. It is suggested that bundled NWs aggregates in 1M-2P seem to breakup at the outer branches to a small extent and turn into slightly more compact aggregate, providing well-dispersed stable suspension. Subsequently, this suggests we could harvest the as-grown nanowires by a solution ultra-sonication method. Generally there will be metallic tungsten in the core region of powder particles. The separation of NWs could be done via the route reported by \citeauthor{Kumar2008}, where separation by sonication in 1-methoxy 2-propanol followed by gravity sedimentation.\cite{Kozan2008}
+
+%\textbf{Growth mechanism}
+
+In regarding to the formation of NWs on tungsten powder itself, we assume the driving force is related to interfacial strain between W and \ce{WOx}. Oxidation of tungsten proceed slowly at room temperature and an oxide layer of $100 \AA$  was found.\cite{Warren1996} The tungsten powder used in current study would be covered by a thin oxide layer as well. During oxidation, different oxidation rates exist for different crystallographic orientations on the tungsten powder. Oxidation occurring at boundaries and defects are preferred.\cite{You2010} Compressive strain will gradually accumulate at the tungsten oxide/tungsten interface, which might limit the diffusion rate of oxygen at temperature lower than 500 \si{\degreeCelsius}.\cite{tungsten1999} At elevated temperature, cracks will primarily occur, as observed in Fig.~\ref{fig:pdtemp}. When heated up, tungsten and the oxide shell will probably relax the strain by converting into substoichiometric NWs, a similar process as suggested by \citeauthor{Klinke2005} in the chemically induced strain growth of tungsten oxide NWs.\cite{Klinke2005} It is worth noting that tungsten oxide nanowires could also formed when \ce{WO3} is reduced.\cite{Sarin1975} We speculate that the elongation of \ce{WOx} is thermodynamically favorable during the conversion from metallic tungsten to tungsten oxide as well. Another possible formation  mechanism of NWs on tungsten powder is a local evaporation-condensation process.
+
+The enhanced yield of NWs obtained via seeded growth could be explained by a vapor-solid (VS) mechanism. External supply of growth species will condense onto the powders and substrate simultaneously, promoting the elongation of NWs on power as well as resulting island-layer growth on substrate. We found that the local NW density in oxidation experiment was much higher than that of seeded growth. It is reasonable to presume that during seeded growth, several NWs in a small region on powder will coalescence, as evidenced by the bundled structures. At last, we point out that when low purity tungsten powder (3N) in our stock was used as source, sodium tungsten oxide nanowires were found to be dominant in the final product. The details have been discussed in Section.~\ref{sec:nawox}. It seems surprising that when 3N powder was used as seeds, only \ce{WO3} nanowires was obtained. We attribute this result to the lower temperature and significantly reduced amount of 3N powder used in the seeded growth, compared with the conditions in another study. The source material in seeded growth is not limited to high purity tungsten powder. Instead, any material that could produce appropriate growth vapor could be employed, indicating the versatility of our approach.
+
+%FG 
+
+% fg sem 
+\begin{figure}[htb]
+\centering
+\subfloat[]{\label{fig:sg1}\includegraphics[width=0.45\textwidth]{wox_flow1}}\hspace{0.04\textwidth}
+\subfloat[]{\label{fig:sg2}\includegraphics[width=0.45\textwidth]{wox_flow2}}
+\caption[Characterization of flow growth \ce{WO3}: SEM]{ (a) Low magnification SEM image showing dense array of NWs (b) High magnification SEM image of NWs grew out of layer and close-up view on individual wire.}
+\label{fig:fgsem}
+\end{figure}
+
+% fg tem
+\begin{figure}[htb]
+\centering
+\includegraphics[width=0.8\textwidth]{wo3_tem.jpg}
+\caption[Flow growth of \ce{wo3}:TEM]{TEM characterization of FG \ce{WO3} NWs. }
+\label{fig:fgtem}
+\end{figure}
+
+
 
 \section{summary}
 
