@@ -1,0 +1,67 @@
+\chapter{CVD gas dynamics}
+
+kinematic viscosity $\nu$ in unit of $m^2/s$. Dynamic viscosity $\eta = \rho*\nu$ in unit of kg/m/s. The relationship between Pascal second and centipoise is 1 Pas = 1 $Ns/m^2$=1 kg/(ms)=103 cP.  laminar flow is considered to exist if the Re numbers are significantly below 1000.
+
+Ideal gas equation
+\[
+PV = n R T;
+\]
+where R = 8.3 J/mole K.
+
+\begin{itemize}
+\item 1 mole = 22.4 liters at "STP" (0 C, 1 atmosphere)
+\item 1 liter = 0.045 moles at STP
+\item 1 cm3 = 4.5E-5 moles @ STP
+\item 1 cm3 = 6.4E-8 moles @ 1 Torr, 23 C
+\item 1 atm = 760 Torr = 101,000 Pa
+\item 1 Pa = 7.6 mTorr
+\item 1 SLPM = 7.4E-4 moles/second
+\item 1 sccm = 7.4E-7 moles/second
+\end{itemize}
+
+Maxwellian velocity distribution is given by
+\[
+\frac{\partial N}{\partial \nu} = N 4\pi \nu^2 (\frac{m}{2\pi k T})^{3/2} exp(-\frac{m\nu^2}{2k T})
+\]
+with mean velocity $c_m = \sqrt{\frac{8 RT}{\pi M}}$.
+
+pumping ability in unit of $cm^3/s$ is estimated to be.
+
+\begin{table}[htb]
+\centering
+\caption{CVD parameters}\label{tab:cvd2}
+    \begin{tabular}{lccr}
+    \toprule
+    \cmidrule(l){4-5}
+    parameter       & value    & Ar     & \ce{O2}  \\
+    \midrule
+    Inner Dia       & 25.4mm    &       &      \\
+    pressure (mTorr)&           & 100   & 10   \\
+    pressure (Pa)   &           & 13.33 & 1.333 \\
+    Molar weight (g/mol) &      & 40     & 32  \\
+    chamber volume  &           & $7.7e^{-4}m^3$  & 770ml \\
+    RT density      & $kg/m^3$  & $2.14e^{-4}$  & $1.71e^{-5}$ \\
+    total molar amount&         & $0.004$  & $4.13e^{-4}$ \\
+    average velocity (m/s) & 300K & 398   & 445  \\
+    average velocity (m/s) & 1200K& 796   & 890  \\    
+    $\eta$  kg/(ms) & 300K      &  $2.272e^{-5}$  & $2.063e^{-5}$   \\
+    Reynolds number &          & 95.2      & 9.4   \\ 
+    MFP  ()         &  & & \\
+    \bottomrule
+    \end{tabular}
+\end{table}
+
+Mean free path of gas in vacuum:
+\[
+\lambda_p = \frac{5\times10^{-3}}{P} \approx 0.05,
+\]
+where $\lambda_p$ is in centimeter, and P is pressure in Torr. Gas impingement flux $\Phi$, is a measure of the frequency with which gas molecules impinge on or collide with a surface.
+\[
+\Phi = 3.513\times10^{22}\frac{P}{\sqrt{M T}},
+\]
+Gas flow could be divided into three regimes: molecular flow, intermediate flow and viscous flow.
+Knudsen number is
+\[
+K_n = D/\lambda_p \approx 50,
+\]
+where D is characteristic dimension of the CVD system. 
