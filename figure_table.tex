@@ -1,7 +1,7 @@
 % art work global settings
 %  origin:
  all tick in, line color: blue or black, line width: 2; tick : 18pt;
- layout area(in): left:1, top:0.3; width 10: height 7; total 
+ layout area(in): left:1, top:0.3; width 10: height 7; total
  layout area(in): left:1, top:0.8; width 9.6: height 7; total 12 by 9
  export: 3in auto
  text size: 22
@@ -103,6 +103,29 @@ Resolution & $\pm1$  & correlated to flow & 1   & 0.1  \\
   \textsuperscript{\emph{a}} Some text;
   \textsuperscript{\emph{b}} Some more text.
 \end{table}
+
+
+%\newgeometry{margin=1in}
+\begin{landscape}
+\begin{table}[htb]
+\centering
+\caption{Tungsten Oxides Growth and Application}\label{tab:wox}
+{\footnotesize
+\begin{tabular}{lp{3.5in}p{2.5in}c}
+\toprule
+composition  &  methods & highlights &  reference  \\
+\midrule
+\ce{WO3} & hot W filament (above 1500 \si{\degreeCelsius}) in Ar/\ce{O2} flow  & Cubic phase, PL, resistivity measured & \cite{Thangala2007} \\
+\addlinespace[0.5em]
+& W filament DC heating in \ce{NH3} or \ce{N2}/\ce{H2} flow  & multi phases, 100mg per batch, stable dispersion in both organic and aqueous solvents & \cite{Chang2007} \\
+\bottomrule
+\end{tabular}
+}
+\end{table}
+\end{landscape}
+%\restoregeometry
+
+
 
 
 %\newgeometry{margin=1in}
