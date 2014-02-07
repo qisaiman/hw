@@ -33,32 +33,32 @@ Git reset HEAD xxx.tex
 
 ssh-keygen -t rsa -C "qisaiman@gmail.com"
 
-% checkout from github 
+% checkout from github
 git add remote hw https://github.com/qisaiman/hw.git
-git fetch hw master or develop 
+git fetch hw master or develop
 git merge hw/master
 git push hw master:master
-% or 
-git push hw master:hw/master % use my master branch to update remote 
+% or
+git push hw master:hw/master % use my master branch to update remote
 
 % view current remote
 git remote -v
 % remove origin remote
-git remote rm origin 
+git remote rm origin
 
 
 %create a branch develop and switch to it
 git checkout -b develop
 {some editing }
 git commit -m ''
-git checkout master 
-git merge develop % into current branch 
-% inspect the branch status 
-git branch --merged % show merged branch 
+git checkout master
+git merge develop % into current branch
+% inspect the branch status
+git branch --merged % show merged branch
 git branch --no-merge % show unmerged works
 
 % delete a branch
-git branch -d develop 
+git branch -d develop
 
 
 \end{lstlisting}
@@ -72,17 +72,17 @@ git commit -m "first commit"
 git remote add origin git@github.com:qisaiman/cv.git
 git push -u origin master
 
-% view current remote 
-git remote -v 
-% remove origin remote 
-git remote rm origin 
+% view current remote
+git remote -v
+% remove origin remote
+git remote rm origin
 
 % to view current config
-git config --list 
+git config --list
 
 
 \end{lstlisting}
-Git protocol 9148 port. 
+Git protocol 9148 port.
 
 \section{Commands}
 
@@ -96,13 +96,51 @@ Git protocol 9148 port.
     gitk\textsuperscript{\emph{a}}   & Visualization versioning history  \\
     git status\textsuperscript{\emph{b}} & current working flow state \\
     ssh key   & zgcss627\\
-    
+
     \bottomrule
   \end{tabular}
 
   \textsuperscript{\emph{a}} Some text;
   \textsuperscript{\emph{b}} Some more text.
 \end{table}
+
+\section{lynda git}
+
+\begin{lstlisting}
+git config --global % to each user level
+git config  % to each project
+
+git config --global core.editor ""
+git config --list % view current config
+ls -la % list hidden files
+git log --since=
+git log --until=
+git log --grep="tms"
+
+three tress: repository, staging, working
+change set into checksum
+
+git diff %
+git diff --staged %
+git diff --color-words filexxx
+
+git mv file1 renamedfile2 % rename a file
+
+git commit -am 'commit comments' % add and commit
+
+git checkout -- filexxx% stay on current branch and restore previous versions from repository
+git reset HEAD filexxx % unstage 
+
+git commit --amend -m "" % undo commit 
+
+git checkout SHA -- filexxx % checkout previous version 
+
+git revert SHA % 
+
+
+
+
+\end{lstlisting}
 
 
 \end{document} 
