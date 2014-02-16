@@ -129,15 +129,62 @@ git mv file1 renamedfile2 % rename a file
 git commit -am 'commit comments' % add and commit
 
 git checkout -- filexxx% stay on current branch and restore previous versions from repository
-git reset HEAD filexxx % unstage 
+git reset HEAD filexxx % unstage
 
-git commit --amend -m "" % undo commit 
+git commit --amend -m "" % undo commit
 
-git checkout SHA -- filexxx % checkout previous version 
+git checkout SHA -- filexxx % checkout previous version
 
-git revert SHA % 
+git revert SHA %
 
+git clean % remove untracked files 
 
+navigating commit tree
+tree-ish 
+
+parent commit: HEAD^, HEAD~1, HEAD~2,
+
+git ls-tree master or HEAD %list commit tree 
+
+git log --oneline 
+git log --author=""
+git log --since=
+git log --graph --all --decorate --oneline
+
+git show SHA 
+
+git diff HEAD~3..HEAD % -b ignore space changes, 
+
+%use branch to try new ideas, and isolate features
+compare branches
+git diff --color-words master..develop  
+
+git branch --merged % to see if current branch include previous contents 
+
+rename branches: 
+
+git branch -m develop newname 
+
+git merge --no-ff branch % no fast-forward merge
+
+true merge  %recursive strategy
+
+resolving conflicts: 
+abort: git merge --abort
+manually: 
+merge tool: 
+
+stashing: store temporally 
+git stash save ""
+git stash list 
+git stash show -p stash@{0}
+git stash apply or pop stash@{0}% pop, no longer in drawer, apply, make a copy from the drawer
+
+git stash drop stash@{0} 
+git stash clear % clear all stashes
+
+% remotes 
+git push -u % 
 
 
 \end{lstlisting}
