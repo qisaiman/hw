@@ -184,7 +184,23 @@ git stash drop stash@{0}
 git stash clear % clear all stashes
 
 % remotes 
-git push -u % 
+git push -u % -u = --set-upstream
+git branch -r % show remote branch
+git branch -a % show all branches
+
+fetch % synch origin/master with remote 
+fetch does not merge origin/master into local master branch
+
+git pull = git fetch + git merge 
+
+git branch no_track origin/nontrakcing % starting a new branch from origin/nontracking 
+
+git show HEAD
+git show branch 
+
+git log -p onebranch..another
+
+
 
 
 \end{lstlisting}
