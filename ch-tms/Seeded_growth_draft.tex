@@ -1,0 +1,239 @@
+% !TEX TS-program = pdflatex
+% !TEX encoding = UTF-8 Unicode
+
+% This is a simple template for a LaTeX document using the "article" class.
+% See "book", "report", "letter" for other types of document.
+
+\documentclass[11pt]{article} % use larger type; default would be 10pt
+
+\usepackage[utf8]{inputenc} % set input encoding (not needed with XeLaTeX)
+
+%%% Examples of Article customizations
+% These packages are optional, depending whether you want the features they provide.
+% See the LaTeX Companion or other references for full information.
+
+%%% PAGE DIMENSIONS
+\usepackage{geometry} % to change the page dimensions
+\geometry{a4paper} % or letterpaper (US) or a5paper or....
+% \geometry{margin=2in} % for example, change the margins to 2 inches all round
+% \geometry{landscape} % set up the page for landscape
+%   read geometry.pdf for detailed page layout information
+
+\usepackage{graphicx} % support the \includegraphics command and options
+
+% \usepackage[parfill]{parskip} % Activate to begin paragraphs with an empty line rather than an indent
+
+%%% PACKAGES
+\usepackage{booktabs} % for much better looking tables
+\usepackage{array} % for better arrays (eg matrices) in maths
+\usepackage{paralist} % very flexible & customisable lists (eg. enumerate/itemize, etc.)
+\usepackage{verbatim} % adds environment for commenting out blocks of text & for better verbatim
+\usepackage{subfig} % make it possible to include more than one captioned figure/table in a single float
+% These packages are all incorporated in the memoir class to one degree or another...
+
+%%% HEADERS & FOOTERS
+\usepackage{fancyhdr} % This should be set AFTER setting up the page geometry
+\pagestyle{fancy} % options: empty , plain , fancy
+\renewcommand{\headrulewidth}{0pt} % customise the layout...
+\lhead{}\chead{}\rhead{}
+\lfoot{}\cfoot{\thepage}\rfoot{}
+
+%%% SECTION TITLE APPEARANCE
+\usepackage{sectsty}
+\allsectionsfont{\sffamily\mdseries\upshape} % (See the fntguide.pdf for font help)
+% (This matches ConTeXt defaults)
+
+%%% ToC (table of contents) APPEARANCE
+\usepackage[nottoc,notlof,notlot]{tocbibind} % Put the bibliography in the ToC
+\usepackage[titles,subfigure]{tocloft} % Alter the style of the Table of Contents
+\renewcommand{\cftsecfont}{\rmfamily\mdseries\upshape}
+\renewcommand{\cftsecpagefont}{\rmfamily\mdseries\upshape} % No bold!
+
+%%% END Article customizations
+%%---added by tao sheng
+\usepackage{subfig}
+\usepackage{float}
+\graphicspath{{../gallery/}} %--added by authior
+
+\usepackage{xcolor}
+
+\usepackage{amsmath}
+%\numberwithin{equation}{section} % reset counters at each start of section
+%\numberwithin{figure}{section}
+\providecommand*{\ud}{\mathrm{d}}
+
+\usepackage[font=small, labelfont=bf]{caption}
+
+\usepackage{pdfpages}
+\usepackage{placeins}
+\usepackage{siunitx}
+\usepackage[version=3]{mhchem}
+\usepackage{mathpazo}
+
+\usepackage[affil-it]{authblk}
+
+\usepackage[super, comma,sort&compress]{natbib}
+\providecommand*{\bibpath}{E:/spring2012/Ubuntu/Latex/Mendeley_Bib_lib}
+
+
+\usepackage{hyperref} % put this package at the last of all other packages
+\hypersetup{
+colorlinks,%
+citecolor=black,%
+filecolor=black,%
+linkcolor=black,%
+urlcolor=black
+} % make all links black
+
+%%% The "real" document content comes below...
+
+
+\begin{document}
+\title{Tungsten Disulfides and Tungsten Oxides Core-Shell NWs}
+\author{Tao Sheng}
+%\date{} % Activate to display a given date or no date (if empty),
+         % otherwise the current date is printed
+\affil{Department of Physics and Optical Science\\}
+\author{Youfei Jiang}
+\author{Haitao Zhang%
+\thanks{Email address:hzhang3@uncc.edu; Corresponding author}}
+\affil{Department of Mechanical Engineering and Engineering Science\\
+The University of North Carolina at Charlotte\\
+9201 University City Boulevard, Charlotte NC 28223}
+
+\maketitle
+
+\section{Introduction}
+% phtotcatalytic activity 
+
+
+
+\section{Experimental}
+
+\textbf{Synthesis} 
+
+\ce{WS2}-\ce{WO_x} core-shell NWs were synthesized using direct sulfurization of \ce{WO3} NWs (Fig.~\ref{fig0}). Tungsten trioxides NWs were synthesized by a seeded growth approach in a home-built CVD apparatus, which has been successfully employed to prepare \ce{TiO2}, \ce{WO3}\cite{Zhang2010}, \ce{MoO3} etc nanomaterials. The seeded growth details are provided in supporting information. The as-grown \ce{WO3} NWs were loaded into the center of heating furnace, and $\sim100$mg sulfur (99.5\%) was positioned just outside the upstream edge of furnace, where the maximum temperature was about 240 \si{\degreeCelsius}. After pumping down, the reaction chamber was flushed two times to expel residual air. Then the furnace was heated to 750 \si{\degreeCelsius} in 30 minutes, held for 15 minutes, and allowed to naturally cool down to room temperature. During entire growth process, 30 sccm Ar was used as carrier flow.
+
+\begin{figure}[htb]
+\centering
+\includegraphics[width=0.7\textwidth]{ws2_coreshell_setup}
+\caption{Schematic illustration of sulfurization process.}
+\label{fig0}
+\end{figure}
+
+\textbf{Characterization} 
+
+The morphology and composition of the as-synthesized samples were analyzed by scanning electron microscopy (SEM, JEOL JSM-6480) and the associated energy dispersive X-ray spectroscopy unit(EDS, Oxford Instrument INCA). Crystal structures were characterized using X-ray diffraction (PANXpertX’pert Pro MRD with Cu K$\alpha$ line at $\lambda$=1.5418\AA) and transmission electron microscopy (TEM, JEOL JEM-2100 LaB6 operated at 200kV). A Raman microscope setup (Horiba Scientific, Labram HR800) were used to detect Raman spectra. 
+
+To perform TEM-Raman integrated study, the core-shell specimen was first dispersed into acetone solution, and dipped onto PDMS () support. A micromanipulator was used to pick up the longer core-shell NWs and to transfer them onto TEM grids. The NWs were first examined using TEM to identify the \ce{WS2} layers configuration and the associated geometrical orientation. Then the core-shell NWs on TEM grids were examined under Raman. 
+
+\FloatBarrier
+
+\section{Results and Discussion}
+
+\textbf{Seeded growth}
+
+% sg sem
+\begin{figure}[htb]
+\centering
+\subfloat[]{\label{fig:sga}\includegraphics[width=0.4\textwidth]{wox_sg_a.jpg}}\hspace{0.04\textwidth}
+\subfloat[]{\label{fig:sgb}\includegraphics[width=0.4\textwidth]{wox_sg_b.jpg}}
+\caption[Characterization of seeded growth \ce{WO3}: SEM]{Characterizations of seeded growth. (a) SEM graphs of \ce{WO3} NWs on \ce{SiO2/Si} substrate. (b) A high magnification view showing uniform NW growth and close-up view of one NW. }
+\label{fig:woseedsem}
+\end{figure}
+
+As shown in Fig.~\ref{fig:sgb}, dense NWs array was obtained on tungsten powder seeds with individual wires of length up to 5 $\mu$m and diameter about 50 to 200 nm, according to the estimation made in the close-up view. Each tungsten powder stood as independent growth site (Fig.~\ref{fig:sga}) with island-layer growth on the substrates, a common feature without using tungsten powder as seed under current experimental conditions. It was occasionally observed that NWs growth was initiated adjacent some tungsten powders. We suspect that this phenomenon was correlated to the local trap of vapor flow since it was more often found among the enclosed area by tungsten powders. We also found that the diameter of NWs decrease as the distance between powders and upstream edge increases. This is a combination effect of lower temperature and reduced \ce{WOx} growth species supply. Similar phenomena were observed in other studies.\cite{Thangala2007}
+
+% sg raman xrd
+\begin{figure}[htb]
+\centering
+\subfloat[]{\label{fig:sgxrd}\includegraphics[width=0.45\textwidth]{wox_xrd_1}}\hspace{0.04\textwidth}
+\subfloat[]{\label{fig:sgram}\includegraphics[width=0.45\textwidth]{wox_raman_1}}
+\caption[Characterization of seeded growth \ce{WO3}: XRD and Raman]{ (a) XRD pattern of as-prepared sample indicating the \ce{WO3} phase and the presence of metallic core. (b) Raman spectrum on NWs region showing the feature of \ce{WO3}.}
+\label{fig:woseedxrd}
+\end{figure}
+
+Fig.~\ref{fig:sgxrd} is the XRD spectrum of one typical sample. The peaks under circular symbol were identified to be the monoclinic \ce{WO3} phase (ICDD PDF 01-083-0950,\emph{a}=7.30084\AA, \emph{b}=7.53889\AA, \emph{c}=7.6896\AA, $\beta$=90.8920$^\circ$), while the peak under the triangular symbol was indexed to cubic tungsten phase (ICDD PDF 04-16-3405, \emph{a}=3.157\AA). This metallic core was anticipated considering the oxygen flow levels (Supporting info for oxidation experiment). Micro-Raman scattering spectroscopy was performed on as-synthesized sample as well. During Raman examination, the laser spot was carefully focused onto the NWs on powders and several inspections on different positions were observed to ensure the reproductivity of spectra data. As shown in Fig.~\ref{fig:sgram}, five distinct bands were well resolved, with its peaks located at 131, 265, 327, 711 and 803 \si{cm^{-1}}, respectively. This pattern closely matches previous studies on \ce{WO3} lattice dynamics.\cite{Salje1975a,Dixit1986} The high background level probably arises from the metallic core.
+
+\textbf{core shell phase and composition}
+
+\begin{figure}[htb]
+\centering
+\includegraphics[width=0.7\textwidth]{WS2_sem_edx.jpg}
+\caption{ Morphology and composition analysis on as-synthesized core-shell structures. (a) SEM images showing the NWs almost retain their original shapes after sulfurization, and (b) EDX spectroscopy revealing the presence of sulfur element after sulfurization.}
+\label{fig:ws2sem}
+\end{figure}
+
+%fig TEM showing CS planes
+
+% fig Raman TEM 
+
+% 
+
+
+\subsection{Photocatalytic}
+
+
+
+\clearpage
+\bibliographystyle{unsrtnat}
+\bibliography{\bibpath/ECD,\bibpath/tungsten_newandgood,\bibpath/ACSnano,\bibpath/tungsten_old,\bibpath/Raman,\bibpath/Molybdenum,\bibpath/tungsten_cl}
+
+
+\end{document}
+
+\si{\degreeCelsius}
+\AA
+
+
+\clearpage
+\begin{table}[htb]
+\centering
+\caption{Source of figures }\label{tab:sof}
+\begin{tabular}{l|c|c|r}
+\hline
+No of Fig & sub index & sample date & remarks\\
+\hline
+1        & a & 013113 & 500 \\
+1        & b & 012913 & 600 \\
+1        & c & 020413 & 650 \\
+1        & d & 013013 & 750 \\
+\hline
+2       & a & 012913 & 1sccm \\
+2       & b & 020513 & 2sccm \\
+2       & c & 020613 & 3sccm \\
+2       & d & 021113 & 10sccm \\
+\hline
+3       & a & 012913 &  3N\\
+3       & b & 042313 &  3N5\\
+3       & c & 041013 &  4N5\\
+3       & d & 041113 &  5N\\
+\hline
+4       & a & 021513 &  8mm-x500\\
+4       & a inset & 021513 &  8mm-x10k\\
+4       & b & 021513 &  13mm-x500\\
+4       & b inset & 021513 &  13mm-x10ka\\
+\hline
+5   &   xrd & 021513 & \\
+\hline
+6  & raman & 060313 or 021513 & \\
+\hline
+7 & TEM & 060413 &
+\end{tabular}
+\end{table}
+
+
+A low recombination rate is preferred for high photocatalytic efficiency. The simultaneous migration of electrons and holes.
+\textbf{\ce{WS2}-\ce{WO3}}: 1 kW light source(Hg, or Xe lamp), photon flux, phenol (\ce{C6H5OH}, 94.1g/mol, MP 40C)concentration is 20 mg/L, hydroxyl group. The quantitative analysis of phenol was performed via a standard colorimetric method.\footnote{\url{http://omlc.ogi.edu/spectra/PhotochemCAD/html/072.html}}
+\citeauthor{DiPaola1999} prepared \ce{WS2}-\ce{WO3} mixture in two methods, sulfurization of \ce{WO3} and oxidation of \ce{WS2},with the latter are more active.
+\citeauthor{DiPaola1999} also concluded that the actual efficiency of mixed \ce{WS2}-\ce{WO3} catalysts depends on the ratio of each composition present of the surface of the particles, and the maximum of photoactivity is obtained with 40-50\% surface molar ratio of \ce{WS2}.
+
+ref 25, 28 and 41.
+
+\textbf{\ce{MoO3}}:
+
+\citeauthor{Sreedhara2013} studied the kinetics of photodegradation of methylene blue\footnote{\ce{C16H18N3SCl},319.8 g/mol, MP: 100C accompanied with decomposition \url{http://en.wikipedia.org/wiki/Methylene_blue}} dye by few layer \ce{MoO3}.
+For the photodegradation method, it was stated that `` the samples were collected after the photoreaction had been centrifuged for 5 min to remove the photocatalyst before UV-Vis measurement.''
+
+
+
