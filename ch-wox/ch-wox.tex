@@ -100,7 +100,7 @@ Tungsten metals crystallize in body center cubic (BCC) phase. Overall, we can st
 \caption[SEM images of W powder after growth]{SEM images of W powder after growth.(a) 3N, (b) 3N5, (c) 4N5 and (d) 5N. }
 \label{fig:pdafter}
 \end{figure}
-After growth, 4N5 and 5N powder (Fig.~\ref{fig:pdafter}c-d) both develop the round edges, while 3N and 3N5 powders (Fig.~\ref{fig:pdafter}a-b) become bundled rods. This difference mainly arise from the average size. 
+After growth, 4N5 and 5N powder (Fig.~\ref{fig:pdafter}c-d) both develop the round edges, while 3N and 3N5 powders (Fig.~\ref{fig:pdafter}a-b) become bundled rods. This difference mainly arise from the average size.
 
 \textbf{OT growth of 3N}
 
@@ -132,6 +132,37 @@ Micro-Raman spectroscopy was also carried out at room temperature in ambient atm
 \label{fig:nawoxram}
 \end{figure}
 
+An empirical formula to relate the Raman peaks and \ce{W-O} bonding lengths\cite{Hardcastle1995} is
+\begin{equation}\label{eq:wobond}
+\nu = 25823 e^{-1.902\cdot R}.
+\end{equation}
+And the standard deviation of estimating \ce{W-O} bond distance from Raman stretching wavenumber is $\pm0.034$\AA. The observed Raman peaks of \ce{Na5W_{14}O_{44}} phase lies at 965, 943, 913, 808, 786, 778, 765, 695 and 107 cm. Multi-peaks Lorentzian fitting is preformed to precisely determine the central maximum. Good fitting is obtained, as shown in Fig.~\ref{fig:naworamfit}. We then calculated \ce{W-O} bond distance using Eq.~\ref{eq:wobond}, as illustrated in Table~\ref{tab:nawobond}. The predicted \ce{W-O} bond length comply very well with the crystallographic value of \ce{Na5W_{14}O_{44}} phase.\cite{Triantafyllou1999a} The 107 peak probably is caused by \ce{Na-O} bond.
+% Na5 raman fitting
+\begin{figure}[htb]
+\centering
+\includegraphics[width=0.6\textwidth]{naxwo_ramfit}
+\caption[\ce{Na5W_{14}O_{44}} Raman fitting]{Multi-peaks Lorentzian fitting on two major peaks region of \ce{Na5W_{14}O_{44}}. The peaks sum height difference is caused by different baseline value adopted in each fitting.}
+\label{fig:naworamfit}
+\end{figure}
+
+% W-O bond length
+\begin{table}[htb]
+\centering
+\caption{\ce{W-O} bond length predication}\label{tab:nawobond}
+\begin{tabular}{lccr}
+\toprule
+peak center & length (\AA) & peak center & length (\AA) \\
+\midrule
+694.6 & 1.900 &  808.6 &  1.821 \\
+745.4 & 1.863 &  911.5 &  1.758 \\
+764.4 & 1.850 &  933.0 &  1.745 \\
+778.7 & 1.840 &   943.5 & 1.740 \\
+788.4 & 1.834 &   965.4 & 1.728 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+
 Heated at elevated temperatures, the W source, quartz tube, and quartz boat were the three possible sources for Na. The sodium concentration in 3N source was 20ppm as provided by vendor.\footnote{Due to the non-uniform distribution of foreign elements, detection of sodium by EDX is possible although the concentration is below the limit of typical EDX capacity.} The Na concentrations in quartz tube and quartz boat (GE 214 quartz, Wilmad Labglass) were 1 ppm and 0.7 ppm,  respectively. To confirm the major source of Na content coming from 3N powder, control experiments were employed by using W source with higher purities (4N5 or 5N). These ultra-high purity W sources produced pure tungsten oxide deposition.  No Na content was detected. These results verified the Na content was mainly from the 3N W powders, not from the quartz tube and boat. In the experiments, the W source was first slowly oxidized at 1000 \si{\degreeCelsius} with 1 sccm \ce{O2} and the oxidized source was then evaporated producing \ce{WO3} and other substoichiometric tungsten oxide vapors. The tungsten oxide vapors produced this way were limited by the slow oxidation, as indicated by (i) only small amount of the tungsten source was consumed during the growth and (ii) only the top layer of the tungsten source was oxidized with a dark blue color. Due to its low concentration, the exact composition of the Na content in the tungsten source is not clear. However, the evaporation rate of the Na content is expected to be high as heated at 1000 \si{\degreeCelsius}. This assumption is supported by the observation that no Na was found in the deposition along the whole substrate in control experiments using the used 3N W source. Put it in another way, this means that the majority of Na content was already evaporated in previous experiment. Hence, despite of its low concentration in the source, the total amount of Na-based vapors produced during the growth was comparable to or more than the amount of tungsten oxide vapors and resulted in the dominating deposition of sodium tungsten oxide phases in the nanowire growth region.
 
 \begin{figure}[htb]
@@ -141,7 +172,7 @@ Heated at elevated temperatures, the W source, quartz tube, and quartz boat were
 \label{fig:nawoxser}
 \end{figure}
 
-As shown by the photograph in Fig.~\ref{fig:nawoxser}a, for a series of growth performed in the same reaction chamber, the morphology of the nanowires changes with the increase of growth numbers. Three growth zones of nanowires can be identified in basis of the coverage and density of the nanowires, as delimited by the vertical guide line. The growth Zone I was located at high temperature end ranging from 660 to 520 \si{\degreeCelsius}, Zone II was from 520 to 470 \si{\degreeCelsius}, and Zone III from 470 to 420 \si{\degreeCelsius}. Detailed morphological changes are depicted in Fig.~\ref{fig:nawoxsemall}. 
+As shown by the photograph in Fig.~\ref{fig:nawoxser}a, for a series of growth performed in the same reaction chamber, the morphology of the nanowires changes with the increase of growth numbers. Three growth zones of nanowires can be identified in basis of the coverage and density of the nanowires, as delimited by the vertical guide line. The growth Zone I was located at high temperature end ranging from 660 to 520 \si{\degreeCelsius}, Zone II was from 520 to 470 \si{\degreeCelsius}, and Zone III from 470 to 420 \si{\degreeCelsius}. Detailed morphological changes are depicted in Fig.~\ref{fig:nawoxsemall}.
 
 \begin{figure}[htb]
 \centering
@@ -173,7 +204,7 @@ The general trend of Na/W ratios with the growth number can also be explained by
 
 \textbf{OT growth of 3N5, 4N5 and 5N}
 
-Typical morphologies of OT growth using other powders are shown in Fig.~\ref{fig:wox3n5} and Fig.~\ref{fig:wox4n5}, respectively. The common feature is the deposition is dominated by islands in upstream end and layers in downstream end. The exact dimension still shows some minor difference, particularly in low temperature region. The deposition with 4N5 and 5N have much smaller grain size than that with 3N5 powder. 
+Typical morphologies of OT growth using other powders are shown in Fig.~\ref{fig:wox3n5} and Fig.~\ref{fig:wox4n5}, respectively. The common feature is the deposition is dominated by islands in upstream end and layers in downstream end. The exact dimension still shows some minor difference, particularly in low temperature region. The deposition with 4N5 and 5N have much smaller grain size than that with 3N5 powder.
 % 3N5 powder growth
 \begin{figure}[htb]
 \centering
@@ -255,7 +286,7 @@ Fig.~\ref{fig:sgxrd} is the XRD spectrum of one typical sample. The peaks under 
 \label{fig:woseedtem1}
 \end{figure}
 
-We also examine the as-synthesized NWs using TEM. TEM specimen was prepared by using carbon grid to slightly scratch the as-grown sample. One can also disperse the NWs into acetone and then drop cast onto TEM grids. Fig.~\ref{fig:woseedtem1} shows the feature of majority NWs. The growth direction is determined to be perpendicular to (002) plane, similar to previous reports. The streakings in SEAD pattern presumably arise from stacking defaults. We also find some NWs exhibit high crystalline quality, as revealed by the TEM analysis in Fig.~\ref{fig:woseedtem2}. The sharp SEAD pattern and clear phase contrast in HRTEM demonstrated are both strong evidence of good crystallinity. This formation indicated our growth parameters have promising potential to obtain highly crystalline \ce{WO3} NWs. 
+We also examine the as-synthesized NWs using TEM. TEM specimen was prepared by using carbon grid to slightly scratch the as-grown sample. One can also disperse the NWs into acetone and then drop cast onto TEM grids. Fig.~\ref{fig:woseedtem1} shows the feature of majority NWs. The growth direction is determined to be perpendicular to (002) plane, similar to previous reports. The streakings in SEAD pattern presumably arise from stacking defaults. We also find some NWs exhibit high crystalline quality, as revealed by the TEM analysis in Fig.~\ref{fig:woseedtem2}. The sharp SEAD pattern and clear phase contrast in HRTEM demonstrated are both strong evidence of good crystallinity. This formation indicated our growth parameters have promising potential to obtain highly crystalline \ce{WO3} NWs.
 
 % sg tem
 \begin{figure}[htb]
@@ -283,8 +314,8 @@ As shown in Fig.~\ref{fig:wogrowsf}b, we use two substrates in flow growth, each
 \caption[Characterization of flow growth \ce{WO3}: SEM]{ (a) Low magnification SEM image showing dense array of NWs (b) High magnification SEM image of NWs grew out of layer and close-up view on individual wire.}
 \label{fig:fgsem}
 \end{figure}
-TEM to be done on D8. 
-% fg tem 
+TEM to be done on D8.
+% fg tem
 %\begin{figure}[htb]
 %\centering
 %\includegraphics[width=0.8\textwidth]{wo3_tem.jpg}
@@ -292,7 +323,7 @@ TEM to be done on D8.
 %\label{fig:fgtem}
 %\end{figure}
 
-The growth mechanism stay the same as aforementioned VS process. Both local flow and temperature play an vital role in the formation of dense NW array. Splitting one substrate into two presumably introduces some fluctuation in the vapor flow. It is well known that in lamellar flow region, there is a velocity boundary above the side wall. 
+The growth mechanism stay the same as aforementioned VS process. Both local flow and temperature play an vital role in the formation of dense NW array. Splitting one substrate into two presumably introduces some fluctuation in the vapor flow. It is well known that in lamellar flow region, there is a velocity boundary above the side wall.
 
 \section{summary}
 
