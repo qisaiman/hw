@@ -232,12 +232,13 @@ We studied the effect of temperature, oxygen partial pressure and growth time to
 \cmidrule(l){1-3}
  Temperature & \ce{O2} & Time & Morphology  \\
 \midrule
--    &  +   & -  &   \\
--    &  -   & +  &   \\
-+    &  +   & -  &   \\
-+    &  +   & -  &   \\
-+    &  +   & -  &   \\
-+    &  +   & -  &   \\
+-    &  +   & -  &   about 50 $\mu m$ belts, some towers \\
+-    &  -   & +  &   irregular shape, not too much growth\\
+-    &  +   & +  &   droplet almost all on tip of belts, many towers \\
++    &  -   & -  &   tens $\mu m$ belt with sharp edge(100 nm thick, and 1micro wide) dominates\\
++    &  -   & +  &   exhibit ITO features, droplets on tips of belt, many tower like structures\\
++    &  +   & -  &   rounded edge flakes dominate, modest density tapering belt, and some possible tower\\
++    &  +   & +  &   ITO/glass features, aggregated belts, some towers\\
 \bottomrule
 \end{tabular}
 \end{table}
@@ -249,6 +250,27 @@ We studied the effect of temperature, oxygen partial pressure and growth time to
 \caption[Droplet position statistics]{Droplet position statistics. On-tip and not-on-tip counts variation with respect to growth time. }
 \label{fig:mo3dropsta}
 \end{figure}
+
+
+\begin{table}[htb]
+\centering
+\renewcommand*{\thetable}{S\arabic{table}}
+\caption{physical constants of reactants }\label{tb:thermo}
+\begin{tabular}{lccr}
+\toprule
+Material & MP(\si{\degreeCelsius}) & BP(\si{\degreeCelsius}) & reference\\
+\midrule
+\ce{NaOH}        & 318 & 1388 & handbook  \\
+\ce{NaI}        & 651 & 1300 & MSDS    \\
+\ce{KI}        & 681 & 1330 & MSDS   \\
+\ce{Na2CO3}        & 851 & Not determined & MSDS    \\
+\ce{Na2MoO4}        & 687 & Not available & handbook   \\
+\ce{MoO3}    & 795 & 1155 & MSDS   \\
+\ce{MoO2}    & 1100(decomp) & Not available & MSDS   \\
+\bottomrule
+\end{tabular}
+\end{table}
+
 
 
 \section{TMS}
@@ -469,16 +491,16 @@ Measure the ratio between 614 and 663 nm before and after adding WS2 can indicat
 
 The oxidized form of MB, \ce{MB.^+} has peak at 520nm, which is stable in acidic solution, but decomposes irreversibly in slight alkaline solution(pH = 9).
 thionine peaks at 600nm.
-MB forms dimers in aqueous solution, 
+MB forms dimers in aqueous solution,
 \ce{
 2MB <=>[K_D] (MB)_2
 }
-A typical value of $K_D$ is 3970 1/M. A quadratic equation can be solved to obtain the monomer concentration: 
+A typical value of $K_D$ is 3970 1/M. A quadratic equation can be solved to obtain the monomer concentration:
 \[
 2K_D [MB]^2 + [MB] - [MB]_{total} = 0
 \]
-MB adsorption on metal oxides. Monomer size is less than 1.5nm. 
-Logarithmic acid dissociation constant $pK_a= -\log_10 \frac{[A^-][H^+]}{[HA]}$. The oxidation potential for \ce{H2O}-\ce{O2} couple is 1.23V and 0.817V versus NHE at pH 0 and pH 7, respectively. 
+MB adsorption on metal oxides. Monomer size is less than 1.5nm.
+Logarithmic acid dissociation constant $pK_a= -\log_10 \frac{[A^-][H^+]}{[HA]}$. The oxidation potential for \ce{H2O}-\ce{O2} couple is 1.23V and 0.817V versus NHE at pH 0 and pH 7, respectively.
 
 \[
 \cee{MB + SED &->[TiO2][h\nu \leq 3.2eV] LMB + SED^{2+}\\
