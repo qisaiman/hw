@@ -22,8 +22,39 @@
 %\usepackage{geometry}
 
 \usepackage{microtype} % better layout
+%%-- mathmatical symbols and equations-----
+\usepackage{amsmath}
+\providecommand*{\ud}{\mathrm{d}}
+
+
+\usepackage{ifluatex}
+% Note: When switching the compiler, one should delete the .aux files.
+\ifluatex
+
+\usepackage{fontspec} % to compile with LuaLatex
+\setmainfont{Times New Roman} % to compile with LuaLatex
+\usepackage{unicode-math}
+\setmathfont{Asana-Math.otf} % latinmodern-math or xits-math 
+% truetype math font 
+\usepackage{polyglossia}
+\setdefaultlanguage{english}
+\usepackage{csquotes}% Recommended 
+
+
+\else
+
 %----inherent of article class-------%
 \usepackage[utf8]{inputenc} % set input encoding (not needed with XeLaTeX)
+\usepackage{pslatex} % not bad
+
+\usepackage{amssymb}
+ %\numberwithin{equation}{section}
+ %\numberwithin{figure}{section}
+\usepackage{csquotes}% Recommended 
+\usepackage[english]{babel}% Recommended
+
+\fi
+
 
 %--- for font ----
 % \usepackage[T1]{fontenc}
@@ -31,23 +62,19 @@
 
 %\usepackage{mathptmx} % fine but not truetype
 % \usepackage{newtxtext}
- \usepackage{pslatex} % not bad
-
-%\usepackage{fontspec} % to compile with LuaLatex
-%\setmainfont{Times New Roman} % to compile with LuaLatex
-
  %-- end of font adaption
 
 \usepackage{graphicx} % support the \includegraphics command and options
 % check pdftex option
-\usepackage{placeins} %
+\usepackage{placeins} % for float and \FloatBarrier command
 
 %\usepackage{subfig}
 \usepackage{float} % for images
  \graphicspath{{../gallery/}} %--added by author
 
 \usepackage[font=small, labelfont=bf]{caption}
-\usepackage{subcaption}
+\usepackage{subcaption} % for multi floats in figure or minipage environments
+
 % It supplies a landscape environment, and anything inside is basically rotated.(http://en.wikibooks.org/wiki/LaTeX/Page_Layout)
 %\usepackage{lscape}
 \usepackage{pdflscape}
@@ -63,17 +90,12 @@
 % for chemical formula, subscripts etc
 \usepackage[version=3]{mhchem}
 \usepackage{siunitx}
-  \DeclareSIUnit \torr{Torr}
-%%-- mathmatical symbols and equations-----
-\usepackage{amsmath}
-\usepackage{amssymb}
- %\numberwithin{equation}{section}
- %\numberwithin{figure}{section}
- \providecommand*{\ud}{\mathrm{d}}
+\DeclareSIUnit \torr{Torr}
+
 
 %------- bibliography and citation ------
-\usepackage[english]{babel}% Recommended
-\usepackage{csquotes}% Recommended
+
+
 \usepackage[style=numeric-comp,
 		    sorting=nty,
             hyperref=true,
@@ -104,8 +126,7 @@
 \providecommand*{\bibpath}{E:/spring2012/Ubuntu/Latex/Mendeley_Bib_lib}
 \bibliography{\bibpath/ECD.bib,\bibpath/tungsten_newandgood.bib,\bibpath/ACSnano.bib,%
 \bibpath/tungsten_old.bib,\bibpath/Raman.bib,\bibpath/Molybdenum.bib,%
-\bibpath/tungsten_cl.bib,\bibpath/optics,\bibpath/CVD.bib,\bibpath/sodium.bib,%
-\bibpath/ECD.bib,\bibpath/VLS.bib}
+\bibpath/tungsten_cl.bib,\bibpath/optics,\bibpath/CVD.bib,\bibpath/sodium.bib,\bibpath/VLS.bib}
 
 %-- for works around, packages conflicts----
 
@@ -134,7 +155,7 @@ postbreak=\raisebox{0ex}[0ex][0ex]{\ensuremath{\color{red}\hookrightarrow\space}
 }
 
 \usepackage{enumitem}
-\setlist{nolistsep}
+\setlist{nolistsep} % or \setlist{noitemsep}
 %\setlist[1]{\labelindent=\parindent}
 %% -- links ---
 \usepackage{hyperref}
@@ -145,6 +166,9 @@ filecolor=black,%
 linkcolor=black,%
 urlcolor=black
 } % make all links black
+% to set pdf in a preset view
+% pdfstartview:
+\hypersetup{pdfstartview={XYZ null null 1.00}}
 
 \usepackage[acronym,toc]{glossaries} % loaded after hyperref
 
