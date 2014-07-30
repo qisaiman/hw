@@ -1,0 +1,194 @@
+
+\chapter{experimental tools}
+
+In this study the nanostructures were grown in a home-built chemical vapor deposition system, and characterized using both electron microscopy and optical spectroscopy methods, including SEM, XRD, EDX, TEM, Raman and UV-Vis. Other sample and substrate preparation methods used are also briefly introduced. A detailed introduction will be given to the CVD system. For other mature techniques, the contents will be limited to the extent where experienced material researchers could repeat the experiments performed in this study. This chapter is concluded with data processing and associated software discussion. 
+
+
+\section{Home-built CVD System}
+
+The synthesis was accomplished in a home-made hot-wall CVD system, as visualized in Fig.~\ref{fig:ch2cvd}. The furnace is made by two semi-cylindrical ceramic fiber heaters (WATLOW inc.) with power density from 0.8 to 4.6 \si{W cm^{-2}}. Quartz tube (Quartz Sci inc.) of 1 inch diameter was primarily used as reaction chamber. A mechanical pump was connected to maintain the low pressure environment inside the chamber. The length of uniform heating zone is 6 inches, with cooling zone extending outward. Carriers gas argon (Ar) and reactant gas oxygen (\ce{O2}) was regulated by two mass flow controllers.
+
+\begin{figure}[htb]
+\centering
+\subfloat[]{\includegraphics[width=0.7\textwidth]{CVD_d346.jpg}}
+
+\subfloat[]{\includegraphics[width=0.9\textwidth]{CVD_model.jpg}}
+\caption[CVD system]{Home-built low-pressure chemical vapor system. (a) Photograph of reaction chamber. (b) Sketch of CVD system, where A1: quartz tube; B1: bubbler; C1-2: gas cylinders; E1: mechanical pump; H1-2: ceramic heater; MFC: flow controller; P1: pressure gauge; V1-4: valves; V5-7: butterfly valves.}
+\label{fig:ch2cvd}
+\end{figure}
+
+The controllable parameters of this CVD system include central heating temperature, absolute gas flow and relative ratio of (Ar/\ce{O2}), amount of source material and location of the substrates. The operation capability is summarized in Table.~\ref{tab:cvd}.
+
+\begin{table}[htb]
+\centering
+\caption{CVD parameters map}\label{tab:cvd}
+    \begin{tabular}{lcccr}
+    \toprule
+     &&&\multicolumn{2}{c}{Flow} \\
+    \cmidrule(l){4-5}
+             & Temperature & Pressure & Ar & \ce{O2}  \\
+    \midrule
+             & \si{\degreeCelsius} & mTorr & sccm & sccm\\
+    \midrule
+    Range      & RT-1100    & 10mTorr-1atm & 0 - 100 & 0-30  \\
+    Resolution & $\pm1$  & correlated to flow & 1   & 0.1  \\
+    \bottomrule
+    \end{tabular}
+\end{table}
+
+The heating temperature $T$ profile measured at different settings in ambient environment was shown in Fig.~\ref{fig:ch2temp}. There exists a uniform heating zone in the center area, spanning over about 2 in. Then $T$ descends gradually within the 6 in heating zone, and decrease rapidly at the rest part. In this study, a zero position is defined at the upstream edge of reaction chamber covered by the furnace. 
+
+\begin{figure}[htb]
+\centering
+\includegraphics[width=0.8\textwidth]{temp_profile.pdf}
+\caption[CVD temperature profile]{Temperature profile of home-built low-pressure chemical vapor system.}
+\label{fig:ch2temp}
+\end{figure}
+
+The substrates were mostly positioned just outside the downstream heating zone since within this region, the vapor undergoes a rapid temperature gradient and precipitation occurs. The source material placed in the furnace center is oxidized and evaporated. The growth species, transported by carrier gas, bombard both substrate and chamber wall. Some will be adsorbed by the substrate and become adatoms while some may remain as gas molecules, waiting for another event. On the hot substrate, adatoms diffuse and do not settle down until finding a appropriate location where equilibrium is favorable. Detailed growth conditions are introduced in corresponding chapters.
+
+
+
+\section{Scanning Electron Microscopy (SEM) and Energy Dispersive X-ray Spectroscopy (EDX)}\label{sec:sem}
+
+SEM, as its name suggests, forms images using contrast from the electron-materials interactions. Electron beam (E-beam), generated from either thermionic or field emission of filaments, travels towards the sample underneath, producing rich signals as illustrated in Fig.~\ref{fig:ch2sem}. The out-coming backscattering (BSE) and secondary electrons (SE) arise from elastic and inelastic process, respectively. The X-ray stems from inner shell transition, and cathodoluminescence from band gap transition. In this study, we mainly use SE-formed images to reveal the morphology of the samples, since SE emission is sensitive to the shape and orientation. X-ray, collected by silicon detector cooled by liquid nitrogen, could provide compositional information attaining to the studied sample, because of the characteristic X-ray emission lines from each element. 
+
+\begin{figure}[htb]
+\centering
+\includegraphics[width=0.5\textwidth]{sem_sch.png}
+\caption[SEM excitation volume]{schematic drawing of electron materials interaction in SEM, some process is not shown, such as Auger emission.}
+\label{fig:ch2sem}
+\end{figure}
+
+The SEM instrument used in this study is JEOL JSM-6480 and EDX attachment from Oxford Instrument INCA. Typical observation conditions are listed as following:
+
+\begin{enumerate}
+\item SEM
+\begin{itemize}
+
+\item Acceleration voltage: 10 kV
+\item Working distance: 10 mm
+\item Scanning time: 80 sec
+\end{itemize}
+\item EDX
+\begin{itemize}
+
+\item Acceleration voltage: 20 kV
+\item Working distance: 10 mm
+\item Dead time: $20\sim30$\%
+\end{itemize}
+\end{enumerate}
+
+\section{X-ray Diffraction (XRD)}
+
+The high energy ($E = 1239.8/0.15148= 8184.5$ eV) photon was generated using accelerated electron beam from tungsten filament to bombard Cu target. When striking onto the crystal, these photons are scattered by the lattices. Since the wavelength of X-ray is similar to the lattice spacing, the scattering events interact coherently. Only at specific angles constructive interference occurs, and a diffraction peak registers when the detector is scanned across that angle.  
+
+Crystal structures of the as-synthesized specimens in this study were characterized using PANXpert X’pert Pro MRD with Cu $K\alpha_{avg}$ radiation at $\lambda$=1.5418\AA. The nanostructures in this work usually grew without preferred orientation, and can be treated as powders. So the $\theta-2\theta$ configuration was primarily used, as shown in Fig.~\ref{fig:ch2theta}. 
+
+\begin{figure}[htb]
+\centering
+\includegraphics[width=0.5\textwidth]{xrd_2theta.png}
+
+\caption[XRD configuration]{Bragg-Brentano geometry used in powder diffractometer}
+\label{fig:ch2theta}
+\end{figure}
+
+The as-synthesized specimens were mounted onto diffractometer in a way that the X-ray will illuminate interested region during the whole scanning. Typical settings used was summarized in Table.~\ref{tab:ch2xrd}.
+
+\begin{table}[htb]
+\centering
+\caption{XRD settings}\label{tab:ch2xrd}
+\begin{tabular}{lp{2in}lp{2in}}
+\toprule
+Name & Value & Name & Value  \\
+\midrule
+Voltage   & 45 kV & Current & 40 mA \\
+Divergence slit & 1/32$^\circ$(alignment) 1/2$^\circ$(scanning) & Receiving slit& Parallel collimator \\
+Soller slit & 0.04 rad & Collimator & Parallel plate 0.27 rad \\
+Scan range & $10 \sim 65 ^\circ$ & Step size & 0.05$^\circ$ \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+
+\section{Transmission Electron Microscopy (TEM)}
+
+TEM qualifies as a powerful and versatile tool for material characterization. JEOL JEM-2100 TEM with a \ce{LaB6} filament operated at 200 kV was used in current thesis. Similar to the photon-lattice interaction in XRD, the process of TEM could be understood as electron scattering events by the same crystal plane. In both processes, the constructive interference is described by $2d\sin\theta = \lambda$, where $d$ is crystal plane distance, $\lambda$ is incident wavelength (photon or electron), and $\theta$ is half of the scattering angle. A numerical comparison in Table.~\ref{tab:ch2tem} demonstrates the origin of difference in these two techniques. 
+
+\begin{table}[htb]
+\centering
+\caption{Scattering angle difference of Si(111)}\label{tab:ch2tem}
+\begin{tabular}{lccr}
+\toprule
+Si(111) spacing & Source & Wavelength & scattering angle($2\theta$) \\
+\midrule
+3.135\AA & Cu $K\alpha$ & 1.541\AA & 28.45$^\circ$  \\
+3.135\AA & 200 kV & 0.0251\AA \textsuperscript{\emph{a}}& 0.45$^\circ$  \\
+\bottomrule
+\end{tabular}
+
+ \textsuperscript{\emph{a}} with relativistic correction;
+\end{table}
+
+This small deviation angle determines the design of TEM column. In analog to the diffraction-limited resolution in conventional lens optics, the ultimate resolved point distance in TEM at 200 kV could be as small as 0.025 \AA. However it is much harder to manipulate electron with magnetic field than photon with dielectric lens, the current resolution in TEM is on the order of 1.0 \AA. The nominal resolution of JEM-2100 is 2.3 \AA. On the other hand, it is much easier to fine tune the power (focal length) of lens in TEM than in conventional optics. This capacity enables other observation approaches that would be rather difficult, if not impossible, to be realized in lens optics, such as selected area electron diffraction pattern (SAED). 
+
+Akin to the electron-materials interaction introduced in Sec.~\ref{sec:sem}, X-ray emission and CL also occur in TEM, and these signals could be collected to obtain value insight into specimen at higher spatial resolution. In this study, the TEM specimen was prepared either by directly scratching the as-synthesized sample using TEM grid (Cu, lacy carbon, 300 mesh), or dispersed into aqueous or organic solutions, then drop-cast onto TEM grid. A JEOL double tilt holder was used to rotate the crystal orientation. TEM images and SEADs were acquired using a charge coupled device (CCD) from Gatan, inc. EDX spectroscopy was captured by similar Oxford Instrument INCA attachment. 
+
+
+\section{Raman and UV-Vis Spectroscopy}
+
+Raman spectroscopy, a common vibrational spectroscopy, is based on the inelastic scattering of a monochromatic excitation source in energy range of 100 to 4000 $cm^{-1}$. Being nondestructive and requiring minimal preparation, 
+it is an excellent tools to assess lattice dynamics and fingerprint species.\cite{McCreery2000} 
+
+In this study, Raman measurement was performed using a confocal micro-Raman system (Horiba Scentific, Labram HR800) with excitation wavelengths of 441, 532 and 632 nm. For nanowire samples, the laser powers were kept between 0.2 and 0.3 mW, and the acquisition time was 100 sec to avoid possible thermal damage. The spectral resolution is about 1 $cm^{-1}$ and the depth resolution about $2\mu m$.  
+
+A Raman pattern database can be found at \url{http://wwwobs.univ-bpclermont.fr/sfmc/ramandb2/index.html}. 
+
+UV-Vis-NIR spectrophotometer is also a useful tool to obtain absorption and reflectance from various samples. The absorption can be described by Lambert-Beer law: $I = I_0 \exp{-\alpha(\lambda) x}$, where $\alpha$ is the absorption coefficient in unit of $cm^{-1}$, and $x$ is the optical path. When the sample is in liquid form, it is more convenient to use $I = I_0 \exp{-\epsilon(\lambda) C x}$, where $C(M = mol dm^{-3})$ is the molar concentration, and $\epsilon (M^{-1}cm^{-1})$ is the extinction coefficient. For example, $\epsilon$ for methylene blue (MB) is $10^5 M^{-1}cm^{-1}$ at 660 nm.\cite{Mills1999}
+
+In this thesis, optical absorption spectra was recorded using Schimadzu, UV2600Plus in transmission mode. When necessary, the as-synthesized sample was removed from substrates by light sonication(Branson 1510R-MTH, 70W) in ethanol or DI water for 15 seconds. The dispersion was left for 12 hrs to enable the possible sedimentation. Then the dispersion was transferred into one 10 mm quartz cuvette (Thorlabs, W005654) for absorption measurement with another paired cuvette containing pairing liquid only. 
+
+
+\section{Substrates and Pre-growth Treatments}
+
+Silicon and silicon dioxides on Si wafer ($p$-Si(100),Unversity Wafer inc.) were primarily used, and other substrates (i.e. Mica\footnote{ \ce{K(Al2)(Si3Al)O10(OH)2}}, glass (Fisher Scientific, microscope slide, 12-549),\footnote{Typical composition is 72.6\% \ce{SiO2}, 0.8\% \ce{B2O3}, 1.7\% \ce{Al2O3}, 4.6\% \ce{CaO}, 3.6\% \ce{MgO} and 15.2\% \ce{Na2O}} stainless steel) were occasionally adapted. Substrates were first cut into rectangular pieces of certain size and then ultrasonically cleaned (Branson 1510R-MTH) with acetone and alcohol for about 15 minutes each followed by blow-drying with nitrogen gas. After solution cleaning, the Si surface is hydrophobic. Depending on the specific experimental requirement, sometimes a hydrophilic surface is desired. We use plasma cleaning (Kurt J Lesker: Plasma-Preen 862) under 2 Torr \ce{O2} for 3 min to render a hydrophilic Si surface. In addition, substrates can be coated with a thin layer of metal before growth. This process will be covered  in Sec.~\ref{sec:mag}.
+
+
+\subsection{Magnetron Sputtering}\label{sec:mag}
+
+Sputtering, a process in which atoms are ejected from a solid target material by bombarding it with energetic particles, is a well established physical vapor deposition (PVD) process with a high degree of controllability. The high energy and controllable parameters of sputtering can result in the growth of well-structured and crystalline films. Further, sputtering can be easily implemented as a roll-to-roll process for large-scale manufacturing. It is widely utilized for deposition of \ce{WO_x} in industry.
+
+In this work, magnetron sputtering (Denton Vacuum Desk IV) was used to coat thin layers of metals onto cleaned substrates, such as W, Mo, Au, Ag, Pd, and Pt. As shown in Fig.~\ref{fig:ch2magsp}, a high potential created between the target (cathode) and substrate ionizes the argon molecules. These ions are accelerated to bombard the target foils, knocking out active atoms which subsequently deposit onto the substrates. A magnetic field is applied to confine electrons to the vicinity of the foils. These electrons in turn increase the ionization yield. 
+
+\begin{figure}[htb]
+\centering
+\includegraphics[width=0.8\textwidth]{magsp.jpg}
+\caption[magnetron sputtering system]{Schematic drawing of sputtering adopted from ref\cite{Song2008}}
+\label{fig:ch2magsp}
+\end{figure}
+
+Sputtering is a better PVD technique than e-beam deposition since it alleviates the adverse effects in the latter. \ce{Ar+} ions are accelerated to target foils. The pressure of \ce{Ar+} has two functions: to sputter off the target ions, and to influence the mean free path (MFP). These collisions between target ions and \ce{Ar+} leads to almost all arrival angle, thus uniform coverage. The sputter yield is number of target ions released per ions hitting on target. If \ce{Ar+} ion energy is less than 100 eV, the yield is zero; If larger than 10 keV, implantation of \ce{Ar+} into target foils occurs. Usually yield between 1 and 2 is desired. The MFP in sputtering is on order of 3 cm (assuming pressure 30 mTorr), with source-to-substrate distance as 5 cm, average number of collisions is about 5/3$\sim$2. 
+
+
+\section{data processing tools}
+
+Image J.\cite{Schneider2012} TEM lattice measurement. 
+
+Fityk. \cite{Wojdyr2010}
+
+XRD pattern, Spectra(EDX, Raman, UV-Vis) redraw using Origin Pro 8.0. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
