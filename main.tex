@@ -9,13 +9,12 @@
 
    \begin{document}
 
- %       \input{./FrontMatter/FrontMatter}
+%       \input{./FrontMatter/FrontMatter}
 
-
-%   \include{./ch-intro/ch-intro}
-   \include{./ch-intro/ch-instr}
+% \include{./ch-intro/ch-intro}
+ \include{./ch-intro/ch-instr}
 %   \include{./ch-wox/ch-wox}
- %  \include{./ch-moox/moox} % no tex needed, otherwise there is error
+  \include{./ch-moox/moox} % no tex needed, otherwise there is error
 %    \include{./ch-tms/tms}
 \appendix
    %\glsaddallunused
@@ -30,3 +29,53 @@
  \end{singlespace}
 
 \end{document}
+
+Both tungsten (W) and molybdenum (Mo) belong to Group VIB transition metal, with outer shell electrons configuration as $4d^55s^1$ and $5d^46s^2$, respectively. Therefore we refer their oxides and chalcogenides as \gls{tmo} and \gls{tmdc}.\footnote{Obviously transition metals include many other elements, all of which have partially filled $d$-electron shell. But here we use TM to denote W and Mo exclusively.}
+
+Nucleation is a process of generating a new phase from a metastable old phase, where the Gibbs energy per molecule of the bulk of the emerging new phase is less than that of the old phase.
+
+General CVD knowledge, substrate preparation, and\cite{MichealK.Zuraw2003}
+  
+\section{Crystal Structures and Electronic Properties}
+
+Solid and orderliness.
+
+Two theories arise to describe the outer shell electrons and to correlate the structure and physical properties: \gls{cft} and band theory.\cite{Goodenough1971} \gls{cft} assumes weak interaction between neighboring atoms and localization of electron towards parent atom, whereas band theory assumes that electron is shared equally by all nuclei and therefore a many-electron problems follows. Description of a single electron in periodic potential fail to treat the electron correlations adequately, as the interaction between atoms becomes weaker.For transition metals, $s$ and $p$ electrons are well described by a collective-electron model, while the 4f or 5f electrons are tightly bound to nuclei and screened from the neighboring atoms by 5s, 5p or 6s, 6p core electrons, hence it matches well with a localized-electron model. d electrons show intermediate character.
+
+
+In vapor synthesis process, two growth mechanism exists: VS and VLS. VS process is widely accepted for the growth of \ce{MoO3}. Yet we caution that synthesis conditions should be scrutinized to determine the exact mechanism. \citeauthor{Li2002c} suggested a VS mechanism at 700 \si{\degreeCelsius} and VLS at 750 \si{\degreeCelsius} and higher.\cite{Li2002c} \citeauthor{Fibers2007} proposed a modified VS mechanism probably because the deposition occurs on \ce{Al2SiO5} with possible \ce{Al_{0.95}SiNa_{0.06}O_x} involved. Therefore temperature and possible impurity could potentially alter the growth mechanism. We divide the growth results into two categories: on Si substrate and on non-Si substrate, and describe them respectively. We also briefly mention using liquid exfoliation to prepare few layer \ce{MoO3}.
+
+
+This rectangular shape implies the boundary plane along growth direction (long axis) is (001), in consistency with previous experimental reports\cite{Zeng1998,Li2002b} and theoretical studies.\cite{Firment1983,Cora1997} We also observed different shapes, i.e., elongated hexagonal using similar growth conditions. This is not an indication of different growth mode. It is a normal thermodynamic fluctuation. The growth rates along different crystalline direction of \ce{MoO3} are determined by the free surface energy. In fact, (201), (101) and (102) planes have all been observed as terminating planes.\cite{Zeng1998} The stacking rate of \ce{MoO6} octahedra along $a$ and $c$ axis could develop some other ratio. And the coexistence of different planes in one growth suggests the similarity of free surface energies between these surfaces. In other words, the migration barrier of adatoms on (010) plane is presumably much lower than that on other low index planes due to the Van der Waals interaction nature along [010] direction.
+
+\citeauthor{Wang2013c} changed the NW growth direction by changing the shape of droplets; \citeauthor{Biswas2013} reported enhanced aspect ratio of Ge NWs from bimetallic alloy.
+
+
+
+
+We first repeated the previous growth on ITO/glass, and then found similar deposition phenomena on glass and mica substrates. We suspected that the morphology difference on the substrates employed in this study arises from the compositions difference. Both mica and glass contains alkaline elements which are absent in Si and \ce{SiO2}/Si substrates. We primarily verify this hypothesis by utilizing \ce{NaOH} treated Si substrates and found that the overall morphology almost reproduces that on ITO and mica substrates. We then propose a new growth mechanism based on the VLS process to explain the deposition of \ce{MoO3} on alkaline-ions-containing substrates.
+
+ITO versus NaOH images.
+
+
+
+According to the phase diagram shown in Fig.~\ref{fig:pd}, \ce{Na2MoO4} - \ce{MoO3} phase above 800 \si{\degreeCelsius} are \ce{Na2MoO4}(l) + \ce{MoO3}(l), More discussion should follow $\ldots$.
+
+
+\subsubsection{Phase evolution probing by Raman}
+
+\citeauthor{Hardcastle1990} summarized an empirical formula to relate the Raman peaks and \ce{Mo-O} bonding lengths.\cite{Hardcastle1990} This correlation assumes general form as
+\begin{equation}\label{eq:mobond}
+\nu = A \exp{B\cdot R},
+\end{equation}
+where $A=32895$ and $B=-2.073$ are fitting parameters, R is bond distance in unit of \AA. Given a stretching frequency, the resolution for calculated bond distance is $\pm0.016$ \AA. Another empirical expression connect the bond valence $s$ and bond distance R: $s(M-O) \approx (R/X)^{-6} $, where X=1.882 when M is Mo, and 1.904 when M is W. The valence sum rule could be then used to check the state of Mo cation. It should be noticed that not all observed Raman lines could be correlated to a \ce{Mo-O} bond distance by extrapolation of Eq.~\ref{eq:mobond}. It is then regarded as a symmetry related vibrational mode, i.e. 820 \si{cm^{-1} in \ce{MoO3}. From the correlation of various Mo compounds, a general conclusion is the lower the stretching frequency for the shortest metal-oxygen bond, the more regular is the structure.
+
+
+
+% droplet position statistics
+\begin{figure}[htb]
+\centering
+\includegraphics[width=0.6\textwidth]{droplets_sta}
+\caption[Droplet position statistics]{Droplet position statistics. On-tip and not-on-tip counts variation with respect to growth time. }
+\label{fig:mo3dropsta}
+\end{figure}
