@@ -1,11 +1,271 @@
-\chapter{Processes developed during Ph.D. study}
+%\chapter{Processes developed during Ph.D. study}
+\chapter{Growth Recipes}
+
+A schematic diagram of the home-built CVD system is shown in Fig.~\ref{fig:ch2cvd}. 
+
+\begin{figure}[htb]
+\centering
+\includegraphics[width=0.9\textwidth]{CVD_model.jpg}
+\caption{Sketch of CVD system for oxide growth, where A1: quartz tube; B1: bubbler; C1-2: gas cylinders; E1: mechanical pump; H1-2: ceramic heater; MFC: flow controller; P1: pressure gauge; V1-4: valves; V5-7: butterfly valves. Note: the thermal sensor attached on H-1 is not shown. }
+\label{fig:ch2cvd}
+\end{figure}
+
+The following text will refer to this diagram using \fbox{symbol in box} when a specific component is mentioned. Please note that the actual CVD system is subject to changes, \emph{e.g.}, in the sulfurization system, a cold trap is used and oxygen tank is absent; whereas in the ZnTe system, a pressure controller is added and hydrogen instead of oxygen is used. 
+
+\section{Basic Operation}
+Before performing growth, check the CVD system to confirm its normal state, where the vacuum in idle status is manifested as:
+\begin{itemize}
+\item 5-7 mTorr reading for the pressure gauge (\fbox{P-1})of ZnTe CVD;
+\item 20-22 mTorr reading for the pressure gauge (\fbox{P-1})of oxide CVD;
+\item 45-50 mTorr reading for the pressure gauge (\fbox{P-1}) of sulfur CVD. 
+\end{itemize} 
+and the mass flow controller reading (\fbox{MFC}) should be either negative or zero. If large deviation occurs, check the vacuum sealing and report to lab manager. 
+
+\subsection{Venting the chamber}
+To load/unload sample into/out of the chamber, one first needs to bring the pressure up to 1 atm. This is done by purging the chamber using Ar gas using steps as following (\textbf{FOLLOW THE EXACT ORDER}):
+\begin{enumerate}
+\item close \fbox{V-5}, one should observe \fbox{P-1} reading increases;
+\item toggle Ar gas switch from OFF to ON, wait for 10 s;
+\item toggle Ar gas purge switch, watching \fbox{P-1} closely; When the chamber is purged with Ar, the indications of actual pressure reaching 1 atm inside are shown as: 
+\begin{itemize}
+\item 760 Torr reading for the ZnTe CVD;
+\item 32-33 Torr reading for the oxide CVD;
+\item 24 Torr reading for the sulfur CVD. 
+\end{itemize} \textbf{Avoid} using higher venting pressure. 
+\item Turn off Ar purge switch rapidly when 1 atm is reached; 
+\item Slowly open \fbox{V-4} to test the ``water'' level in \fbox{B-1}. Close \fbox{V-4} if the level goes up; fully open \fbox{V-4} if otherwise. 
+\end{enumerate}
+%Using the same procedure when harvesting the samples. 
+
+\subsection{Pumping down the chamber}
+Most of synthesis experiments in this group are performed in low pressure conditions, so after loading the substrate and source, one needs to pump down the system using the following steps (\textbf{FOLLOW THE EXACT ORDER}):
+\begin{enumerate}
+\item seal the chamber and keep the Ar flow on, one should observe continuous bubbling in \fbox{B-1}. If not check the vacuum sealing;
+\item turn off ANY gas flow first, then close \fbox{V-4};
+\item open \fbox{V-5} slowly, check \fbox{P-1} reading, which should drop rapidly to similar value as in idle status. If not, STOP and check the vacuum sealing.  
+\end{enumerate}
+
+\subsection{Starting heating} 
+The heating is controlled by a close-loop PID method, with the control panel shown in Fig.~\ref{fig:omega}. 
+\begin{figure}[htb]
+\centering
+\includegraphics[width=0.4\textwidth]{omega_temp}
+\caption{Front panel of temperature controller, and the four keys are denoted as $\Omega$, $\nabla$, $\Delta$, and $\Xi$ here. SV means setting value; PV means present value.}
+\label{fig:omega}
+\end{figure}
+
+Change to heating mode by the following steps:
+\begin{enumerate}
+\item turn on the voltage transformer; 
+\item hold $\Xi$ key for 3 second;
+\item use $\nabla$ or $\Delta$ key to circle until ``r.s'' emerges;
+\item hold $\Xi$ key for 1 second to confirm.
+\end{enumerate}
 
 
-\section{Growth recipes}
+\textcolor{red}{Check the CVD system status periodically, and update the default status. \textbf{DO NOT} proceed if in question. Consult the lab manager or supervisor.}
+
+
+\section{Emergence Procedures}
+
+When the temperature controller is recovered from a power outrage event, it will try to resume the previous heating procedure or start the stored procedure. This can be a problem depending on the previous CVD system status. Therefore, it is required that the temperature controller is put to standby mode manually by the frequent user. 
+
+Change to standby mode by the following steps:
+\begin{enumerate}
+\item turn off the voltage transformer; 
+\item hold $\Xi$ key for 3 second;
+\item use $\nabla$ or $\Delta$ key to circle until ``stby'' emerges;
+\item hold $\Xi$ key for 1 second to confirm.
+\end{enumerate}
+
+\newpage
+%\section{Growth Recipes}
+
+\section{Substrates and Precursors}
+
+The precursors are summarized in Table.~\ref{tb:pre} and Table.~\ref{tb:mosource}, and substrates in Table.~\ref{tb:subs}. 
+
+\begin{table}[htb]
+\centering
+\caption{List of reactants:\ce{WO3},\ce{WS2}}\label{tb:pre}
+\begin{tabular}{lcccr}
+\toprule
+Materials & Name & Purity & Average size & Vendor LOT\\
+\midrule
+Tungsten & 3N   &  99.9\% & 17 $\mu$m & Alfa Aesar \#39749\\
+         & 3N5  &  99.95\% & 32 $\mu$m  & Alfa Aesar \#42477\\
+         & 4N5  &  99.995\% & 3.3 $\mu$m  & Materion T-2049 \\
+         & 5N   &  99.999\% & 1.5 $\mu$m & Alfa Aesar \#12973\\
+Sulfur   & S    &   99.5\%  &  NA  & Alfa Aesar \#10785\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[htb]
+\centering
+\caption{List of reactants: \ce{MoO3}}\label{tb:mosource}
+\begin{tabular}{lcccr}
+\toprule
+Material & Stock No & LOT &Purity & Vendor\\
+\midrule
+\ce{NaOH}        & S318-500 & 070241 & 99.8\% & Fisher Scientific \\
+\ce{NaI}        & 11665 & K11W054 & 99.9\% &  Alfa Aesar \\
+\ce{KI}        & 42857 & H06Z051 & 99.9\% &  Alfa Aesar \\
+\ce{Na2CO3}        & 33377 & 114X012 & 99.95\% &  Alfa Aesar \\
+\ce{Molybdenum}        & 00932 & I07S024 & 99.9\% &  Alfa Aesar\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[htb]
+\centering
+\caption{List of substrates}\label{tb:subs}
+\begin{tabular}{lcp{3in}}
+\toprule
+Name & Resistivity (\si{\ohm cm}) &  Remark\\
+\midrule
+\ce{SiO2}-Si  & 0.06 - 0.12  & p type, Born, (100), 1 $\mu$m thermally grown \ce{SiO2} \\
+\ce{SiO2}-Si  & 1 - 10       & p type, Born, (100), 300 nm thermally grown \ce{SiO2} \\
+\ce{Si}       & 3 - 7        & n type, Phosporus (100) \\
+Glass         & NA           &  microscope slide\\
+ITO glass     &               & \ce{SiO2} passivated, 1.1 mm thick float glass \\
+Mica          & NA            & \ce{K(Al2)(Si3Al)O10(OH)2} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+
+
+\section{Tungsten Oxides Growth}
+\subsection{Seeded Growth}
+
+\begin{figure}[htb]
+\centering
+\includegraphics[width=0.7\textwidth]{wo3_seed}
+\caption{Seed \ce{WO3} growth setup, the symbols meaning are explained in Table.~\ref{tb:pre}}
+\label{fig:seed}
+\end{figure}
+
+The substrate treatment in the seeded growth only includes usual cleaning using organic solvents. The growth steps are as following:  
+
+\begin{enumerate}
+\item Load $\sim$1 g high purity W powder into the handler end of the long boat, spread the power evenly into 1 in long;  
+\item Load a thin layer of 3N W powder on the clean substrate, spread them uniformly by putting the polished side of another clean Si substrate against the power and sliding the top substrate gently; 
+\item Position the substrate with W powder into the same long boat in a way that when the whole boat in loaded into the chamber, the separation between substrate and power source is the same as indicated in Fig.~\ref{fig:seed};
+\item Vent the chamber to 1 atm, load the long boat with the substrate and source as shown in Fig.~\ref{fig:seed};
+\item Seal the chamber, check the valve status, pump down and record the pressure gauge reading when it becomes stabilized; 
+\item Admit gases (10 sccm Ar and 0.3 sccm \ce{O2}) into the chamber, record the corresponding pressure reading;
+\item Close the furnace, begin the heating procedure as required in Fig.~\ref{fig:seed}; 
+\item Close the butterfly valve to pressure gauge (V-6 in Fig.~\ref{fig:ch2cvd});
+\item Put up the warning sign beside the furnace;
+\end{enumerate}
+
+\subsection{NaOH-Si Growth}
+
+The substrate treatment in this growth includes \begin{enumerate*}[label=\itshape\alph*\upshape)]
+\item usual cleaning using organic solvents;
+\item plasma cleaning (2 Torr oxygen, 3 min); and
+\item drop casting of NaOH solution (50 $\mu$L, 0.01 mol/L).
+\end{enumerate*} The growth steps are as following: 
+
+\begin{figure}[htb]
+\centering
+\includegraphics[width=0.7\textwidth]{wo3_naoh}
+\caption{NaOH \ce{WO3} growth, the symbols meaning are explained in Table.~\ref{tb:pre}}
+\label{fig:naw}
+\end{figure}
+
+
+\begin{enumerate}
+\item Load $\sim$1 g high purity W powder into the handler end of the long boat, spread the power evenly into 1 in long;
+\item Position the NaOH--treated substrate into the same long boat in a way that when the whole boat in loaded into the chamber, the separation between substrate and power source is the same as indicated in Fig.~\ref{fig:naw};
+\item Vent the chamber to 1 atm, load the long boat with the substrate and source as shown in Fig.~\ref{fig:naw};
+\item Seal the chamber, check the valve status, pump down and record the pressure gauge reading when it becomes stabilized; 
+\item Admit gases (10 sccm Ar and 0.4 sccm \ce{O2}) into the chamber, record the corresponding pressure reading;
+\item Close the furnace, begin the heating procedure as required in Fig.~\ref{fig:naw}; 
+\item Close the butterfly valve to pressure gauge (V-6 in Fig.~\ref{fig:ch2cvd});
+\item Put up the warning sign beside the furnace;
+\end{enumerate}
+
+\section{Sulfurization}
+
+The as-synthesized \ce{WO3} samples are further sulfurized to fabricate the core-shell heterostructure. 
+
+\begin{figure}[htb]
+\centering
+\includegraphics[width=0.7\textwidth]{ws2_coreshell}
+\caption{\ce{WO3} sulfurization growth}
+\label{fig:suf}
+\end{figure}
+
+\begin{enumerate}
+\item Prepare 200 -- 300 g Sulfur in a small boat;
+\item Vent the chamber to 1 atm, and position the as-grown \ce{WO3} sample and small boat with S into chamber as indicated in Fig.~\ref{fig:suf};
+\item Seal the chamber, check the valve status, pump down and record the pressure gauge reading when it becomes stabilized; 
+\item Add liquid nitrogen into cold trap; 
+\item Admit gases (30 sccm Ar) into the chamber, record the corresponding pressure reading;
+\item Close the furnace, begin the heating procedure as required in Fig.~\ref{fig:suf}; 
+\item Close the butterfly valve to pressure gauge (V-6 in Fig.~\ref{fig:ch2cvd});
+\item Put up the warning sign beside the furnace;
+\end{enumerate}
+
+
+\section{Moly Oxide Growth}
+
+
+The substrate treatment in this growth includes \begin{enumerate*}[label=\itshape\alph*\upshape)]
+\item usual cleaning using organic solvents;
+\item plasma cleaning (2 Torr oxygen, 3 min); and
+\item drop casting of NaOH solution (50 $\mu$L, 0.01 mol/L).
+\end{enumerate*} The growth steps are as following: 
+
+\begin{figure}[htb]
+\centering
+\includegraphics[width=0.7\textwidth]{moo3_naoh}
+\caption{NaOH \ce{MoO3} growth}
+\label{fig:namo}
+\end{figure}
+
+\begin{enumerate}
+\item Load $\sim$1 g Mo powder into the handler end of the long boat, spread the power evenly into 1 in long;
+\item Position the NaOH--treated substrate into the same long boat in a way that when the whole boat in loaded into the chamber, the separation between substrate and power source is the same as indicated in Fig.~\ref{fig:namo};
+\item Vent the chamber to 1 atm (32-33 Torr reading on gauge), load the long boat with the substrate and source as shown in Fig.~\ref{fig:namo};
+\item Seal the chamber, check the valve status, pump down and record the pressure gauge reading when it becomes stabilized; 
+\item Admit gases (10 sccm Ar and 10 sccm \ce{O2}) into the chamber, record the corresponding pressure reading;
+\item Close the furnace, begin the heating procedure as required in Fig.~\ref{fig:namo}; 
+\item Close the butterfly valve to pressure gauge (V-6 in Fig.~\ref{fig:ch2cvd});
+\item Put up the warning sign beside the furnace;
+\end{enumerate}
+
+
+
+
+
+
+
+
+\iffalse
+
+\begin{figure}[htb]
+\centering
+\includegraphics[width=0.4\textwidth]{omega_temp}
+\caption{Front panel of temperature controller, and the four keys are denoted as $\Omega$, $\nabla$, $\Delta$, and $\Xi$ here. SV means setting value; PV means present value.}
+\label{fig:omega}
+\end{figure}
+
+
+Change heating procedure ( heating time and temperature) by the following steps:
+\begin{enumerate}
+\item hold $\Omega$ key for 3 second; a new display should show up, 
+\item use $Xi$ key to circle until ``r.s'' emerges;
+\item hold $\Xi$ key for 1 second to confirm.
+\end{enumerate}
+
+
+\subsection{sulfurization}
 
 
 \section{Characterization and data processing}
-
 
 \subsection{UV-Vis measurements}
 
@@ -17,4 +277,8 @@
 \textbf{Multipeaks fitting}
 
 \textbf{3D pdf} 
+
+\fi
+
+
 
