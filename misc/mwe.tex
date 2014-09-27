@@ -5,7 +5,6 @@
 
    \newacronym{cvd}{CVD}{chemical vapor deposition}
    \newacronym{cft}{CFT}{crystal-field theory}
-
    \makeglossaries
 
 \begin{document}
@@ -24,7 +23,9 @@
     \begin{singlespace}
     %\thispagestyle{myheadings} % before, this does not work
     \renewcommand{\glossarypreamble}{\thispagestyle{myheadings}} % after, this works.
+    %\renewcommand{\acronymname}{LIST OF ABBREVIATIONS}
     \printglossary[type=\acronymtype]
+    \addcontentsline{toc}{chapter}{\acronymname}
     \clearpage
     \end{singlespace}
 
@@ -45,7 +46,7 @@ Inline lists, which are sequential in nature, just like enumerated lists, but ar
 After 20 minutes sonication, the dispersion is milky. We measured the transmission spectra of this dispersion immediately upon sonication and after 40 hrs for gravity sedimentation.
 \end{hypothesis}
 \subsection{level two }
-
+\Gls{cft}, \gls{cvd}
 \subsubsection{level three}
 After 20 minutes sonication, the dispersion is milky. We measured the transmission spectra of this dispersion immediately upon sonication and after 40 hrs for gravity sedimentation. The t0 line mainly arises from the scattering of flakes in the dispersion. There are two scattering mechanisms: Rayleigh scattering and Tyndall scattering. Rayleigh scattering, which occurs when particles are comparable to wavelength, is inversely proportional to the fourth power of wavelength; While Tyndall scattering, which occurs when the particles are larger, is inversely proportional to the square of the wavelength. To fully evaluate the true absorbance of the sample itself, one needs to decouple the scattering part from apparent absorbance. Generally we select one part of spectrum and assume it is only caused by scattering. Then a empirical dependence shown in Eq.~\ref{eq:sca2} is used as polynomial fitting model. test.
 

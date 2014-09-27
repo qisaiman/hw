@@ -133,6 +133,10 @@
 %-- for works around, packages conflicts----
 
 %-- redefine toc macros ------
+% pdflatex and lualatex all ignore list of abbre
+% polyglossia is a babel replacement for lualatex; it relies on fontspec
+% how the book documentclass build TOC
+%
 \addto\captionsenglish{%
 \renewcommand\chaptername{CHAPTER}%
 \renewcommand\appendixname{APPENDIX}%
@@ -171,6 +175,6 @@ urlcolor=black
 % to set pdf in a preset view
 % pdfstartview:
 \hypersetup{pdfstartview={XYZ null null 1.00}}
-
-\usepackage[acronym,toc]{glossaries} % loaded after hyperref
-
+%http://tex.stackexchange.com/questions/128879/defined-acronymname-is-not-used-in-toc-but-the-standard-acronyms-why
+\usepackage[acronym]{glossaries} % loaded after hyperref
+\renewcommand{\acronymname}{LIST OF ABBREVIATIONS}
