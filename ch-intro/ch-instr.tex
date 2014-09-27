@@ -3,8 +3,9 @@
 
 In this study, the nanostructures were grown in a home-built chemical vapor deposition system and characterized using both electron microscopy and optical spectroscopy methods, including SEM, XRD, EDX, TEM, Raman and UV-Vis. Other sample and substrate preparation methods are also briefly introduced. A detailed introduction will be given to the CVD system. For other mature techniques, the contents will be limited to the extent where experienced material researchers could repeat the experiments performed here. Particular attentions will also be mentioned for properly characterizing the nanostrucutres synthesized in this work. This chapter is concluded with data processing discussion. 
 
-\section{Home-built CVD System}
-The synthesis was accomplished in a home-made hot-wall CVD system, as visualized in Fig.~\ref{fig:ch2cvd}. The furnace is made by two semi-cylindrical ceramic fiber heaters (WATLOW, Inc.) with power density from 0.8 to 4.6 \si{W cm^{-2}}. Quartz tube (Quartz Sci, Inc.) of 1 in diameter was primarily used as reaction chamber. A mechanical pump was connected to maintain the low pressure environment inside the chamber. The length of uniform heating zone is 6 in, with cooling zone extending outward. Carriers gas argon (Ar) and reactant gas oxygen (\ce{O2}) was regulated by mass flow controllers.
+\section{Synthesis Equipments}
+\subsection{Home-built CVD System}
+The syntheses were accomplished in a home-made hot-wall CVD system. The reaction chamber part and a schematic drawing of whole system can be visualized in Fig.~\ref{fig:ch2cvd}.  The reaction chamber consists of fused silica tube and a thermal furnace. The furnace is made by two semi-cylindrical ceramic fiber heaters (WATLOW, Inc.) with power density from 0.8 to 4.6 \si{W cm^{-2}}. Quartz tube (Quartz Sci, Inc.) of 1 in diameter was inserted into the furnace serving as reaction chamber. A mechanical pump was connected to maintain the low pressure environment inside the chamber. The length of uniform heating zone is 6 in, with cooling zone extending outward. Carriers gas argon (Ar) and reactant gas oxygen (\ce{O2}) was regulated by mass flow controllers.
 
 \begin{figure}[htb]
 \centering
@@ -34,19 +35,37 @@ The controllable parameters of this CVD system include central heating temperatu
     \end{tabular}
 \end{table}
 
-The heating temperature $T$ profile measured at different settings in ambient environment was shown in Fig.~\ref{fig:ch2temp}. There exists a uniform heating zone in the center area, spanning over about 2 in; then $T$ descends gradually within the 6 in heating zone, and decrease rapidly at the rest part. In this study, a zero position is defined at the upstream edge of reaction chamber covered by the furnace. 
+The heating temperature $T$ profile measured at different settings in ambient environment was shown in Fig.~\ref{fig:ch2temp}. There exists a uniform heating zone in the center area, spanning over about 2 in; then $T$ descends gradually within the 6 in heating zone, and decrease rapidly at the rest part. In this study, a zero position referred as 0 inch is defined at the upstream edge of reaction chamber covered by the furnace. 
 
 \begin{figure}[htb]
 \centering
 \includegraphics[width=0.8\textwidth]{temp_profile.pdf}
-\caption[CVD temperature profile]{Temperature profile of home-built low-pressure chemical vapor system.}
+\caption[CVD temperature profile in ambient environment]{Temperature profile of home-built low-pressure chemical vapor system measured in ambient environment.}
 \label{fig:ch2temp}
 \end{figure}
 
-The substrates were mostly positioned just outside the downstream heating zone since within this region, the vapor undergoes a rapid temperature gradient and precipitation occurs. The source material placed in the furnace center is oxidized and evaporated. The growth species, transported by carrier gas, bombard both substrate and chamber wall. Some will be adsorbed by the substrate and become adatoms while some may remain as gas molecules, waiting for another event. On the hot substrate, adatoms diffuse and do not settle down until finding an appropriate location where equilibrium is favored. Detailed growth conditions are introduced in corresponding chapters.
+The substrates were mostly positioned just outside the downstream heating zone since within this region, the vapor undergoes a rapid temperature gradient and precipitation occurs. The source material placed in the furnace center is oxidized and evaporated. The growth species, transported by carrier gas, bombard both substrate and chamber wall. Some will be adsorbed by the substrate and become adatoms while some may remain as gas molecules, waiting for another event. On the hot substrate, adatoms diffuse and do not settle down until finding an appropriate location where equilibrium is favored. Detailed growth conditions will be introduced in the corresponding chapters. Basic operations and several growth recipes using the home-built CVD system are included in Appendix.
 
 
-\section{Scanning Electron Microscopy (SEM) and Energy Dispersive X-ray Spectroscopy (EDX)}\label{sec:sem}
+\subsection{Substrates Treatments}\label{ch2sub}
+
+Silicon and silicon dioxides on Si wafer ($p$-Si(100), University Wafer Inc.) were primarily used, and other substrates, i.e., Mica\footnote{\ce{K(Al2)(Si3Al)O10(OH)2}}, glass (Fisher Scientific, microscope slide, 12-549),\footnote{Typical composition is 72.6\% \ce{SiO2}, 0.8\% \ce{B2O3}, 1.7\% \ce{Al2O3}, 4.6\% \ce{CaO}, 3.6\% \ce{MgO} and 15.2\% \ce{Na2O}} stainless steel, were also employed. Si and \ce{SiO2}-Si substrates were first cut into rectangular pieces of certain size and then ultrasonically cleaned (Branson 1510R-MTH) with acetone and alcohol for about 15 min, each followed by blow-drying with nitrogen gas. After solution cleaning, the substrate surface is usually hydrophobic. Depending on the specific experimental requirement, a hydrophilic surface may be required. A plasma cleaner (Kurt J Lesker, Plasma-Preen 862) was used to render a hydrophilic Si surface, where reaction among $e$, \ce{O^+}, \ce{O2^+}, \ce{O^-},\ce{O2} occurs, and \ce{OH}-terminated surface followed.\cite{Habib2010} The treatment was done at 2 Torr \ce{O2} for 3 min. Glass substrates cleaning is the same as that of Si. Mica is cleaved right before the growth withoud extra cleaning steps. In addition, substrates can be coated with a thin layer of metal before growth. This process will be covered in Sec.~\ref{sec:mag}.
+
+\subsection{Magnetron Sputtering}\label{sec:mag}
+Sputtering, a process in which atoms are ejected from a solid target material by bombarding it with energetic particles, is a well established physical vapor deposition (PVD) process with a high degree of controllability. The high energy and controllable parameters of sputtering can result in the growth of well-structured and crystalline films. Further, sputtering can be easily implemented as a roll-to-roll process for large-scale manufacturing. It is widely utilized for deposition of \ce{WO_x} in industry.
+
+In this work, magnetron sputtering (Denton Vacuum Desk IV) was used to coat thin layers of metals onto cleaned substrates, such as W, Mo, Au, Ag, Pd, and Pt. As shown in Fig.~\ref{fig:ch2magsp}, a high potential created between the target (cathode) and substrate ionizes the argon molecules. These ions are accelerated to bombard the target foils, knocking out active atoms which subsequently deposit onto the substrates. A magnetic field is applied to confine electrons to the vicinity of the foils. These electrons in turn increase the ionization yield. 
+\begin{figure}[htb]
+\centering
+\includegraphics[width=0.8\textwidth]{magsp.jpg}
+\caption[magnetron sputtering system]{Schematic drawing of sputtering adopted from ref\cite{Song2008}}
+\label{fig:ch2magsp}
+\end{figure}
+
+Sputtering is a better PVD technique than e-beam deposition since it alleviates the adverse effects in the latter. \ce{Ar+} ions are accelerated to target foils. The pressure of \ce{Ar+} has two functions: to sputter off the target ions, and to influence the mean free path (MFP). These collisions between target ions and \ce{Ar+} leads to almost all arrival angle, thus uniform coverage. The sputter yield is number of target ions released per ions hitting on target. If \ce{Ar+} ion energy is less than 100 eV, the yield is zero; If larger than 10 keV, implantation of \ce{Ar+} into target foils occurs. Usually yield between 1 and 2 is desired. The MFP in sputtering is on order of 3 cm (assuming pressure 30 mTorr), with source-to-substrate distance as 5 cm, average number of collisions is about 5/3$\sim$2. 
+
+\section{Characterization Tools}
+\subsection{Scanning Electron Microscopy (SEM)}\label{sec:sem}
 
 The SEM instrument used in this study is JEOL JSM-6480. The electron beam (E-beam) source is a tungsten filament heated at about 2800 K. The acceleration voltage can be up to 30 kV. After acceleration, electron beam strikes the sample mounted on specimen stage, producing rich signals as illustrated in Fig.~\ref{fig:ch2sem}. Depending on the energy and scattering angle, the out-coming electrons from specimen can be grouped into backscattering electron (BSE) and secondary electron (SE), respectively. SE is generated from the emission of valence band electrons. And due to the limited energy ($<50$ eV), the emission from deep region is mostly absorbed again; only those electrons that are at the vicinity of specimen surface can escape. Hence the SE image is topographical sensitive. The emission efficiency is strongly affected by the geometry (tilting angle of specimen surface) and voltage potential (charging effect), so does the contrast in SE image. On the other hand, backscattered electron could have large energy close to that of incident E-beam. The scattering cross section strongly depends on atomic number (Z), thus allowing for the compositional analysis. The X-ray emission stems from inner shell transition of the constitutive atoms, and cathodoluminescence from bandgap transition. Other E-beam generated signals, such as Auger electrons, are usually not useful in SEM unless with ultra-high vacuum and clean surface.
 
@@ -57,57 +76,25 @@ The SEM instrument used in this study is JEOL JSM-6480. The electron beam (E-bea
 \label{fig:ch2sem}
 \end{figure}
 
-In this study, SE images were mainly used to reveal the morphology of the samples. Energy dispersive X-ray spectroscopy provides compositional information attaining to the studied sample because of the characteristic X-ray lines from each element. The X-ray detector (INCA, 7573-M, 10 \si{mm^2} Si cooled by liquid nitrogen) is equipped with a super thin window enabling light element detection such as boron. To obtain quantitative results on EDX spectra, special attentions should be paid to the following aspects:
+In this study, secondary electron images were mainly used to reveal the morphology of the samples. Unless otherwise noticed, the SEM images in this work were all acquired using 10 kV acceleration voltage, 10 mm working distance and 30 spot size.
+
+Charge effect could arise on the samples grown in this study, leading to anomalous contrast on the images. Several measures could be taken to alleviate this adverse influence, including adjusting the acceleration voltage, tilting the specimen, and coating a thin layer of metal. Sometimes when an area is scanned for a long time at high magnification, the surrounding region could appear brighter after switching to a lower magnification. This is a sample contamination, due to the E-beam induced polymerization and deposition of hydrocarbon molecules in the vicinity of that smaller area. 
+
+
+\subsection{Energy Dispersive X-ray Spectroscopy (EDX)}\label{sec:edx}
+
+Energy dispersive X-ray spectroscopy provides compositional information attaining to the studied sample because of the characteristic X-ray emission from each constitutive element. EDX unit is usually attached to another electron microscopy, SEM or TEM. In this study, the SEM-attached EDX was primarily used. The X-ray detector (INCA 7573-M, 10 \si{mm^2} Si cooled by liquid nitrogen) is equipped with a super thin window enabling light element detection such as boron. Typical working parameters of EDX detection in this study include 20 kV acceleration voltage, 10 mm working distance and 60 s analysis time.
+
+To obtain quantitative results on EDX spectra, special attentions should be paid to the following aspects:
 \begin{itemize}
 \item elemental distribution in an X-ray generation area is uniform,
 \item the specimen surface is flat,
 \item the electron beam enters perpendicular to the specimen. 
 \item a reference sample consisting of identical elements and known ratio is used. 
 \end{itemize}
-
 Even for qualitative analysis, ambiguity exists when the $K$ lines of lighter elements overlap with $L$ lines of heavier elements. For instance, Na-$K_\alpha$ (1.041 keV) interferes with $L_\alpha$ lines of Zn (1.009 keV) and Cu (0.928 keV). Overall spectra and growth conditions should be weighted against possible wrong assignment. 
 
-Charge effect could arise on the samples grown in this study, leading to anomalous contrast on the images. Several measures could be taken to alleviate this adverse influence, including adjusting the acceleration voltage, tilting the specimen, and coating a thin layer of metal. Sometimes when an area is scanned for a long time at high magnification, the surrounding region could appear brighter after switching to a lower magnification. This is a sample contamination, due to the E-beam induced polymerization and deposition of hydrocarbon molecules in the vicinity of that smaller area. 
-
-
-\iffalse
-An eucentric specimen stage is used, thus observation area remain fixed when tilting the specimen. The pressure in SEM chamber is on the order of $10^{-3} \sim 10^{-4}$ Pa, which is usually maintained by a diffusion pump, or turbo molecular pump when oil-free operation is needed. For a field emission electron source, a sputter ion pump becomes necessary due to the high vacuum requirement. 
-
-The SEM instrument used in this study is JEOL JSM-6480 and EDX attachment from Oxford Instrument INCA. Typical observation conditions are listed as following:
-
-\begin{enumerate}
-\item SEM
-\begin{itemize}
-
-\item Acceleration voltage: 10 kV
-\item Working distance: 10 mm
-\item Scanning time: 80 s
-\end{itemize}
-\item EDX
-\begin{itemize}
-
-\item Acceleration voltage: 20 kV
-\item Working distance: 10 mm
-\item Dead time: $20\sim30$\%
-\end{itemize}
-\end{enumerate}
-
-
-\begin{quotation}
-Since the intensity of characteristic X-rays is proportional to the concentration of the corresponding element, quantitative analysis
-can be performed. In actual experiment, a standard specimen containing elements with known concentrations is used. The
-concentration of a certain element in an unknown specimen can be obtained by comparing the X-ray intensities of the certain element
-between the standard specimen and unknown specimen. However, X-rays generated in the specimen may be absorbed in
-this specimen or excite the X-rays from other elements before they are emitted in vacuum. Thus, quantitative correction is needed.
-In the present EDS and WDS, correction calculation is easily made; however, a prerequisite is required for this correction. That is,
-elemental distribution in an X-ray generation area is uniform, the specimen surface is flat, and the electron probe enters perpendicular to the specimen. Actually, many specimens observed with the SEM do not satisfy this prerequisite; therefore, it should be noted that a quantitative analysis result might have appreciable errors.
-\end{quotation}
-
-
-\fi
-
-\section{X-ray Diffraction (XRD)}
-
+\subsection{X-ray Diffraction (XRD)}
 Crystal structures of the as-synthesized specimens in this study were characterized using PANXpert Pro MRD with Cu $K\alpha_{avg}$ radiation at $\lambda$=1.5418 \AA. The high energy photon ($E = 1239.8/0.15148= 8184.5$ eV) was generated using accelerated electron beam from tungsten filament to bombard Cu target. The $\theta-2\theta$ configuration was primarily used, as shown in Fig.~\ref{fig:ch2theta}. 
 \begin{figure}[htb]
 \centering
@@ -137,7 +124,7 @@ Scan range & $10 \sim 65 ^\circ$ & Step size & 0.02$^\circ$ \\
 The 1D nanostructures in this study usually grew with preferred orientation; therefore, they cannot be treated as powders. The interpretation of XRD patterns could become difficult somehow. Two possible approaches could be followed to bypass this difficulty: one is using grazing angle XRD which could reveal in-plane domain size and orientation;\cite{Tersigni2011,Goorsky2002} the other is combining XRD with alternative techniques, such as Raman, TEM. The latter approach was pursued in this work. 
 
 
-\section{Transmission Electron Microscopy (TEM)}
+\subsection{Transmission Electron Microscopy (TEM)}
 
 TEM qualifies as a powerful and versatile tool for material characterization. Akin to the electron-materials interaction introduced in Sec.~\ref{sec:sem}, various signals are generated when the thin specimen was radiated by electron beam. Besides the SAED pattern and HRTEM imaging, other TEM based techniques include CBED, EDX, EELS and CL, etc. Therefore, TEM is essentially a signal-generating and detecting tool. Fundamental physics of electron is needed to obtain a comprehensive understanding of these TEM related techniques. Only a brief summary is given here.
 
@@ -149,8 +136,7 @@ where $\theta$ is scattering angle in radians, $\Omega$ is solid angle in sterad
 
 The spatial distribution of scattering is observed as contrast in images, and angular distribution is viewed in form of diffraction patterns. The positions of diffracted E-beams are determined by size and shape of unit cell, and intensities governed by distribution, number, and types of atoms in the specimen. 
 
-JEOL JEM-2100 TEM with a \ce{LaB6} filament operated at 200 kV was used in this work. A numerical comparison between the scattering events in XRD and TEM is provided to visualize the difference. In both processes, the constructive interference is described by $2d\sin\theta = \lambda$, where $d$ is crystal plane distance, $\lambda$ is incident wavelength (photon or electron), and $\theta$, again, is half of the scattering angle. Table~\ref{tab:ch2tem} demonstrates the origin of difference in these two techniques. 
-
+JEOL JEM-2100 TEM with a \ce{LaB6} filament operated at 200 kV was used in this work. A numerical comparison between the scattering events in XRD and TEM is provided to visualize the difference. In both processes, the constructive interference is described by $2d\sin\theta = \lambda$, where $d$ is crystal plane distance, $\lambda$ is incident wavelength (photon or electron), and $\theta$, again, is half of the scattering angle. Table~\ref{tab:ch2tem} demonstrates the origin of difference in these two techniques.
 \begin{table}[htb]
 \centering
 \caption{Scattering angle difference of Si(111)}\label{tab:ch2tem}
@@ -159,57 +145,18 @@ JEOL JEM-2100 TEM with a \ce{LaB6} filament operated at 200 kV was used in this 
 Si(111) spacing & Source & Wavelength & scattering angle($2\theta$) \\
 \midrule
 3.135 \AA & Cu $K\alpha$ & 1.541 \AA & 28.45$^\circ$  \\
-3.135 \AA & 200 kV & 0.0251 \AA \textsuperscript{\emph{a}}& 0.45$^\circ$  \\
+3.135 \AA & 200 kV & 0.0251 \si{\angstrom}\textsuperscript{\emph{a}}& 0.45$^\circ$  \\
 \bottomrule
 \end{tabular}
 
- \textsuperscript{\emph{a}} with relativistic correction;
+\textsuperscript{\emph{a}} with relativistic correction;
 \end{table}
+This small deviation angle determines the way of secondary signal usage in TEM. In analog to the diffraction-limited resolution in conventional lens optics, the ultimate resolved point distance in TEM should be on the order of electron wavelength used, which is 0.025 \si{\angstrom} at 200 kV. However, it is generally more difficult to manipulate electron with magnetic field than do photon with dielectric lens. The current resolving power in TEM is on the order of 1.0 \si{\angstrom} without correction of spherical aberration. The nominal resolution of JEM-2100 is 2.3 \si{\angstrom}. On the other hand, it is much easier to fine tune the power (focal length) of lens in TEM than in conventional optics. This capacity enables other observation approaches that would be rather difficult, if not impossible, to be realized in lens optics, such as selected area electron diffraction pattern (SAED). 
 
-This small deviation angle determines the way of secondary signal usage in TEM. In analog to the diffraction-limited resolution in conventional lens optics, the ultimate resolved point distance in TEM should be on the order of electron wavelength used, which is 0.025 \AA at 200 kV. However, it is generally more difficult to manipulate electron with magnetic field than do photon with dielectric lens. The current resolving power in TEM is on the order of 1.0 \si{\angstrom} without correction of spherical aberration. The nominal resolution of JEM-2100 is 2.3 \AA. On the other hand, it is much easier to fine tune the power (focal length) of lens in TEM than in conventional optics. This capacity enables other observation approaches that would be rather difficult, if not impossible, to be realized in lens optics, such as selected area electron diffraction pattern (SAED). 
+In this study, the TEM specimen was prepared either by directly scratching the as-synthesized sample using TEM grid (Cu, lacy carbon, 300 mesh), or dispersed into aqueous or organic solutions, then drop-cast onto TEM grid. A JEOL double tilt holder was used to rotate the crystal orientation. TEM images and SEADs were acquired using a charge coupled device (CCD) from Gatan, Inc. EDX spectroscopy was captured by similar Oxford Instrument INCA attachment introduced in Sec.~\ref{sec:edx}. To make the best out of TEM analysis, one also needs to be aware of the limitations of TEM. Two aspects were pointed out here, including small sampling and interpreting of the image. The former one is inherent and can only be partially overcome by combining TEM with other ensemble characterization tools. As to the latter one, it should be noted that the specimen is usually in focus from top to bottom surface; therefore the images, DPs and spectra are all averaged through the thickness of specimen. In other words, single TEM image has no depth sensitivity.\cite{Williams2009}  
 
-In this study, the TEM specimen was prepared either by directly scratching the as-synthesized sample using TEM grid (Cu, lacy carbon, 300 mesh), or dispersed into aqueous or organic solutions, then drop-cast onto TEM grid. A JEOL double tilt holder was used to rotate the crystal orientation. TEM images and SEADs were acquired using a charge coupled device (CCD) from Gatan, Inc. EDX spectroscopy was captured by similar Oxford Instrument INCA attachment introduced in Sec.~\ref{sec:sem}. 
-
-To make the best out of TEM analysis, one also needs to be aware of the limitations of TEM. Two aspects were pointed out here, including small sampling and interpreting of the image. The former one is inherent and can only be partially overcome by combining TEM with other ensemble characterization tools. As to the latter one, it should be noted that the specimen is usually in focus from top to bottom surface; therefore the images, DPs and spectra are all averaged through the thickness of specimen. In other words, single TEM image has no depth sensitivity.\cite{Williams2009}  
-
-\iffalse
-Similar to the photon-lattice interaction in XRD, the process of TEM could be understood as electron scattering events by the same crystal plane. 
-
-\begin{itemize}
-\item X-ray: characteristic X-ray for elemental analysis, Bremsstrahlung X-ray also useful for biological sample; $K_\alpha$ line from L to K transition, and $K_\beta$ from M to K transition, $L_\alpha$ line from M to L transition, Inelastic cross section, Bethe expression, X-ray energies are not identical to the ionized energy because after first emission, the atom is not in ground state until a free electron fill the last hole in the outermost shell. A cascade of transitions, Coster-Kroning transition, X-ray line shift slightly due to the chemical bonding to another atom. XEDS is not good at analyzing light elements due to the low fluorescence yield, which is strongly dependent on Z. Bremsstrahlung X-ray emission is strongly forward, 
-\item SE: ejected from the conduction or valence bands, weak so only escaping if near the surface, STEM, complex cross section mechanism, 
-\item Auger: Auger electron has specific energy similar to X-Ray, but is much more strongly absorbed than X-ray. Stated another way, Auger electron is hard to escape, so it is surface sensitive. 
-\item CL: spatial resolution around 100 nm, 
-\item collective interaction, plasmon and phonon, plasmon excitation cross section in Lorenztian form $\frac{d\sigma_\theta}{d\Omega} = \frac{1}{2\pi a_0} \frac{\theta_E}{\theta^2 + \theta_E^2}$, where $\theta_E = E_p/2E_0$, 
-\end{itemize}
-
-
-The diameter of E-beam in TEM is less than 5 nm in general, and can be $< 0.1$ nm at best.
-
-correction of spherical aberration ($C_s$) and chromatic aberration ($C_c$), $C_s$ is done by , $C_c$ by energy-filtering, which is more useful for thicker specimens. $C_s$ correction permits the generation of smaller electron probes with higher currents, which significantly improves both analytical spatial resolution and sensitivity. $C_c$ correction offer the possibility to form band-gap imaging and chemical-bond imaging. The limiting apertures increase the depth of field for specimen, and the depth of focus for the image.\cite{Williams2009} 
-
-including controlling the interactions of electron with magnetic fields and with specimen.  
-
-XRD: X-ray scattered by electrons, electron scattered by both electrons and nuclei. Fresnel vs. Fraunhofer, high-angle scattered electron are incoherent; therefore, it can be used to form high-resolution Z-contrast image of a crystalline specimen, regardless of the orientation. Auger electron spectroscopy. EELS and XEDS constitute analytical electron microscopy (AEM). close approach the single-atom level. well suited to, energy-loss electrons cause Kikuchi lines to arise in DPs. Ionized atom enters excited state, 
-
-penetrate electron cloud, spherical wavelets, the cross section for electrons elastically scattered into angles larger than $\theta$ is $\sigma_{nucleus}= 1.62\times10^{-24} (\frac{Z}{E_0})^2\cot^2\frac{\theta}{2}$; scattering factor $f(\theta)$ for low angle ($< \sim 3^{\circ}$). 
-
-Point-group and space-group determination from convergent-beam patterns. crystal symmetry analysis. e-beam wavelength in metal. The high-resolution comes at the cost of poor sampling.  Human eyes and brain understand reflected light image, and not well-trained for the transmission images.
-
-One must be just as aware of the instrument's limitations as one is of its advantages.   TEM is initially developed to overcome the image resolution imposed by light microscopes. constitute, draw analogies, resolving power, E-beam is one type of ionizing radiation, which is capable of removing the tightly bound, inner-shell electrons from attractive field of nucleus (visible light, is non-ionizing radiation to some extent). a wide range of secondary signal can be produced, the spectra exhibits characteristic peaks, which identify the elements present in the specimen. In analog to laser as a highly coherent source, . 
-
-Both wave and particle approach, non-scattering is invisible, backscattered in large angle and secondary electrons are of interest in SEM, where they provide Z contrast and surface-sensitive, topographical images. forward scattered is of interest in TEM.  scattering events as billiard balls colliding, coherently scattered are those that remain in step, and incoherently scattered electrons have random phase relationship. Assuming single scattering events in TEM, 
-
-The cost of TEM adds up to \$10 per eV. seize the public's imaginations. 
-
-The cross section of tungsten, moly is 
-
-Focused ion beam (FIB) to prepare thin foils of individual gates from one of the many millions of such on a wafer. The events of electron passing through one crystal plane, The coherent length of e-beam, collection angle, 
-
-\fi
-
-
-\section{Raman and UV-Vis Spectroscopy}
+\section{Optical Measurements}
+\subsection{Raman Spectroscopy}
 
 Raman spectroscopy, a common vibrational spectroscopy, is based on the inelastic scattering of a monochromatic excitation source with photon energy variation range of 100 to 4000 \si{cm^{-1}}. This energy difference between incident photon and inelastically scattered photon is closely related to a series of vibrational modes. Being nondestructive and requiring minimal preparation, it is an excellent tools to assess lattice dynamics and fingerprint species.\cite{McCreery2000} For instances, characteristic Raman shift can be used to determine material compositions; changes in Raman peak (FWHM, frequency shift) are often related to strain; polarization Raman spectra can be used to derive crystal orientation and symmetry. 
 
@@ -222,17 +169,12 @@ Some common symbols for symmetry representations are as following:
 \item Subscripts u and g indicate asymmetric (\emph{ungerade}) or symmetric (\emph{gerade}) with respect to a center of inversion.
 \end{enumerate}
 
-In this study, Raman measurement was performed using a confocal micro-Raman system (Horiba Scentific, Labram HR800) with excitation wavelengths of 441, 532 and 632 nm. For nanowire samples, the laser powers were kept between 0.2 and 0.3 mW, and typical acquisition time was 100 s to avoid possible thermal damage. The spectral resolution is about 1 \si{cm^{-1}} and the depth resolution about 2 $\mu$m.
+In this study, Raman measurement was performed using a confocal micro-Raman system (Horiba Scentific, Labram HR800) with excitation wavelengths at 441, 532 and 632 nm, where the corresponding photon energy is 2.81 eV, 2.33 eV and 1.96 eV, respectively. For nanowire samples, the laser powers were kept between 0.2 and 0.3 mW, and typical acquisition time was 100 s to avoid possible thermal damage. The spectral resolution is about 1 \si{cm^{-1}} and the depth resolution about 2 $\mu$m.
 
-\iffalse
-A Raman pattern database can be found at \url{http://wwwobs.univ-bpclermont.fr/sfmc/ramandb2/index.html}. 
-In analytical practice, frequency is expressed in reciprocal wavelength (as cm−1), called wavenumbers;
-\fi
+\subsection{UV-Vis Spectroscopy}
+UV-Vis-NIR spectrophotometer is a useful tool to obtain optical properties from various samples. Generally speaking, the UV spectrum ranges from 100 nm to 400 nm, and visible spectrum spans from 400 nm to 750 nm. Absorption from atmospheric \ce{CO2} becomes significant below 200 nm; therefore 100 to 200 nm region is usually not measured unless some vacuum technique is applied. Near-IR ranges from 0.75 to 3 $\mu$m. The cost of fabricating a spectrometer covering the whole NIR region can be quite high. The instrument used in this dissertation (Schimadzu, UV2600Plus) can measure from 220 nm to 1350 nm (5.6 eV to 0.92 eV) with an integrating sphere.
 
-
-UV-Vis-NIR spectrophotometer is a useful tool to obtain absorption and reflectance from various samples. Generally speaking, the UV spectrum ranges from 100 nm to 400 nm, and visible spectrum spans from 400 nm to 750 nm. Absorption from atmospheric \ce{CO2} becomes significant below 200 nm; therefore 100 to 200 nm region is usually not measured unless some vacuum technique is applied. Near-IR ranges from 0.75 to 3 $\mu$m. The cost of fabricating a spectrometer covering the whole NIR region can be quite high. The instrument used in this thesis (Schimadzu, UV2600Plus) can measure from 220 nm to 1350 nm (5.6 eV to 0.92 eV) with an integrating sphere.
-
-The absorption of materials can be described by Lambert-Beer law: $I = I_0 \exp(-A)=I_0\exp(-\alpha(\lambda) x)$, where $\alpha$ is the absorption coefficient in unit of \si{cm^{-1}}, and $x$ is the optical path in cm. When the sample is in liquid form, it is more convenient to use $A =\epsilon_\lambda C x$, where $C$ is the molar concentration (M = \si{\mole \per L}), and $\epsilon_\lambda$ is the extinction coefficient/molar absorptivity (\si{M^{-1} cm^{-1}}). For example, $\epsilon$ for methylene blue (MB) is $10^5 M^{-1}cm^{-1}$ at 660 nm.\cite{Mills1999} So by measuring the maximum absorbance of known sample, its concentration can be estimated accordingly. 
+The absorption of materials can be described by Lambert-Beer law: $I = I_0 \exp(-A)=I_0\exp(-\alpha(\lambda) x)$, where $\alpha$ is the absorption coefficient in unit of \si{cm^{-1}}, and $x$ is the optical path in cm. When the sample is in liquid form, it is more convenient to use $A =\epsilon_\lambda C x$, where $C$ is the molar concentration (M = \si{\mole \per L}), and $\epsilon_\lambda$ is the extinction coefficient/molar absorptivity (\si{M^{-1} cm^{-1}}). For example, $\epsilon$ for methylene blue (MB) is $10^5$ \si{M^{-1}cm^{-1}} at 660 nm.\cite{Mills1999} So by measuring the maximum absorbance of sample with known composition, its concentration can be estimated accordingly. 
 
 In the transmission mode, the reflection from materials phase boundary has been compensated with the usage of paired container and solvent. The scattering, however, cannot be eliminated this way. Usually scattering is negligible in molecular disperse media, yet should be considered in colloids or solids when the incident wavelength is comparable to the particle dimension. The size of nanostructures studied in this work is estimated to be 200 to 400 nm after sonication treatment; therefore, scattering effect should be included in the absorbance spectrum. 
 
@@ -262,122 +204,7 @@ where $n$ depends on the nature of electronic transition. The diffuse reflection
 \label{fig:ch2uvvis}
 \end{figure}
 
-In this thesis, UV-Vis and diffuse reflectance spectra were recorded using Schimadzu, UV2600Plus, with schematic measurement setup shown in Fig.~\ref{fig:ch2uvvis}. For UV-Vis measurement in transmission mode, the as-synthesized sample was removed from substrates by light sonication(Branson 1510R-MTH, 70W) in ethanol or DI water for 15 seconds. The dispersion was left for 12 h to enable the possible sedimentation. Then the dispersion was transferred into one 10 mm quartz cuvette (Thorlabs, W005654) for absorption measurement with another paired cuvette containing pairing liquid only. To carry out diffuse reflectance measurement, integrating sphere (ISR2600Plus) was used with an incident angle of 0 deg. The baseline reflectance was first recorded with the standard white plate (barium sulfate powder, \ce{BaSO4}) placed at the exit window on the sample path side, then the target sample was set in for relative reflectance measurement. The \ce{BaSO4} powder should be replaced periodically, otherwise the surface might turn yellow. To replace the \ce{BaSO4} powder, one should supply new powder into the sample holder for several time, each followed by a compact pressing using the glass rod. Chemical wrapping paper can be inserted between the glass rod and \ce{BaSO4} powder to prevent the powder sticking. Nanostructured sample could be mounted directly with the growth substrate, or ground and spread evenly onto \ce{BaSO4} surface.
-
-\iffalse
-
-hemispherical reflectance, 
-diffusive reflectance is a mathematical artifice without direct physical meaning. 
-
-p332- 338
-
-the reflecting power associated with a specular-type process is often termed reflectivity, while reflectance is the analogous term for diffusely reflected radiation. This two types of reflection are present simultaneously. 
-
-Cauchy formula, empirical equation which has subsequently been placed on a firm theoretical basis. 
-
-intensity for a complex quantities is obtained by multiplying the complex conjugate. 
-
-For strongly absorbing materials, the reflected light is complementary to the color of light transmitted by it, such as gold transmission is green; 
-
-For the weakly absorbing substances of rough surface, it will appear the same color by transmission or reflection. 
-
-penetration depth is wavelength dependent $d = \frac{In2 \lambda}{2\pi \sqrt{\sin^2\theta_i - n^2}}$, longer wavelength penetrated further than did shorter wavelength. attenuated total reflectance, 
-
-thin film, amorphous, mean free path of electron is diminished, and porous in structure. The maxwell-garnett theory provides a satisfactory explanation, where free electron density is reduced. 
-
-diffuse reflection: $I = I_0 \exp(-\epsilon d)$, Lambert cosine law formulated. multiple scattering by individual particles. 
-$R_tot = \alpha R_sp + (1- \alpha) R_diff $, 
-
-multiple scattering of diffuse radiation in a medium composed of closely packed particles. 
-
-\[
-\log{f(r_\infty) = \log{k} - \log{s}}
-\]
-
-It is concluded that the KM function can be used to obtain the characteristic color curve of a given sample only in the limit of small total absorption. 
-
-by mixing the sample with an abundance of the reflectance standard, the regular reflection is extensively eliminated. 
-
-The color of an object depends on the spectral composition of the source. The color of many light sources can be specified in terms of the temperature to which a blackbody radiator must be heated in order to achieve a color match for the source, which is known as color temperature. 
-
-integrating sphere: the intensity at any part of the sphere, due to the reflected light is a measure of the total flux from a particular source, independent of the spatial distribution or location of the source on the sphere. 
-
-substitution method, comparison method, 
-
-\fi
-
-
-\section{Substrates and Pre-growth Treatments}\label{ch2sub}
-
-Silicon and silicon dioxides on Si wafer ($p$-Si(100), Unversity Wafer Inc.) were primarily used, and other substrates (i.e. Mica\footnote{ \ce{K(Al2)(Si3Al)O10(OH)2}}, glass (Fisher Scientific, microscope slide, 12-549),\footnote{Typical composition is 72.6\% \ce{SiO2}, 0.8\% \ce{B2O3}, 1.7\% \ce{Al2O3}, 4.6\% \ce{CaO}, 3.6\% \ce{MgO} and 15.2\% \ce{Na2O}} stainless steel) were occasionally used. Substrates were first cut into rectangular pieces of certain size and then ultrasonically cleaned (Branson 1510R-MTH) with acetone and alcohol for about 15 minutes each followed by blow-drying with nitrogen gas. After solution cleaning, the Si surface is hydrophobic. Depending on the specific experimental requirement, a hydrophilic surface may be desired. A plasma cleaning was used (Kurt J Lesker: Plasma-Preen 862) to render a hydrophilic Si surface, where reaction among $e$, \ce{O^+}, \ce{O2^+}, \ce{O^-},\ce{O2} occurs, and \ce{OH}-terminated surface followed.\cite{Habib2010} The treatment was done at 2 Torr \ce{O2} for 3 minutes. In addition, substrates can be coated with a thin layer of metal before growth. This process will be covered  in Sec.~\ref{sec:mag}.
-
-\subsection{Magnetron Sputtering}\label{sec:mag}
-
-Sputtering, a process in which atoms are ejected from a solid target material by bombarding it with energetic particles, is a well established physical vapor deposition (PVD) process with a high degree of controllability. The high energy and controllable parameters of sputtering can result in the growth of well-structured and crystalline films. Further, sputtering can be easily implemented as a roll-to-roll process for large-scale manufacturing. It is widely utilized for deposition of \ce{WO_x} in industry.
-
-In this work, magnetron sputtering (Denton Vacuum Desk IV) was used to coat thin layers of metals onto cleaned substrates, such as W, Mo, Au, Ag, Pd, and Pt. As shown in Fig.~\ref{fig:ch2magsp}, a high potential created between the target (cathode) and substrate ionizes the argon molecules. These ions are accelerated to bombard the target foils, knocking out active atoms which subsequently deposit onto the substrates. A magnetic field is applied to confine electrons to the vicinity of the foils. These electrons in turn increase the ionization yield. 
-
-\begin{figure}[htb]
-\centering
-\includegraphics[width=0.8\textwidth]{magsp.jpg}
-\caption[magnetron sputtering system]{Schematic drawing of sputtering adopted from ref\cite{Song2008}}
-\label{fig:ch2magsp}
-\end{figure}
-
-Sputtering is a better PVD technique than e-beam deposition since it alleviates the adverse effects in the latter. \ce{Ar+} ions are accelerated to target foils. The pressure of \ce{Ar+} has two functions: to sputter off the target ions, and to influence the mean free path (MFP). These collisions between target ions and \ce{Ar+} leads to almost all arrival angle, thus uniform coverage. The sputter yield is number of target ions released per ions hitting on target. If \ce{Ar+} ion energy is less than 100 eV, the yield is zero; If larger than 10 keV, implantation of \ce{Ar+} into target foils occurs. Usually yield between 1 and 2 is desired. The MFP in sputtering is on order of 3 cm (assuming pressure 30 mTorr), with source-to-substrate distance as 5 cm, average number of collisions is about 5/3$\sim$2. 
-
-
-\section{Data Processing}
-
-The SEM images are cropped using Adobe Photoshop for highlighting the features and fitting into text width. To obtain the dimension of specimen, scale bar was measured and compared to the size of interest using ImageJ\cite{Schneider2012} for SEM, TEM images and SAED pattern. It is worth noting that ImageJ could directly read the dm3 format generated in Gatan imaging software, which is more productive than the scale bar method.
-
-Various spectra, be it from XRD, EDX, Raman, or UV-Vis, were redraw using Origin Pro 8.0. The peak fitting was performed using \emph{Fityk}, a nonlinear curve fitting program specialized in data processing from powder diffraction, chromatography, photoluminescence and photoelectron spectroscopy, infrared and Raman spectroscopy, \emph{etc}.\cite{Wojdyr2010}
-
-
-\iffalse
-incoherent illumination $s = \frac{1.22 \lambda_{vac}}{2n\sin i}$, 
-coherent illumination in microscope $s = \frac{\lambda_{vac}}{n\sin i}$,, 
-phase contrast: transforming phase change in object plane into amplitude variation in image plane. 
-much better than needed, human eye resolving power 0.3 mrad, 
-
-The illumination can be considered as incoherent (adding intensity) if the object is self-luminous, or if illminated from all direction. 
-
-The opposite occurs in TEM probably, where the specimen is irradiated with complete transverse coherence across its area. back 
-focal plane displays the Fourier transform of complex amplitude in object plane. The optical system is a spatial low-pass filter: it builds up images from only the low Fourier components present at the object, having higher values cutoff. 
-
-The information about an object is on display in the objective lens's back focal plane in a Fourier-transform form. dark field, removing zero order; Schlieren technique, removing half of diffraction from one side of back focal plane; applications: apodizing in telescope, satellite transmitting aerial structure, 
-
-with the aid of Fig. 
-conjugate plane, 
-
-electron lens can be made of electrostatic field, and magnetic field, and the B field can be generated from ferromagnetic materials (soft iron, 2 T) or superconducting (100 T). 
-
-$C_s$ has dimensions of length, and is approximately equal to the focal length of objective lens (1-3 mm in TEM). 
-
-$r_{min} \approx 0.91(C_s \lambda^3)^{1/4}$ is about 0.3 nm typically; with $C_s$ correction, $r_{min}$ can be further reduced to 0.07 nm. And human eye can resolve a distance of 0.2 mm, therefore the maximum useful magnification is about $0.2 \times 10^{-3}/0.3 \times 10^{-9} \sim 670 K$. 
-
-And after interacting with specimen, the energy spread of transmitted E-beam becomes about 20eV, which will limit the resolution more than does the spherical aberration. 
-
-\textbf{coherence of E-beam}
-
-faint points, large disk, the feature of interest is what make the materials imperfect, 
-
-20 keV E-beam in TV. 
-
-In XRD, both diffraction peak position and intensity are used; whereas in TEM, most time only the positions of spots are of concern. 
-
-physical process of diffraction where the atomic planes appear to behave as mirrors for incident E-beam; 
-
-\fi
-
-
-
-
-
-
-
-
-
+In this thesis, UV-Vis and diffuse reflectance spectra were recorded using Schimadzu, UV2600Plus, with schematic measurement setup shown in Fig.~\ref{fig:ch2uvvis}. For UV-Vis measurement in transmission mode, the as-synthesized sample was removed from substrates by light sonication(Branson 1510R-MTH, 70W) in ethanol or DI water for 15 seconds. The dispersion was left for 12 h to enable the possible sedimentation. Then the dispersion was transferred into one 10 mm quartz cuvette (Thorlabs, W005654) for absorption measurement with another paired cuvette containing pairing liquid only. To carry out diffuse reflectance measurement, integrating sphere (ISR2600Plus) was used with an incident angle of 0 degree. The baseline reflectance was first recorded with the standard white plate (barium sulfate powder, \ce{BaSO4}) placed at the exit window on the sample path side, then the target sample was set in for relative reflectance measurement. The \ce{BaSO4} powder should be replaced periodically, otherwise the surface might turn yellow. To replace the \ce{BaSO4} powder, one should supply new powder into the sample holder for several time, each followed by a compact pressing using the glass rod. Chemical wrapping paper can be inserted between the glass rod and \ce{BaSO4} powder to prevent the powder sticking. Nanostructured sample on transparent substrates, i.e., quartz, could be mounted directly with the growth substrate, or ground and spread evenly onto \ce{BaSO4} surface.
 
 
 

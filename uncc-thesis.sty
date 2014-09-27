@@ -194,7 +194,7 @@
 \RequirePackage{epsfig}
 
 \usepackage{sectsty}
-
+\usepackage[us,12hr]{datetime}
 \usepackage{etoolbox}
 \BeforeBeginEnvironment{equation}{\begin{singlespace}}
 \AfterEndEnvironment{equation}{\end{singlespace}\noindent\ignorespaces}
@@ -235,8 +235,8 @@
     \MakeUppercase{\abstractname} \\
     \hfill\\[3.75ex]
     \MakeUppercase{\thesisauthor}.
-%    \thesistitle. \\ (Under the direction of \MakeUppercase{\thesisadvisor})
-    \thesistitle. \\ (Under the direction of \thesisadvisor)
+    \thesistitle. \\ (Under the direction of \MakeUppercase{\thesisadvisor})
+%    \thesistitle. \\ (Under the direction of \thesisadvisor)
     \hfill\\[3.75ex]
   \end{center}
 \end{singlespace}
@@ -256,7 +256,7 @@
 \end{singlespace}
 \par\indent}{\vfill\newpage}
 
-\newcommand\acknname{acknowledges}
+\newcommand\acknname{acknowledgments}
 \newenvironment{ackn}{%
 \thispagestyle{myheadings}
 \setcounter{page}{5}  % Force this because \maketitle uses the titlepage environtment.
@@ -345,7 +345,7 @@
 \def\thedegree{Doctor of Philosophy}
 
 % Default department:
-\def\thedepartment{Computer Science}
+\def\thedepartment{Physics and Optical Science}
 
 % Default submission statement on title page:
 \def\thesubmissionstmt{A dissertation submitted to the faculty
@@ -436,7 +436,8 @@ in partial fulfillment of the requirements\\
 % Hey maybe we want the UNCC crown on each page.
 %  \renewcommand{\@oddfoot}{\resizebox{1in}{!}{\includegraphics{UNCClogo.eps}} \hfill \thepage \hfill \@author}
 
-  \renewcommand{\@oddfoot}{}
+  \renewcommand{\@oddfoot}{Complied on \hfill \today \hfill at \currenttime} % for version control 
+  %\renewcommand{\@oddfoot}{}
   \renewcommand{\@evenfoot}{}
 }
 % http://www.personal.ceu.hu/tex/pagestyl.htm

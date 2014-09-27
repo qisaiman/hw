@@ -18,7 +18,7 @@
 %\RequirePackage{comment}
 %\RequirePackage{epsfig}
 %\usepackage{sectsty} % for sectional header style. Alternative: titlesec package
-% \usepackage{tocloft}
+%\usepackage{tocloft}
 %\usepackage{geometry}
 
 \usepackage{microtype} % better layout
@@ -57,34 +57,6 @@
  %\numberwithin{figure}{section}
 \usepackage{csquotes}% Recommended
 \usepackage[english]{babel}% Recommended
-
-\iffalse
-\usepackage{stringenc}
-\makeatletter
-\renewcommand*{\UTFviii@defined}[1]{%
-  \ifx#1\relax
-    \begingroup
-      % Remove prefix "\u8:"
-      \def\x##1:{}%
-      % Extract Unicode char from command name
-      % (utf8.def does not support surrogates)
-      \edef\x{\expandafter\x\string#1}%
-      \StringEncodingConvert\x\x{utf8}{utf16be}% convert to UTF-16BE
-      % Hexadecimal representation
-      \EdefEscapeHex\x\x
-      % Enhanced error message
-      \PackageError{inputenc}{Unicode\space char\space \string#1\space
-                              (U+\x)\MessageBreak
-                              not\space set\space up\space
-                              for\space use\space with\space LaTeX}\@eha
-    \endgroup
-  \else\expandafter
-    #1%
-  \fi
-}
-\makeatother
-
-\fi
 
 \fi
 
@@ -165,7 +137,8 @@
 
 %-- for works around, packages conflicts----
 
-%-- redefine toc macros ------
+%-- redefine toc macros ------of babel package
+%
 \addto\captionsenglish{%
 \renewcommand\chaptername{CHAPTER}%
 \renewcommand\appendixname{APPENDIX}%
@@ -174,6 +147,7 @@
 \renewcommand{\listfigurename}{LIST OF FIGURES}%
 \renewcommand{\listtablename}{LIST OF TABLES}%
 }
+
 
 %-- misc---
 \usepackage{lipsum}
@@ -204,6 +178,13 @@ urlcolor=black
 % to set pdf in a preset view
 % pdfstartview:
 \hypersetup{pdfstartview={XYZ null null 1.00}}
-
-\usepackage[acronym,toc]{glossaries} % loaded after hyperref
+% http://tex.stackexchange.com/questions/128879/defined-acronymname-is-not-used-in-toc-but-the-standard-acronyms-why
+% solve the acronym name in TOC issue
+% using addcontentsline{toc}{chapter}{\acronymname} command
+% to add List of Abbreviation into TOC, instead of using the toc option provided by glossaries package
+% probably due to the renewcommand for changing list of abbre name is not respected
+% when the glossaries packge add the index to TOC; 
+% it always tries to use acronym, which is probably the default name
+% However, this workaround may have pagenumbering issues for long list of abbre
+\usepackage[acronym,nonumberlist]{glossaries} % loaded after hyperref
 

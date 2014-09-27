@@ -3,55 +3,51 @@
 \chapter{introduction}
 
 \section{Background and Motivation: Nanomaterials for Energy Applications}
-\today
 
-TMO as electrochromic device and TMDC as newly 2D semiconductor, and some VLS.
-Transition metal oxides (TMOs) exhibit rich structures and useful properties, and could been used in solar energy harvesting (\emph{e.g.}, photoelectrochemistry, photocatalysis, and photovoltaics) and energy saving (\emph{e.g.}, electrochromism and photochromism) applications. 
+Transition metal generally refers to any elements in the d-block of periodic table, and transition metal oxides (TMOs) mean the chemical compounds that consist of at least one transition metal element and oxygen. Similarly, transition metal dichalcogenides (TMDCs) are compounds that combine at least one transition metal with chalcogen elements from group VIA (S, Se, Te, Po). Oxygen also belongs to group VIA, but is often treated separately. This study focused on the following three materials: molybdenum oxide, tungsten oxide and tungsten disulfide. Both tungsten (W) and molybdenum (Mo) belong to Group VIB transition metal, with outer shell electrons configuration as $4d^55s^1$ and $5d^46s^2$, respectively. 
+ 
+The two metal oxides, \ce{MoO3} and \ce{WO3}, have been studied for decades for energy related applications, e.g., photoelectrochemistry,\cite{Su2010} photocatalysis,\cite{Watcharenwong2008, Macphee2010} photovoltaics\cite{Coridan2013} and electrochromism.\cite{Yoshimura1985, Mortimer2011} \ce{WS2} has also been investigated in various forms, i.e., thin film, nanotube, and 2D atomic layer recently. \ce{WS2} exhibits some potentials in solar cell, water cleavage, and field effect transistor. 
 
-\iffalse
-Materials that human can make define the age they live in. From Stone Age to Bronze Age and Iron Age, people evolve as mastering more and more sophisticated techniques of manipulating metals, such as alloying and annealing. Obtaining extreme high purity of silicon brings us into Information Age. Future is difficult to predict. But nanotechnology is one direction that we can not ignore. According to \gls{nni}, \gls{nanotechnology}. This definition alludes that dimension comes before compositions. It is often related to the quantum confinement or surface area in nanomaterials, which we will later revisit with specific scenario.
 
-There are three states of matter under usual conditions: solid,liquid and gas. Solids materials could be further categorized into five groups: metals, ceramics, polymers, semiconductors, and composites.\cite{William2009} This classification is based on both composition and mechanical, electrical, and thermal properties as well as the associated functionality(i.e., \gls{ceramics} are typically hard yet brittle, insulating to electricity and resistant to heating).
 
-\fi
-Energy saving and harvesting. 
+\subsection{Electrochromism for Energy Saving}
+
+Commercial buildings in U.S. consumed approximately 35\% of the electricity use.\footnote{U.S. Department of Energy, "Energy Efficiency Trends in Residential and Commercial Buildings", 2008.} And traditional windows in the buildings account for up to 40\% of the total heating, cooling and lighting consumption. The smart windows is an energy efficient solution by allowing for separate control of the visible and NIR illumination/transmission.
+
+Electrochromic materials are a group of functional materials whose coloration status can be reversibly switched using a finite durance of low DC voltage (\textless 5 V). Another important advantage of smart windows based on EC materials is the failure mode being clear instead of opaque compared to other techniques, e.g, liquid crystal, suspended particles. 
+
+coloration efficiency, the doping amount, 
+ 
+
+\subsection{Photocatalysis for Energy Harvesting}
+
+Photocatalytic activity occurs when a semiconductor in aqueous solution is illuminated by photons of energy larger than the bandgap, then electron-hole pairs generate free radicals, i.e., \ce{OH.}, which enable further reactions. For water splitting using solar energy, the band gap should be within $2.0 \sim 3.0 $ eV, and CB edge should be more negative than reduction potential of \ce{H^+/H2}, whereas the VB top should be more positive than the oxidation potential of \ce{H2O}/\ce{O2}.\cite{Wang2012} The valence band holes (\ce{h^+}) oxidize water to oxygen and conduction band electrons propel hydrogen generation, as depicted in Eq.~\ref{eq:h2o}.
+\begin{subequations}\label{eq:h2o}
+\begin{align}
+4\ce{h^+} +  \ce{H2O} &\rightarrow \ce{O2} + 4\ce{H^+} \label{eq:hervb}\\
+4\ce{H^+} +  4e^- &\rightarrow 2\ce{H2} \label{eq:hercb}
+\end{align}
+\end{subequations}
+As shown in Fig.~\ref{fig:woxnhe}, \ce{WO3} has \gls{cb} edge positioned slightly more positive than reduction potential of \ce{H^+/H2}(versus \gls{nhe}), and \gls{vb} edge much more positive than the oxidation potential of \ce{H2O}/\ce{O2}. So the photo-cleavage of water cannot be accomplished by \ce{WO3} alone. Nevertheless, a tandem cell approach by \ce{WO3} film and dye-sensitized \ce{TiO2} has been demonstrated with an efficiency of 4.5\%.\cite{Michael1999} It is worth noting that green plants also have two photosynthetic systems connected in series, one for oxidation of water into oxygen and the other for fixation of carbon dioxide.
+% wo3 vs NHE
+\begin{figure}[htb]
+\centering
+\includegraphics[width=0.7\textwidth]{woxnhe.jpg}
+\caption[Bands positions of \ce{WO3} versus NHE]{Bands positions of \ce{WO3} in contact with aqueous electolyte at pH 1, adapted from Ref.\cite{Gratzel2001}}
+\label{fig:woxnhe}
+\end{figure}
+Moreover, favorable oxygen evolution of \ce{WO3} brings good performance in degradation of organic compounds\cite{Hepel2001,Luo2001,Watcharenwong2008}. The formation of long-lived holes is recognized as a key requirement.\cite{Pesci2011} Besides, \ce{WO3} is remarkably stable in acid, making it a significant candidate for treating water pollutant caused by organic acids.\cite{Monllor-Satoca2006}
+
+\subsection{Advantages of Nano-Engineering}
 
 why nano? surface-to-volume ratio, more surface area for catalytic reaction; surface energy state: tuned by dimension; quantum confinement effects: exciton size vs physical dimension. easy for dopant diffusion, thereby band structure modification; charge-separation and transport mechanism may also differ from bulk.
 
 how to show the crystalline TMO is better than amorphous thin film counterparts.
 
-Commercial buildings in U.S. consumed approximately 35\% of the electricity use.\footnote{U.S. Department of Energy, "Energy Efficiency Trends in Residential and Commercial Buildings", 2008.} And traditional windows in the buildings account for up to 40\% of the total heating, cooling and lighting consumption. The smart windows is an energy efficient solution by allowing for separate control of the visible and NIR illumination/transmission.  
-
-\subsection{Electrochromism for Energy Saving}
-
-coloration efficiency, the doping amount, 
-
-Electrochromic materials are a group of functional materials whose coloration status  can be reversibly switched using a finite durance of low DC voltage (\textless 5 V). Another important advantage of smart windows based on EC materials is the failure mode being clear instead of opaque compared to other techniques, e.g, liquid crystal, suspended particles. 
-
-\subsection{Photocatalysis for Energy Harvesting}
-
-
-
-\subsection{Advantage of Nano-engineering}
-
 In comparison to oxides thin films, 1D TMO nanostructures (e.g., nanowires) have following advantages to improve the response speed and enhance the coloration efficiency: (1) With reduced diameters down to nanometer scale, the distance for ion diffusing into and out of the nanowires is significantly shortened. (2) The gap between nanowires always provides channels for fast ion diffusion outside the nanowires. (3) The large surface area to bulk volume ratio of nanowires is desired to improve the overall usage of material, which results in enhanced the contrast between colored and bleached states. Furthermore, doped with certain metals (such as Ti and Ag), the crystalline structure of the TMO nanowires can be modified with enhanced electrochromic properties.\cite{Xiong2008} 
 
-
+\section{Objective and Scope}
+To fully harvest the advantages of these TMO and TMDC one-dimensional nanomaterials, a scalable growth method and a comprehensive understanding towards the growth-structure-property relation must first be established. Therefore, this dissertation primarily focuses on synthesis, growth mechanism study and characterization, and will only present preliminary results on device and applications.
 
 \section{Dissertation Outline}
-% what content should be presented
-
-The materials studied in this work/dissertation are tungsten oxides (\ce{WO3}), molybdenum oxides (\ce{MoO3}),and their chalcogenide counterparts (\ce{WS2} and \ce{MoS2}). 
-
-This dissertation primarily focuses on growth and characterization, and will only present some preliminary tests on device and applications. Experimental tools for growth and characterization will be introduced in Chapter 2. Chapter 3 will be devoted to tungsten oxides (\ce{WO3}) and sodium tungsten oxides (\ce{Na5W14O44}) nanowires, where the role of sodium compounds in metallic tungsten precursors are thoroughly investigated. Chapter 4 will turn to molybdenum oxides (\ce{MoO3}) growth using alkaline metal compounds as catalysts. In Chapter 5, the growth of \gls{tmdc} and heterostructures will be discussed. Emphasis will be placed on the characterization of individual \ce{WO3}-\ce{WS2} core-shell \gls{nw}. The dissertation is then concluded with a summary and future work. 
-
-\iffalse
-
-We have synthesized \gls{tmo} and \gls{tmdc} at nanoscale, measured their crystalline structures and optical properties and demonstrated some devices assembled using as-synthesized nanomaterials. We aim to illustrate that by nanoengineering these \gls{tmo} and \gls{tmdc}, enhanced performances over their bulk states could be expected and new properties will arise. In the remaining sections of this chapter, we will discuss some general perspectives of nanomaterials, the growth apparatus and characterization methods that apply to all experiments done in this work. Then chapter 2 will focus on growth of \ce{WO3} and its derivative. We employed thermal \gls{cvd} to synthesize \ce{WO3} \gls{nw}, and we investigated the role of impurity in tungsten metallic powders, during which we observed a new state of sodium tungsten oxides: \ce{Na5W14O44} nanowires. We also found a method to potentially obtain large yield of \ce{WO3} \gls{nw}. Chapter 3 will concentrate on \ce{MoO3}. We explored two different growth mechanism of \ce{MoO3}:\gls{vs} and \gls{vls}. We discovered that alkaline oxides can be used as catalyst to grow two distinct \ce{MoO3} morphologies: nanobelts and towers. We further demonstrated the application of as-synthesized \ce{MoO3} nanomaterials in electrochromic devices.  In chapter 4 we discuss  We synthesized  and inspected the growth of \gls{fl} \ce{WS2}. Chapter 5 will conclude with an overall summary.
-
-\fi
-
-
-
-
-%\input{../end.tex} %  comment out when assembling 
+The materials studied in this dissertation are tungsten oxides (\ce{WO3}), molybdenum oxides (\ce{MoO3}),and tungsten disulfide (\ce{WS2}). Experimental tools will be introduced in Chapter 2, including CVD apparatus and substrate treatments for growth, electron microscopes and optical spectrometers for characterization. Chapter 3 is devoted to tungsten oxides (\ce{WO3}) and sodium tungsten oxides (\ce{Na5W14O44}) nanowires, where the role of sodium in metallic tungsten precursors are thoroughly investigated; a potentially scalable growth method is also developed. Chapter 4 will turn to molybdenum oxide (\ce{MoO3}) growth using alkaline metal compounds as catalysts. In Chapter 5, a heterostructure based on \ce{WO3} \glspl{nw} is studied. Emphasis will be placed on the characterization of individual \ce{WO3}-\ce{WS2} core-shell \gls{nw}. The dissertation is then concluded with a summary and future work. 
