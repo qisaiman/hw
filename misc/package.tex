@@ -164,6 +164,8 @@ postbreak=\raisebox{0ex}[0ex][0ex]{\ensuremath{\color{red}\hookrightarrow\space}
 \setlist{nolistsep} % or \setlist{noitemsep}
 %\setlist[1]{\labelindent=\parindent}
 %% -- links ---
+%\usepackage[breaklinks=true]{hyperref}
+%\usepackage[linktocpage]{hyperref}
 \usepackage{hyperref}
 \hypersetup{
 colorlinks,%
@@ -178,3 +180,25 @@ urlcolor=black
 %http://tex.stackexchange.com/questions/128879/defined-acronymname-is-not-used-in-toc-but-the-standard-acronyms-why
 \usepackage[acronym]{glossaries} % loaded after hyperref
 \renewcommand{\acronymname}{LIST OF ABBREVIATIONS}
+
+\iffalse
+long name issue
+
+%http://tex.stackexchange.com/questions/4311/how-can-i-force-long-chapter-names-including-page-numbers-to-stay-in-the-margi?rq=1
+
+My section title is too wide for the page header
+http://www.tex.ac.uk/cgi-bin/texfaq2html?label=runheadtoobig
+
+http://tex.stackexchange.com/questions/16032/how-do-i-indent-the-2nd-line-a-long-chapter-name-created-using-the-tocloft-packa
+
+http://tex.stackexchange.com/questions/24745/why-does-setlength-using-tocloft-causes-strange-alignment-in-toc
+
+or move to the other template using titlesec
+http://tex.stackexchange.com/questions/58775/somethings-wrong-with-tocloft
+
+
+
+
+
+
+\fi

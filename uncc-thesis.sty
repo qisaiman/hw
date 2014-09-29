@@ -598,9 +598,8 @@ in partial fulfillment of the requirements\\
 %% #1 contains the chapter title.
 %% #2 contains the chapter title; yes, same as #1.
 %%
-                      \addcontentsline{toc}{chapter}
-                                     {\protect\numberline
-                                       {\MakeUppercase{\@chapapp~\thechapter: #1}}}
+                    \addcontentsline{toc}{chapter}%
+                                     {\@chapapp~\thechapter: #1}%
                     \else
                       \addcontentsline{toc}{chapter}{#1}
                     \fi
