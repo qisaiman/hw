@@ -1,0 +1,543 @@
+\NeedsTeXFormat{LaTeX2e}[1994/06/01]
+\ProvidesPackage{unccx}[2014/10/01]
+
+%-----------------------------------------------------------------------------
+% updated style to 2013 format
+% 
+%
+% 
+% author 1: John H. Merritt  (john@johhnyland.info) Copyright 2011. GPL 3
+% author 2: Tao Sheng (cosmo.sheng@gmail.com)
+%
+%------------------------------------------------------------------------------
+% The UNCC thesis style as specified in 2011.
+%
+%       I) Preliminary pages
+%          a) Title/Signature. No page number, but counted.        REQUIRED
+%          b) Copyright.       Page number is small Roman numeral. REQUIRED
+%          c) Abstract.        Page number is small Roman numeral. REQUIRED
+%          d) Dedication.      Page number is small Roman numeral. OPTIONAL
+%          e) Acknowledgment.  Page number is small Roman numeral. OPTIONAL
+%          f) Introduction*    Page number is small Roman numeral. OPTIONAL
+%          g) Table of Contents. Page number is small Roman numeral. REQUIRED
+%          h) List of Tables.  Page number is small Roman numeral. OPTIONAL
+%          i) List of Figures. Page number is small Roman numeral. OPTIONAL
+%          j) List of Symbols/Abbreviations. Page number is small Roman numeral. OPTIONAL
+%       II) Text ** REQUIRED.  Page number are Arabic in upper right.
+%       III) References/Bibliography. Page numbers are Arabic.     REQUIRED
+%       IV) Appendices.        Page numbers are Arabic.            OPTIONAL
+%       V) Vita.               Page numbers are Arabic.            OPTIONAL
+%
+%       * An Introduction may be placed before the Table of Contents depending upon the
+%       discipline or the requirements of the student
+%       as advisory committee. If it is placed before
+%       the Table of Contents it is considered a preliminary page.
+%-----------------------------------------------------------------------------
+%
+%
+%
+%
+%-----------------------------------------------------------------------------
+
+\RequirePackage{ifthen}
+\RequirePackage{setspace} % for double spacing
+\RequirePackage{comment}
+%\RequirePackage{epsfig}
+
+\usepackage{sectsty}
+\usepackage[us,12hr]{datetime}
+\usepackage{etoolbox}
+\BeforeBeginEnvironment{equation}{\begin{singlespace}}
+\AfterEndEnvironment{equation}{\end{singlespace}\noindent\ignorespaces}
+\BeforeBeginEnvironment{align}{\begin{singlespace}}
+\AfterEndEnvironment{align}{\end{singlespace}\noindent\ignorespaces}
+
+\usepackage{geometry}
+\geometry{verbose,letterpaper,tmargin=1in,bmargin=1in,lmargin=1.5in,rmargin=1in}
+\doublespacing
+% verbose, print the page layout info in console.
+
+% Adjust the abstract title to include author and advisor.
+% modified by tao sheng to comply with the line spacing requirments
+%----------------------------------------------------------------------
+%
+%     a b s t r a c t
+%
+%----------------------------------------------------------------------
+\newcommand\abstractname{ABSTRACT}  
+\newenvironment{abstract}{%
+\thispagestyle{myheadings}
+\setcounter{page}{3}  % Force this because \maketitle uses the titlepage environtment.
+\begin{singlespace}
+  \begin{center}
+    \normalfont
+    \MakeUppercase{\abstractname} \\
+    \hfill\\[2.0ex]
+    \MakeUppercase{\thesisauthor}.
+    \thesistitle. (Under the direction of \MakeUppercase{\thesisadvisor})
+    \hfill\\[3.0ex]
+  \end{center}
+\end{singlespace}
+\par\indent}{\vfill\newpage}
+
+%-------- new environment for decication and acknowledges ---
+\newcommand\dedicationname{dedication}
+\newenvironment{dedication}{%
+\thispagestyle{myheadings}
+\setcounter{page}{4}  % Force this because \maketitle uses the titlepage environtment.
+\begin{singlespace}
+    \begin{center}
+    \normalfont
+    \MakeUppercase{\dedicationname}
+    \hfill\\[3.0ex]
+    \end{center}
+\end{singlespace}
+\par\indent}{\vfill\newpage}
+
+\newcommand\acknname{acknowledgments}
+\newenvironment{ackn}{%
+\thispagestyle{myheadings}
+\setcounter{page}{5}  % Force this because \maketitle uses the titlepage environtment.
+\begin{singlespace}
+    \begin{center}
+    \normalfont
+    \MakeUppercase{\acknname}
+    \hfill\\[3.0ex]
+    \end{center}
+\end{singlespace}
+\par\indent}{\vfill\newpage}
+%----------------------------------------------------------------------
+%
+%     thesis make copyright
+%
+%----------------------------------------------------------------------
+\def\thesismakecopyright{
+  \thispagestyle{myheadings}
+  \mbox{}\vfill
+  \begin{spacing}{1.1}
+    \vfill
+    \@ifundefined{thesiscopyrighttext}{}{\thesiscopyrighttext}
+    \vfill
+    \begin{center}
+      \copyright{} \thethesisyear \\
+      \thesisauthor \\
+      ALL RIGHTS RESERVED
+    \hfill\\[1.5in]%
+    \end{center}
+  \end{spacing}
+  }
+
+\newcommand\copyrighttext[1]{\def\thesiscopyrighttext{#1}}
+% --- begin-----
+\makeatletter
+%----------------------------------------------------------------------
+%
+%     title, author, department, degree, submissionstmt
+%     university, location, thesisyear, advisor
+%
+%----------------------------------------------------------------------
+\renewcommand\title[1]{\def\thesistitle{#1}\gdef\@title{#1}}
+\renewcommand\author[1]{\def\thesisauthor{#1}\gdef\@author{#1}}
+\newcommand\department[1]{\def\thedepartment{#1}}
+\newcommand\degree[1]{\def\thedegree{#1}}
+\newcommand\submissionstmt[1]{\def\thesubmissionstmt{#1}}
+\newcommand\university[1]{\def\theuniversity{#1}}
+\newcommand\location[1]{\def\thelocation{#1}}
+\newcommand\thesisyear[1]{\def\thethesisyear{#1}}
+\newcommand\advisor[1]{\def\thesisadvisor{#1}}
+
+% Some nice defaults.
+% DO NOT CHANGE the defaults here.  Set them in your LaTeX or LyX document.
+
+\let\@afterindentfalse\@afterindenttrue
+
+% Default advisor is the first committee member.
+\@ifundefined{@memberA}{\gdef\@memberA{UNKNOWN ADVISOR}}{}
+\def\thesisadvisor{\@memberA}
+
+\title{Invention of the wheel}
+\author{Anonymous}
+
+% Default university:
+\def\theuniversity{The University of North Carolina at Charlotte}
+
+% Default location:
+\def\thelocation{Charlotte}
+
+% Default year:
+\def\thethesisyear{\the\year}
+
+% Default degree:
+\def\thedegree{Doctor of Philosophy}
+
+% Default department: this is where I was
+\def\thedepartment{Physics and Optical Science}
+
+% Default submission statement on title page:
+\def\thesubmissionstmt{A dissertation submitted to the faculty
+ of\\
+ \theuniversity\ \\
+in partial fulfillment of the requirements\\
+ for the degree
+ of \thedegree\ in\\
+ \thedepartment}
+
+% Uppercase all section names.  These are used by \chapter*.  See makeschapter below.
+% Because fancy header needs babel, we must use the \addto\captionsenglish function to
+% redefine the section names.  Without babel, all you need is the \renewcommand part.
+% Also, the babel does not honor the \listtablename it sets it to 'Contents', the necessary
+% tweaking moved to package.tex aftering loading babel; Tao Sheng 01132014
+
+% Add a the university logo and the committee members list.
+% Initial \maketitle taken from the LaTeX report.cls
+% We assume the top margin is 1in.
+\renewcommand\maketitle{\begin{titlepage}%
+\begin{singlespace}
+  \pagenumbering{roman} % begin pagenumbering setting
+  \thispagestyle{empty}
+  \let\footnotesize\small
+  \let\footnoterule\relax
+   \let \footnote \thanks
+% This should be at the top (that is, 1in from the top).  The page margin.
+% \hfill is needed to force a blank line.
+  \begin{center}%
+    {   \normalsize \MakeUppercase{\thesistitle} \par}%
+        \normalsize
+        \hfill\\
+        \hfill\\
+        \hfill\\
+        by\\
+        \hfill\\
+        \thesisauthor\\
+        \hfill\\
+        \hfill\\
+        \hfill\\
+        \hfill\\
+        \thesubmissionstmt\\
+        \hfill\\
+        \thelocation\\
+        \hfill\\
+        \thethesisyear\\
+        \vfill
+  \end{center}
+
+    \begin{flushright}
+        \begin{minipage}{2.5in}
+            \begin{flushleft}\normalsize
+            Approved by:\\[.15in] \vfill  % This distance looks close to the sample.
+            \prtmembers
+            \end{flushleft}
+        \end{minipage}
+    \end{flushright}
+
+\end{singlespace}
+\newpage
+\thesismakecopyright
+  \end{titlepage}%
+}
+
+% Since the default margin is 1'' we move up .25 in for a page number
+% at 3/4'' from the top.
+% For twosided, 'even' are the left side pages.
+% For onesided, Only 'odd' is used -- the right side pages are all of them.
+\renewcommand{\ps@myheadings}{
+  \renewcommand{\@oddhead}{ \thepage} % put page number into header
+  \renewcommand{\@evenhead}{ \thepage}
+  \renewcommand{\@oddfoot}{Complied on \hfill \today \hfill at \currenttime} % for version control 
+  %\renewcommand{\@oddfoot}{}
+  \renewcommand{\@evenfoot}{}
+}
+% http://www.personal.ceu.hu/tex/pagestyl.htm
+\pagestyle{myheadings}
+
+% Seems that 1.75ex skips one line using the current font.
+%
+% UNCC thesis spec. worries about the chapter (or major section -- like a chapter) for
+% page margin distances, so LaTeX or (report.cls) parameters should be fine.
+% The font and uppercase are required.  Oh, the first paragraph must be indented.
+
+% The UNCC spec. doesn't say whether the section headings must be centered or uppercase, for that
+% matter.
+
+% \uppercase doesn't work w/ labels, unless you protect them.  But, I can't figure
+% out how to \protect it.  So, don't place labels in the text of the \section definition.
+% Place the section label at the beginning of the following paragraph.
+
+%
+% The sections headings need a tweek for the before and after skip.
+%
+% \@startsection {NAME}{LEVEL}{INDENT}{BEFORESKIP}{AFTERSKIP}{STYLE}
+%            optional * [ALTHEADING]{HEADING}
+%    Generic command to start a section.
+%    NAME       : e.g., 'subsection'
+%    LEVEL      : a number, denoting depth of section -- e.g., chapter=1,
+%                 section = 2, etc.  A section number will be printed if
+%                 and only if LEVEL < or = the value of the secnumdepth
+%                 counter.
+%    INDENT     : Indentation of heading from left margin
+%    BEFORESKIP : Absolute value = skip to leave above the heading.
+%                 If negative, then paragraph indent of text following
+%                 heading is suppressed.
+%    AFTERSKIP  : if positive, then skip to leave below heading,
+%                       else - skip to leave to right of run-in heading.
+%    STYLE      : commands to set style
+%  If '*' missing, then increments the counter.  If it is present, then
+%  there should be no [ALTHEADING] argument.  A sectioning command
+%  is normally defined to \@startsection + its first six arguments.
+%
+\newcommand\sectionTitleStyle{\normalfont\normalsize\UNCCHeadingStyle} % section title on left
+%\newcommand\sectionTitleStyle{\normalfont\normalsize\centering\UNCCHeadingStyle} % section title centering
+\newcommand\sectionTitleStylep{\normalfont\normalsize\textsc}
+
+\sectionfont{\sectionTitleStyle}
+\subsectionfont{\sectionTitleStyle}
+\subsubsectionfont{\sectionTitleStyle}
+\paragraphfont{\sectionTitleStylep}
+\subparagraphfont{\sectionTitleStylep}
+
+%
+% Each \section is modified to provide uniform spacing above and below.
+% Looks like 1.5ex is the magic.  The indentation of the first paragraph
+% is controlled by \afterindentfalse and \afterindenttrue.  In other words,
+% the first paragraph IS indented.
+%
+\renewcommand\section{\@startsection {section}{1}{\z@}%
+                                   {-1.5ex \@plus -1ex \@minus -.2ex}%
+                                   {1.5ex \@plus .2ex}%
+                                   {\sectionTitleStyle}}
+\renewcommand\subsection{\@startsection{subsection}{2}{\z@}%
+                                     {-1.5ex\@plus -1ex \@minus -.2ex}%
+                                     {1.5ex \@plus .2ex}%
+                                     {\sectionTitleStyle}}
+\renewcommand\subsubsection{\@startsection{subsubsection}{3}{\z@}%
+                                     {-1.5ex\@plus -1ex \@minus -.2ex}%
+                                     {1.5ex \@plus .2ex}%
+                                     {\sectionTitleStyle}}
+\renewcommand\paragraph{\@startsection{paragraph}{4}{\z@}%
+                                    {1.5ex \@plus1ex \@minus.2ex}%
+                                    {-1em}%
+                                    {\sectionTitleStylep}}
+\renewcommand\subparagraph{\@startsection{subparagraph}{5}{\parindent}%
+                                       {1.5ex \@plus1ex \@minus .2ex}%
+                                       {-1em}%
+                                      {\sectionTitleStylep}}
+
+
+\newcounter{acnt}
+
+% I don't think LaTeX/TeX has array variables so we must use A, B, ... suffixes and
+% explicitly test using an 'if' statement to select.
+\newcommand\committeemember[1]
+{
+  \stepcounter{acnt}
+     \ifnum \value{acnt} = 1 \gdef\@memberA{#1} \fi
+     \ifnum \value{acnt} = 2 \gdef\@memberB{#1} \fi
+     \ifnum \value{acnt} = 3 \gdef\@memberC{#1} \fi
+     \ifnum \value{acnt} = 4 \gdef\@memberD{#1} \fi
+     \ifnum \value{acnt} = 5 \gdef\@memberE{#1} \fi
+     \ifnum \value{acnt} = 6 \gdef\@memberF{#1} \fi
+     \ifnum \value{acnt} = 7 \gdef\@memberG{#1} \fi
+     \ifnum \value{acnt} = 8 \gdef\@memberH{#1} \fi
+     \ifnum \value{acnt} = 9 \gdef\@memberI{#1} \fi
+     \ifnum \value{acnt} = 10 \gdef\@memberJ{#1} \fi
+
+}
+
+\newcommand\prtmember[1]{\hfill\\ \rule{\columnwidth}{0.1mm}\\#1\vfill}
+% This part is not rigidly specified, but, it looks very close to the sample provided.
+\newcommand\prtmembers{
+    \@ifundefined{@memberA}{}{\prtmember{\@memberA}}
+    \@ifundefined{@memberB}{}{\prtmember{\@memberB}}
+    \@ifundefined{@memberC}{}{\prtmember{\@memberC}}
+    \@ifundefined{@memberD}{}{\prtmember{\@memberD}}
+    \@ifundefined{@memberE}{}{\prtmember{\@memberE}}
+    \@ifundefined{@memberF}{}{\prtmember{\@memberF}}
+    \@ifundefined{@memberG}{}{\prtmember{\@memberG}}
+    \@ifundefined{@memberH}{}{\prtmember{\@memberH}}
+    \@ifundefined{@memberI}{}{\prtmember{\@memberI}}
+    \@ifundefined{@memberJ}{}{\prtmember{\@memberJ}}
+}
+
+%
+% You adjust the chapter and chapter* heading format by
+% redefining \@makechapterhead and \@makeschapterhead.  The initial
+% code was taken from report.cls and adjusted to match the UNCC thesis
+% specification.  Basically, chapters are 2 inches from the top and centered using a
+% normal font with two blank lines following.  Also, the first paragraph is
+% indented (see \@afterindenttrue).
+%
+%               CHAPTER 1: MY FANCY TOPIC
+%
+%               1.2 My Fancy Topic Section
+%
+% use the UPPERCASE style.
+%
+
+%---------------------------------------------------------------------------
+% Pick ONE of the following:
+
+\newcommand\UNCCHeadingStyle[1]{\MakeUppercase{#1}}
+
+% Otherwise, leave it just as you typed it by uncommenting the following:
+\renewcommand\UNCCHeadingStyle[1]{#1}
+
+%---------------------------------------------------------------------------
+
+%
+% LaTeX note: We need to create a new chapter command because we need to
+% have the table of contents entry match (UPPERCASE) the heading in the text.
+% Be aware that we test for chapter 1 and
+% pick our page numbering style from that; it is the first arabically numbered page.
+
+%%
+%% \@chapapp  contains the word CHAPTER
+%% \thechapter contains the number of the chapter.
+%% #1 contains the chapter title.
+%% #2 contains the chapter title; yes, same as #1.
+%%
+%% Known issue: multiline in ToC, 
+%% In ToC, multiline title and its page No is required to be aligned with first line,
+%% the default setting in book class is with last line, 
+%% the tocloft package, book class default setting and babel, hyperref package 
+%% might all play a role there, some serious tweakings 
+\def\@chapter[#1]#2{\ifnum \c@secnumdepth >\m@ne
+                        \refstepcounter{chapter}%
+                        \typeout{\MakeUppercase{\@chapapp\space\thechapter.}}%
+
+                        \addcontentsline{toc}{chapter}%
+                                     {\protect\numberline{\MakeUppercase{\@chapapp~\thechapter: #1}}}%
+                    \else
+                      \addcontentsline{toc}{chapter}{#1}%
+                    \fi
+                    \chaptermark{#1}%
+%                    \addtocontents{lof}{\protect\addvspace{10\p@}}%
+%                    \addtocontents{lot}{\protect\addvspace{10\p@}}%
+                    \if@twocolumn
+                      \@topnewpage[\@makechapterhead{#2}]%
+                    \else
+                      \@makechapterhead{#2}%
+                      \@afterheading
+                    \fi}
+
+
+\def\@makechapterhead#1{%
+  {\parindent \z@ \raggedright \normalfont
+    \ifthenelse{\equal{\appendixname}{\@chapapp}}
+    {
+      % This is a numbered page.
+      % should be at 1 inch margin, already.
+      \thispagestyle{myheadings}
+    }
+    {
+      \vspace*{.625in}  % ideally, this should be 1 in.  But, for PDF or printers,
+                       % this is needed.  Measured directly, to get a 2 in margin.
+      \thispagestyle{empty}
+      \ifnum \value{chapter} = 1
+        \@ifundefined{@seenPageONE}{
+        \gdef\@seenPageONE{set}
+        \pagenumbering{arabic} % Resets the page counter to 1
+        \pagestyle{myheadings}
+      }
+      {}
+
+      \fi
+    }
+
+    \ifnum \c@secnumdepth >\m@ne
+
+%
+%           CHAPTER 1: MY FANCY TOPIC
+%
+    \centering  \normalsize \MakeUppercase{\@chapapp~\thechapter:}
+    \fi
+    \interlinepenalty\@M
+    \normalsize \MakeUppercase{ #1}\par\nobreak
+
+    \vspace*{3.75ex}  % Skip 2 single space lines, in the current font.
+  }}
+
+\def\@makeschapterhead#1{%
+  {\parindent \z@ \raggedright
+
+% The margin puts at 1 inch already.
+%
+% Any unnumbered chapters are probably 'Table of contents, Bib, etc' so they are
+% 3/4 inch from the top of the page.  So, conditionally, add 1 more inch for your own
+% un-numbered chapters that are part of your thesis text; See \bibname, \contentsname
+% \indexname, \listtablename, \listfigurename.
+%
+% Table of contents, list of figures, list of tables is handled via tocloft (at the \usepackage{tocloft} section).
+% Looks like each page is numbered.
+    \ifthenelse{\equal{\bibname}{#1}}{\thispagestyle{myheadings}\addcontentsline{toc}{chapter}{\bibname}}{}
+    \ifthenelse{\equal{\indexname}{#1}}{\thispagestyle{myheadings}}{}
+    \centering
+    \normalfont
+    \interlinepenalty\@M
+    \normalsize \UNCCHeadingStyle{ #1}
+    \par\nobreak
+    \vspace*{3.75ex}  % Skip 2 single space lines, in the current font.
+  }}
+
+
+%%\usepackage[rm,md,up,tiny,center,compact]{titlesec}
+%%\usepackage[dotinlabels]{titletoc}
+
+\usepackage{tocloft}
+
+% Remove the dots in TOC, LOF, LOT.
+\renewcommand{\cftdot}{}
+
+\renewcommand{\cftfigaftersnum}{:}
+\renewcommand{\cftfigpresnum}{\MakeUppercase{\figurename} }
+\renewcommand{\cftfignumwidth}{7em}
+\renewcommand{\cfttabaftersnum}{:}
+\renewcommand{\cfttabpresnum}{\MakeUppercase{\tablename} }
+\renewcommand{\cfttabnumwidth}{6em}
+
+% this modifies the section wrapping not the chapter one
+% is the depth of counter for chapter is wrong 
+%\renewcommand{\cftchapleader}{\cftdotfill{\cftdotsep}}
+%\cftsetrmarg{3cm}
+
+% Adjust the before/after skip values.
+% A single spaced lines is 1.5ex.
+% But, I had to measure the before_titleskip; need to move up .325 inches.
+
+% For TOC
+\setlength{\cftbeforetoctitleskip}{-.325in}
+\setlength{\cftaftertoctitleskip}{3.75ex}
+
+% For LOF
+\setlength{\cftbeforeloftitleskip}{-.325in}
+\setlength{\cftafterloftitleskip}{5.0ex}
+
+% For LOT
+\setlength{\cftbeforelottitleskip}{-.325in}
+\setlength{\cftafterlottitleskip}{5.0ex}
+
+% Adjust the left margin, slightly. Just 1/16''.
+\setlength{\cftfigindent}{0.0in}
+\setlength{\cfttabindent}{0.0in}
+
+% To center, you might think using \centering; it doesn't work.
+% You need to use the \hfill trick:
+\renewcommand{\cfttoctitlefont}{\hfill\UNCCHeadingStyle}
+\renewcommand{\cftloftitlefont}{\hfill\UNCCHeadingStyle}
+\renewcommand{\cftlottitlefont}{\hfill\UNCCHeadingStyle}
+\renewcommand{\cftaftertoctitle}{\hfill\thispagestyle{myheadings}}
+\renewcommand{\cftafterloftitle}{\hfill\thispagestyle{myheadings}\addcontentsline{toc}{chapter}{\listfigurename}}
+\renewcommand{\cftafterlottitle}{\hfill\thispagestyle{myheadings}\addcontentsline{toc}{chapter}{\listtablename}}
+
+%
+% Each entry font should not be bold.
+\renewcommand{\cftchapfont}{\normalfont}
+\renewcommand{\cftchappagefont}{\normalfont}
+
+\setlength{\cftbeforechapskip}{0in}
+\setlength{\cftbeforefigskip}{0in}
+\setlength{\cftbeforetabskip}{0in}
+
+\makeatother
+
+% Force footnotes to not split to the next page.
+\interfootnotelinepenalty=10000
