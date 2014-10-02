@@ -29,7 +29,7 @@
 \newtheorem{hypothesis}{Hypothesis}
 
 \usepackage{ifluatex}
-% Note: When switching the compiler, one should delete the .aux files.
+% Note: When switching the compiler, delete the .aux file.
 \ifluatex
 
 \usepackage{fontspec} % to compile with LuaLatex
@@ -77,7 +77,8 @@
 \usepackage{float} % for images
  \graphicspath{{./gallery/}} %--added by author
 
-\usepackage[font=small, labelfont=bf]{caption}
+\usepackage[font=small]{caption}
+%\usepackage[font=small, labelfont=bf]{caption}
 %\usepackage{subcaption} % for multi floats in figure or minipage environments
 
 % It supplies a landscape environment, and anything inside is basically rotated.(http://en.wikibooks.org/wiki/LaTeX/Page_Layout)
@@ -106,6 +107,7 @@
             hyperref=true,
             url=false,
             isbn=false,
+            doi=false,
             backref=true,
             maxcitenames=2,
             maxbibnames=4,
@@ -166,6 +168,7 @@ postbreak=\raisebox{0ex}[0ex][0ex]{\ensuremath{\color{red}\hookrightarrow\space}
 \usepackage[inline]{enumitem}
 \setlist{nolistsep} % or \setlist{noitemsep}
 %\setlist[1]{\labelindent=\parindent}
+
 %% -- links ---
 \usepackage{hyperref}
 \hypersetup{
@@ -186,5 +189,9 @@ urlcolor=black
 % when the glossaries packge add the index to TOC; 
 % it always tries to use acronym, which is probably the default name
 % However, this workaround may have pagenumbering issues for long list of abbre
-\usepackage[acronym,nonumberlist]{glossaries} % loaded after hyperref
+%\usepackage[acronym,nonumberlist]{glossaries} % loaded after hyperref
+\usepackage[acronym,toc,nonumberlist,nopostdot,nogroupskip]{glossaries} % loaded after hyperref
+
+%% http://tex.stackexchange.com/questions/30812/two-column-glossary
+%% http://tex.stackexchange.com/questions/197222/formatting-for-glossaries
 

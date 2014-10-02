@@ -1,5 +1,5 @@
-
-  \title{Controlled Growth and Property Measurement of One-dimensional Oxide Nanostructures for Energy Applications}
+  %\title{Controlled Growth and Property Measurement of One-dimensional Oxide Nanostructures for Energy Applications}
+  \title{Controlled growth and property measurement of one-dimensional oxide nanostructures for energy applications}
   \author{Tao Sheng}
   \university{The University of North Carolina at Charlotte}
   \location{Charlotte}
@@ -41,16 +41,16 @@ TBD.
 \listoftables
 \clearpage
 \listoffigures
-\begin{singlespace}
-%\thispagestyle{myheadings}
+
 \renewcommand{\glossarypreamble}{\thispagestyle{myheadings}}
 \renewcommand{\acronymname}{LIST OF ABBREVIATIONS}
-\glossarystyle{long}
-\printglossary[type=\acronymtype]
-\addcontentsline{toc}{chapter}{\acronymname}
-\clearpage
-\end{singlespace}
-%\listofabbre
+\glossarystyle{superborder}
+%\glsaddall
+\setlength{\glsdescwidth}{0.7\textwidth}
+\printglossary[type=\acronymtype, toctitle=\acronymname]
+
+%\addcontentsline{toc}{chapter}{\acronymname} this method has wrong page numbering for list of abb
+% more than one page; instead, use toc option when loading glossaries package, and specify % toctitle when printing it.
 
 
 \pagebreak{} 
