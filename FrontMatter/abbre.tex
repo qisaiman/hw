@@ -81,3 +81,20 @@
    name=ceramics,
    description={compounds often including oxides, nitrides and  carbides}}
 
+   \makeglossaries
+   
+
+\newglossarystyle{mysuper3col}{%
+  \renewenvironment{theglossary}%
+    {\tablehead{}\tabletail{}%
+     \begin{supertabular}{rp{0.1\textwidth}p{\glsdescwidth}}}%
+    {\end{supertabular}}%
+  \renewcommand*{\glossaryheader}{}%
+  \renewcommand*{\glsgroupheading}[1]{}%
+  \renewcommand*{\glossaryentryfield}[5]{%
+    \glstarget{##1}{##2} &  & ##3\\}%
+  \renewcommand*{\glsgroupskip}{}%
+}
+
+%% https://github.com/bhulliger/CRF/blob/master/doc/UserManual/glossary-super.sty
+%% 
