@@ -2,7 +2,10 @@
 \chapter{INTRO ON THE CONTROLLED GROWTH AND PROPERTIES MEASUREMENTS OF 1D NWS}
 \chaptermark{header version}
 
-\section{A LONG SECTION TITLE FOR TOC CONTENT LINE WRAPPING TEST TEST TEST A LONG SECTION TITLE FOR TOC CONTENT LINE WRAPPING TEST TEST TEST}
+\section{KK, optics modeling, doping}
+
+optical properties of \ce{WO3} gaps\cite{Saygin-Hinczewski2008}
+
 
 Concentration of charge carrier $n$ is related to gate voltage $V_g$ by:
 \[
@@ -12,12 +15,12 @@ where $\epsilon_r = \epsilon_0 \epsilon$ is dielectric constant of gate material
 
 intrinsic silicon equilibrium charge carrier concentration at RT is $n_i = p_i = 1.5 \times 10^{10} cm^{-3}$, much smaller than silicon atoms density as $5\times 10 ^{22} cm^{-3}$.
 
-The average distance between dopant atoms is cubed root of concentration, $d = (10^{18} cm^{-3})^{-1/3} = 10nm$.
+The average distance between dopant atoms is cubed root of concentration, $d = (10^{18})^{-1/3}$ \si{cm^{-3}}$^{-1/3}$ = 10 nm.
 
 The electron mobility $\mu_n = 1500 cm^2/V\cdot sec $ at RT for Si, and hole mobility $\mu_p = 450 cm^2/V\cdot sec$ at RT.
 
 for p-type silicon, when the conductivity $\sigma = 1 (ohm cm )^{-1}$, the doping level is
-$N_A = \frac{\sigma}{q \mu_p}= 1 / (1.6E-19 \times 450) = 1.4E16 cm^{-3}$.
+$N_A = \frac{\sigma}{q \mu_p}= 1 / (1.6E-19 \times 450)$ = 1.4E16 \si{cm^{-3}}.
 
 Built-in voltage $V_0 = \frac{kT}{q}ln(N_A N_D/n_i^2)$, depletion region width $W = \sqrt{\frac{2 \epsilon_{Si} V_0}{q}(1/N_A + 1/N_D)}$, where $\epsilon_{Si} = 11.7 \epsilon_0$. When applying external field, depletion width $W = \sqrt{\frac{2 \epsilon_{Si} (V_0 - V) }{q}(1/N_A + 1/N_D)}$
 
@@ -47,7 +50,7 @@ General CVD knowledge, substrate preparation, and\cite{MichealK.Zuraw2003}
 
 Solid and orderliness.
 
-Two theories arise to describe the outer shell electrons and to correlate the structure and physical properties: \gls{cft} and band theory.\cite{Goodenough1971} \gls{cft} assumes weak interaction between neighboring atoms and localization of electron towards parent atom, whereas band theory assumes that electron is shared equally by all nuclei and therefore a many-electron problems follows. Description of a single electron in periodic potential fail to treat the electron correlations adequately, as the interaction between atoms becomes weaker.For transition metals, $s$ and $p$ electrons are well described by a collective-electron model, while the 4f or 5f electrons are tightly bound to nuclei and screened from the neighboring atoms by 5s, 5p or 6s, 6p core electrons, hence it matches well with a localized-electron model. d electrons show intermediate character.
+Two theories arise to describe the outer shell electrons and to correlate the structure and physical properties: \gls{cft} and band theory.\cite{Goodenough1971} \gls{cft} assumes weak interaction between neighboring atoms and localization of electron towards parent atom, whereas band theory assumes that electron is shared equally by all nuclei and therefore a many-electron problems follows. Description of a single electron in periodic potential fail to treat the electron correlations adequately, as the interaction between atoms becomes weaker. For transition metals, $s$ and $p$ electrons are well described by a collective-electron model, while the 4f or 5f electrons are tightly bound to nuclei and screened from the neighboring atoms by 5s, 5p or 6s, 6p core electrons, hence it matches well with a localized-electron model. d electrons show intermediate character.
 
 
 \chapter{experimental}
@@ -227,11 +230,20 @@ In analytical practice, frequency is expressed in reciprocal wavelength (as cmâˆ
 \chapter{wo3}
 metal oxide contact on work function and band structure.\cite{Greiner2013}
 
+sodium tungsten bronzes, DRS from 335 nm to 1250 nm show \ce{Na_{0.3}WO3} exhibits absorption peak at about 650 nm.\cite{Brown1954} 
+
+oxygen deficiency, electron carrier con about $5\times10^{18}$ \si{cm^3}, absorption edge at 2.7 eV attributed allowed transition. absorption in infrared region observed but not rigorously resolved: donor level in the forbidden gap near VB, or thermally excited electrons in CB. Absorption increase when oxygen vacancy is created. Resistivity increase as heated up. \cite{Berak1970}
+
+A systematic study of optical and electrical properties of \ce{WO3} thin film.\cite{Deb1973} Film density 6.5 \si{g\per cm^3}, substantial porosity. \ce{WO3} become substoichiometric at 1300-1500 K, and evaporate at a composition near \ce{WO_{2.96}}. $K \propor (h\nu - E_g)^2/h\nu$, indicating an allowed band to band transition, and 3.25 eV energy gap determined thereby. Refractive index $\epsilon_{st}$ of thin film \ce{WO3} found at 2.2, lower than that of single crystal value of 2.5; $n$ increases to 4.0 at absorption edge region, with $\alpha$ as high as $10^5$ \si{cm^{-1}}. So the color center can form in a thin layer of 100 nm; its density estimated by the Smakula's Equation:
+\[
+Nf = 0.89\times10^17\frac{n}{(n^2+2)^2} \alpha d
+\]
+where $f$ osc strength, n ref index, $\alpha$ in \si{cm^{-1}}, and d is the half width of absorption band. Assuming $f$ = 1, N to be $5\times10^{19}$ \si{cm^3}. 
+Narrow conduction band proposed to explain the high energy peak at 4.39 eV and 5.25 eV. Impurity band when the ele wavefuntion overlap, the color center spacing comparable to lattice constant. 
+
 \citeauthor{Wang2009a} mentioned that amorphous \ce{WO3} can only be used in lithium-based electrolytes due to its in-compact structure and high dissolution rate in acidic electrolyte solutions. Electrochromic materials that can endure acidic electrolytes without degradation should be developed. Crystalline \ce{WO3} nanostructures with their much denser structures and small particle sizes are promising to be used as suitable electrochromic material in acidic electrolytes.
 
 Raman assignment of \ce{WO3}
-
-
 XRD assignment of \ce{WO3}
 
 raman assign
@@ -260,9 +272,43 @@ Raman shift (\si{cm^{-1}}) & Symmetry &  Ref.   & Remarks   \\
 vw-very weak; w-weak; m-medium; s-strong; vs-very strong
 \end{table}
 
-\ce{Na2W2O7} Raman. \cite{Knee1979}
 
-\ce{WO3}, \ce{WP3.H2O}\cite{Daniel1987}
+\begin{table}[htb]
+\centering
+\caption{Raman fingerprints of tungsten oxides and sodium tungsten compounds}\label{tab:woram2}
+\begin{tabular}{lp{3in}r}
+\toprule
+Name & Raman Shift (\si{cm^{-1}}) &  Ref   \\
+\midrule
+\ce{WO2}  & 287(s), 334(w), 514(m), 600(w), 621(w), 785(vs) & \cite{Ma2005} \\
+\ce{W18O49}  & broad bands from 750 to 780 & \cite{Guo2012} \\
+             &  267(s), 778(s), 969(m) & \cite{Liu2013d} \\
+m-\ce{WO3}  & 131(m), 265(m), 327(m), 715(s), 807(vs) &  \cite{Salje1975a,Daniel1987} \\
+h-\ce{WO3}  & 162(m), 253(m), 320(m), 645, 690(s), 817(vs) &  \cite{Daniel1987}\\
+\ce{WO3.H2O}  & 230(m), 377(w), 428(w), 650(s), 816(vs), 946(vs) &  \cite{Daniel1987} \\
+\ce{WO3.2H2O}  & 235, 268(m), 380(w), 662(s), 685(vs), 960(vs) & \cite{Daniel1987} \\
+\ce{Na2WO4}  & 94(w), 314(vw), 377(m), 813(m), 930(vs) &  \cite{Lima2011} \\
+\ce{Na2W2O7}  & 381(w), 422(w), 763(w), 835(s), 886(m), 948(m), 957(vs) &  \cite{Knee1979} \\
+\ce{Na4W4O13} & &\\
+\ce{Na5W14O44} & & this work
+\bottomrule
+\end{tabular}
+Materials in solid state, 
+vw-very weak; w-weak; m-medium; s-strong; vs-very strong
+\end{table}
+
+Nanoscale \ce{WO3} Raman.\cite{Boulova2002}
+
+\ce{WO3} and sub-wo3 conductivity vs temp. \cite{Sahle1983}
+
+
+oxygen vacancies in \ce{WO_{3-x}}.\cite{Wang2011b}  Coloration and electron conductivity changes. \citeauthor{Wang2011b} found strong dependence of WO3-x electronic properties on $V_O$ concentration and the the crystallographic direction on which O is removed. DFT band gap calculation is close to experimental value. Vacancy levels are found at 2.1eV.
+
+The Raman spectra of \ce{WO_x} is rare because of the difficulty of preparing pure suboxides phase and the strong shielding of \ce{WS2}. Yet it does exhibit distinct Raman spectra. \cite{Tenne2005} The 870 line is attributed to \ce{W3O8}.\cite{Hardcastle1995}
+
+Delichere1988coloured states
+
+\ce{W18O49} reflectivity, carrier density $1.87\times10^{22}$ \si{cm^{-3}}, quasi-free carrier reflection of Drude type, \cite{Brandt1981} 
 
 xrd assignment
 \begin{table}
@@ -294,14 +340,34 @@ xrd assignment
 
 The concept of polaron was first proposed by Landau in 1933. In ionic or highly polar crystals, such as II-VI semiconductors, alkali halides and transition metal oxides, the Coulomb interaction between a conduction electron and the lattice ions results in a strong electron-phonon coupling. A new quasi-particle, virtual phonon, can be defined corresponding to the effect of electron pulling nearby positive ions towards it and pushing nearby negative ions away. The electron and its virtual phonons, taken together, can be treated as a new composite particle, called an electron polaron; the hole polaron is defined analogously. \cite{Devreese1996}
 
-
 the electrical conductivity is given by $\sigma = n e \mu$, where $n$ is the density of free carriers, $\mu$ is their mobility and $e$ is electronic charge. The mobility is given by $\mu = e\tau/m^*$ with $\tau$ is carrier resistivity relaxation time and $m^*$ is the carrier effective mass.
 
 \section{ECD}
 
+carrier density estimation, the stoichiometry of tungsten bronze was calculation from the inserted charge by Faraday's Law. Na diffuses slower than H+, accumulating at the surface of wo3 film and preventing further intercalation.\cite{Dini1996}
+
+\[
+m = \frac{Q}{F} \frac{M}{z},
+\]
+where $m$ is the mass of substance at an electrode in gram, $Q$ is the total charge transferred; F is Faraday constant; $M$ is molar mass; $z$ is the valency number of ions. 
+
+
+The degree of \ce{H^+} intercalation, $x$, is determined by integrating cathodic current, and given by
+\begin{equation}
+x = \frac{Q}{F}\frac{M_\ce{WO3}}{m_f}
+\end{equation}
+where $m_f$ is the mass of film, $M_\ce{WO3}$ is the molar mass of \ce{WO3*1/3H2O}, and F is Faraday's constant. 
+The color center density, $c$, is then obtained using formula
+\begin{equation}
+c= \frac{x \rho N_A}{M_\ce{WO3}}
+\end{equation}
+where $N_A$ is Avogadro number, $\rho$ is density of film.
+
+During the test of ECD, constant current source is often used. The total charge $Q$ is then $It$. Charge density, the diffusion of \ce{Na+}, 
+
 Characterization of ECD (work like a thin-film batteries) includes transmission measurement and associated EC calculation, charge-discharge time, current-time curve and the fitting of obtained data.
 
-The coloration efficiency (CE) represents the change in the optical density (OD) per unit charge density ($Q/A$, in units of \si{\cm^2\per\coulomb}) during switching and can be calculated according to the formula:
+The coloration efficiency (CE) represents the change in the optical density (OD) per unit charge density ($Q/A$ in unit of \si{\coulomb}\per\cm^2) during switching and can be calculated according to the formula:
 \begin{equation}
 CE = \frac{\Delta~OD}{(Q/A)} [cm^2/C],
 \end{equation}
@@ -312,29 +378,15 @@ t_s = \Delta~OD\cdot A \cdot R /(CE\cdot U_s).
 \end{equation}
 
 
-The degree of \ce{H^+} intercalation, $x$, is determined by integrating cathodic current, and given by
-\begin{equation}
-x = \frac{Q}{F}\frac{M_\ce{WO3}}{m_f}
-\end{equation}
-where $m_f$ is the mass of film, $M_\ce{WO3}$ is the molar mass of \ce{WO3*1/3H2O}, and F is Faraday's constant.
-The color center density, $c$, is then obtained using formula
-\begin{equation}
-c= \frac{x M_\ce{WO3}N_A}{\rho}
-\end{equation}
-where $N_A$ is Avogadro number, $\rho$ is density of film.
-
-
 battery and ECD.\cite{Granqvist2012} electrolyte: PVB (poly vinyl buteral).
 alternative materials and design: organic, Prussian Blue as EC materials, metal hydrides, suspended particle device, liquid crystal, electroplating,
 challenges: large area nanoporosity, transparent conducting contact, electrolyte with good ionic conductivity and poor electronic conductivity, stable under UV; assembly and large scale manufacturing;
 cathodic coloration:
 anodic coloration:
-The coloration mechanism: \ce{MO6} octahedrons lead to $e_g$ and $t_{2g}$ level and ion channelling.
+The coloration mechanism: \ce{MO6} octahedrons lead to $e_g$ and $t_{2g}$ level and ion channeling.
 ref54,60,65,66,200,209,
 
-
 \ce{WO3} as cathodic and either polyaniline(PANI) or Prussian white (PW) as anodic electrochromic half cells. \cite{Heckner2002}
-
 
 \begin{table}[htb]
 \caption{Combinations of ECD configuration}\label{tb:ecd}
@@ -363,12 +415,9 @@ $\lambda$ & $\Delta T$ & $t_c$ & $t_b$ & $CE$  \\
 \end{tabular}
 \end{table}
 
-
-
 \begin{quote}
 a viable electrochromic smart window must exhibit a cycling life time \textgreater $10^5$ cycles, corresponding to an operation life at 10 -- 20 years.
 \end{quote}
-
 
 \citeauthor{Sella1998} studied the optical and structural properties of RF sputtered thin film of \ce{WO3} and \ce{VO2} for electrochromic devices. Ionic conductor was built using transparent polymer electrolyte, which was prepared from a solution of 1 M \ce{LiClO4} in propylene carbonate which was mixed with methylmetharcylate (MMA). The main characteristics of polymer electrolyte were: viscosity at 25 \si{\degreeCelsius} $\approx$ 12920 Pa.s, conductivity $\approx 10^{-2}-10^{-4}$ \si{\per\ohm\per cm},non-hygroscopic if PMMA concentration \textgreater 30\%. A specific counter-electrode layer was not used since the encapsulated polymer electrolyte processes a very high ion storage capacity.\cite{Sella1998}
 
@@ -457,9 +506,7 @@ Nanotube growth is relatively independent of substrates and FL layer is closely 
 Raman conditions: 0.3 mW, 532 nm, 200 sec acquisition time. photon flux = $0.3E-3\times6.242E+18/1.2398/0.532=2.84E15$
 
 first demonstration of \ce{WS2} NT n-type FET. \cite{Levi2013}
-the importance of contact, and avoiding moisture. 
-
-The calculated carrier concentration is about $10^{19}cm^{-3}$, a highly doped semiconductor, possibibly arising from sulfur vacancy. 
+the importance of contact, and avoiding moisture. The calculated carrier concentration is about $10^{19}cm^{-3}$, a highly doped semiconductor, possibly arising from sulfur vacancy. 
 
 \ce{WS2} absorption coefficient $10^{-7}m^{-1}$, mean free path of photo-excited charge carriers 1 $\mu m$. the wave vector of photon is considerably small than size of BZ, therefore The wave vector of phonon in Raman scattering usually close to zero.
 
@@ -614,7 +661,7 @@ A typical value of $K_D$ is 3970 1/M. A quadratic equation can be solved to obta
 2K_D [MB]^2 + [MB] - [MB]_{total} = 0
 \]
 MB adsorption on metal oxides. Monomer size is less than 1.5nm.
-Logarithmic acid dissociation constant $pK_a= -\log_10 \frac{[A^-][H^+]}{[HA]}$. The oxidation potential for \ce{H2O}-\ce{O2} couple is 1.23V and 0.817V versus NHE at pH 0 and pH 7, respectively.
+Logarithmic acid dissociation constant $pK_a= -\log_10 \frac{[A^-][H^+]}{[HA]}$. The oxidation potential for \ce{H2O}-\ce{O2} couple is 1.23 V and 0.817 V versus NHE at pH 0 and pH 7, respectively.
 
 %\begin{align}
 %\cee{MB + SED &->[TiO2][h\nu \leq 3.2eV] LMB + SED^{2+}\\
@@ -646,9 +693,7 @@ MB. \cite{Lee2003a}
 
 \section{literature to read}
 
-
 \ce{WS2} 1L doping calculation. \cite{Ma2011}
-
 
 electrochromic films. \cite{Yoshimura1985}
 ECD \cite{Jiao2012} recent review \cite{Mortimer2011}
@@ -659,8 +704,6 @@ WO3 photoactivity MB. \cite{Watcharenwong2008}
 WO3 plasmon \cite{Manthiram2012}
 
 \ce{WO3} indirect gap 2.6eV, direct gap 3.4eV. \cite{Koffyberg1979}
-
-Raman fingerprint of m-\ce{WO3}, h-\ce{WO3} and \ce{WO3.nH2O} were summarized in ref\cite{Daniel1987}.
 
 \ce{WO3} on FTO by flame synthesis.\cite{Rao2014} \cite{Xu2006}
 
@@ -675,11 +718,7 @@ Seeded \ce{W_{18}O_{49}} NWs growth on W foil.\cite{Hong2006a}
 \ce{WO_{3-x}} \cite{Migas2010}
 
 \ce{WO3} high temperature phase. \cite{Vogt1999}
-tungsten bronzes \cite{Wiseman1976}
 
-Phase transformation of \ce{Na2MoO4} and \ce{Na2WO4} by Raman scattering. \cite{Lima2011}
-
-\ce{WO2} NWs synthesis and raman \cite{Ma2005}.
 
 \ce{WO_{3-x}} CS planes and conductivity.\cite{Sahle1983}
 
@@ -691,16 +730,11 @@ nucleation catalysis \cite{Turnbull1952}
 
 \ce{WO3} NWs aggregates. \cite{Kozan2008a}
 
-optical properties of \ce{WO3} gaps\cite{Saygin-Hinczewski2008}
-
 \ce{WO3} atomic layer by exfoliation and annealing \ce{WO3.H2O}. \cite{Kalantar-zadeh2010a}
 
-sodium tungstates raman \cite{Redkin2010}
+
 
 charge density wave in K-doped \ce{WO3} \cite{Raj2008}
-
-\ce{W_{18}O_{49}} Raman, IR shielding.\cite{Guo2012} \cite{Guo2011}
-broad peak between 750-780 cm-1.
 
 \ce{WnO_{3n-1}} NPs. \cite{Frey2001}
 
@@ -711,7 +745,12 @@ broad peak between 750-780 cm-1.
 Cathodoluminescence \cite{Parish2007}
 
 optical characterization of WOx film.\cite{Valyukh2010a}
+homogeneous optical properties of \ce{WO3} film,\cite{Valyukh2010a} 
 
+Tungsten bronze: \ce{AxWO3}, or \ce{AxW_{1-x}^{6+}W_x^{5+}O3}, 
+Tungstates: \ce{(A2O)x.(WO3)n}, full oxidized, no free electron, transparent in visible and NIR. 
+
+============================
 E-beam penetration \cite{Kanaya2002}
 
 optics in electron microscopy. \cite{GarciadeAbajo2010a}
@@ -802,6 +841,16 @@ magnetic properties of ws2.\cite{Zhang2013j}
 
 \section{literature read}
 
+\ce{W_{18}O_{49}} Raman, IR shielding.\cite{Guo2012} \cite{Guo2011}
+broad peak between 750-780 cm-1.
+\ce{Na2W2O7} Raman. \cite{Knee1979}
+Raman fingerprint of m-\ce{WO3}, h-\ce{WO3} and \ce{WO3.nH2O} were summarized in ref\cite{Daniel1987}.
+Phase transformation of \ce{Na2MoO4} and \ce{Na2WO4} by Raman scattering. \cite{Lima2011}
+sodium tungstates solution compounds Raman \cite{Redkin2010}
+\ce{WO2} NWs synthesis and raman \cite{Ma2005}
+tungsten bronzes \cite{Wiseman1976}
+
+
 
 To develop large-size single-crystal graphene on dielectric substrates. small carbon flow near-equilibrium CVD process. Grain size about 10 microns, precursor \ce{CH4} and \ce{H2} (ratio 2.3:50) at 1180 C. \ce{SiO2}-Si surface roughness. Although the growth substrates (quartz,\ce{SiO2}-Si and \ce{Si3N4}-\ce{SiO2}-Si ) have a complicated stereo network similar to diamond, regular hexagonal G growth is obtained, which indicates the deposition is determined by equilibrium kinetics, and this should be applicable to other 2D materials as well. I2D/IG exceeds two on \ce{SiO2}-Si subs (514.5nm), indicating monolayer G. armchair (AC) G edge grows faster than zigzag (ZZ) edge.\cite{Chen2013j}
 
@@ -821,10 +870,6 @@ $\epsilon = (a - a_0)/a_0$ =(6.4-6.16)/6.16 = 3.8\%. tensile strain ($\epsilon >
 
 DFT doped \ce{WO3} for photocatalytic reaction.\cite{Wang2012} CBM arises from W $5d$ states and splits into $t_{2g}$ and $e_g$ states under crystal field. VBM comes from O $2p$ states, including $2p_\sigma$ (along \ce{W-O} bonds) and $2p_\pi$ (normal to \ce{W-O} bonds).
 
-
-oxygen vacancies in \ce{WO_{3-x}}.\cite{Wang2011b}  Coloration and electron conductivity changes. \citeauthor{Wang2011b} found strong dependence of WO3-x electronic properties on $V_O$ concentration and the the crystallographic direction on which O is removed. DFT band gap calculation is close to experimental value. Vacancy levels are found at 2.1eV.
-
-The Raman spectra of \ce{WO_x} is rare because of the difficulty of preparing pure suboxides phase and the strong shielding of \ce{WS2}. Yet it does exhibit distinct Raman spectra. \cite{Tenne2005} The 870 line is attributed to \ce{W3O8}.\cite{Hardcastle1995}
 
 
 \citeauthor{Huang2006} studied the \ce{W3On} cluster with n from 7 to 10.\cite{Huang2006} It was found \ce{W3O9} clusters possess a HOMO-LUMO gap about 3.4eV. This closeness to bulk value suggests \ce{W3O9} could be viewed as the smallest molecular unit for bulk \ce{WO3}.
@@ -857,7 +902,6 @@ Electrons and Phonons in Layered Crystal Structures, edited by T. J. Wieting (Re
 Electronic structure of \ce{MoS2}.\cite{Eknapakul2014} K intercalating into bulk to create quasi-standing 1L. Large effective mass 0.6 $m_e$ found, implying low mobility. Direct gap 1.88eV is measured.
 
 Self-assembled monolayer (SAM) on \ce{SiO2} and its effect on \ce{MoS2} 1L.\cite{Najmaei2014}
-
 
 \citeauthor{Shi2013} studied the strained monolayer \ce{MoS2} and \ce{WS2}. The results show that exciton binding energy is insensitive to the strain, while optical band gap becomes smaller as strain increases. Monolayer \ce{WS2} PL maximum located at about 1.95 eV. Calculation shows the electron effective mass of \ce{WS2} is the smallest, rendering higher mobility in device.\cite{Shi2013}
 
