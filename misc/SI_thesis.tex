@@ -4,7 +4,62 @@
 
 \section{KK, optics modeling, doping}
 
+how to show the crystalline TMO is better than amorphous thin film counterparts.
+
+In comparison to oxides thin films, 1D \gls{tmo} nanostructures (e.g., nanowires) have following advantages to improve the response speed and enhance the coloration efficiency: (1) With reduced diameters down to nanometer scale, the distance for ion diffusing into and out of the nanowires is significantly shortened. (2) The gap between nanowires always provides channels for fast ion diffusion outside the nanowires. (3) The large surface area to bulk volume ratio of nanowires is desired to improve the overall usage of material, which results in enhanced the contrast between colored and bleached states. Furthermore, doped with certain metals (such as Ti and Ag), the crystalline structure of the TMO nanowires can be modified with enhanced electrochromic properties.\cite{Xiong2008}
+
 optical properties of \ce{WO3} gaps\cite{Saygin-Hinczewski2008}
+
+soda lime glass. thermal radiative transfer through windows, \cite{Rubin1985} \ce{FeO} absorb infrared, and \ce{Fe2O3} in ultraviolet,  
+
+The phase of amplitude reflection coeffs
+\[
+\phi(\omega) = \frac{1}{2\pi} \int_0^\infty \frac{d\log r}{d\omega'}\log(abs(\frac{\omega' + \omega}{\omega' - \omega}))d\omega'
+\]
+
+two python projects available, KKcalc\cite{Watts2014} and hyperSpy. 
+http://www1.univap.br/gaa/nkabs-database/data.htm
+
+KK relations in optical materials research. 
+\begin{align}
+N(\omega) &= [N(-\omega)]^* \\
+N(\omega) - 1 &\approx -\frac{\omega_p^2}{2\omega^2}\\
+r(\omega) = \frac{N(\omega)-1}{N(\omega)+1} &= \frac{n-1+ik}{n+1+ik}\\
+r(\omega) &= |r(\omega)| \exp[i\theta(\omega)]\\
+\log r(\omega) &= \log|r(\omega)| + i\theta(\omega)
+\end{align}
+
+phase retrieval, 
+Principal value:
+\[
+P\cdot\int_0^\infty f(x)dx = \lim_{\delta\rightarrow 0} (\int_0^{a-\delta} f(x)dx + \int_{a+\delta}^\infty f(x)dx)
+\]
+
+Maclaurin methodology, \cite{Rocha2014}. The singularity, 
+
+\[
+\nu_1, \nu_2, \nu_3, \ldots, \nu_m;\\
+k_1,k_2,
+\]
+
+\[
+n(\nu) = n_0 + 2/\pi \int_{\nu_1}^{\nu_2} \frac{\nu' k(\nu')}{\nu'^2 - \nu^2} d\nu'
+\]
+discretized as
+
+\[
+I_i = n_0 + 2/\pi \times 2h \times \sum_j f_j,
+\]
+where
+\[
+f_j = 0.5*k_j (\frac{1}{\nu_j - \nu_i} + \frac{1}{\nu_j + \nu_i})
+\]
+
+dispersive and dissipative mode, sum rules given. \cite{King1979}
+\[
+F(\omega) = \frac{\log r(\omega)}{\omega + i\omega'}
+\]
+
 
 
 Concentration of charge carrier $n$ is related to gate voltage $V_g$ by:
@@ -234,12 +289,26 @@ sodium tungsten bronzes, DRS from 335 nm to 1250 nm show \ce{Na_{0.3}WO3} exhibi
 
 oxygen deficiency, electron carrier con about $5\times10^{18}$ \si{cm^3}, absorption edge at 2.7 eV attributed allowed transition. absorption in infrared region observed but not rigorously resolved: donor level in the forbidden gap near VB, or thermally excited electrons in CB. Absorption increase when oxygen vacancy is created. Resistivity increase as heated up. \cite{Berak1970}
 
-A systematic study of optical and electrical properties of \ce{WO3} thin film.\cite{Deb1973} Film density 6.5 \si{g\per cm^3}, substantial porosity. \ce{WO3} become substoichiometric at 1300-1500 K, and evaporate at a composition near \ce{WO_{2.96}}. $K \propor (h\nu - E_g)^2/h\nu$, indicating an allowed band to band transition, and 3.25 eV energy gap determined thereby. Refractive index $\epsilon_{st}$ of thin film \ce{WO3} found at 2.2, lower than that of single crystal value of 2.5; $n$ increases to 4.0 at absorption edge region, with $\alpha$ as high as $10^5$ \si{cm^{-1}}. So the color center can form in a thin layer of 100 nm; its density estimated by the Smakula's Equation:
+A systematic study of optical and electrical properties of \ce{WO3} thin film.\cite{Deb1973} Film density 6.5 \si{g\per cm^3}, substantial porosity. \ce{WO3} becomes substoichiometric at 1300-1500 K, and evaporate at a composition near \ce{WO_{2.96}}. $K \propto (h\nu - E_g)^2/h\nu$, indicating an allowed band to band transition, and 3.25 eV energy gap determined thereby. Refractive index $\epsilon_{st}$ of thin film \ce{WO3} found at 2.2, lower than that of single crystal value of 2.5; $n$ increases to 4.0 at absorption edge region, with $\alpha$ as high as $10^5$ \si{cm^{-1}}. So the color center can form in a thin layer of 100 nm; its density estimated by the Smakula's Equation:
 \[
 Nf = 0.89\times10^17\frac{n}{(n^2+2)^2} \alpha d
 \]
 where $f$ osc strength, n ref index, $\alpha$ in \si{cm^{-1}}, and d is the half width of absorption band. Assuming $f$ = 1, N to be $5\times10^{19}$ \si{cm^3}. 
 Narrow conduction band proposed to explain the high energy peak at 4.39 eV and 5.25 eV. Impurity band when the ele wavefuntion overlap, the color center spacing comparable to lattice constant. 
+
+
+polycrystalline \ce{WO3} film reflectivity in NIR.\cite{Goldner1983} tentatively,  $E_p$ 4.07 eV was obtained by $R$ fitting using Drude model. 
+
+T and R data on ECD. \cite{OBrien1999}
+
+ECD wo3 NW for fast response time. \cite{Liao2006a}
+
+
+exhibits electrochromic functionality. reversible, recoverable, electrochromism, 
+coloration efficiency, the doping amount, 
+ion mobility is the bottleneck, 
+The optical properties modification in EC materials is related to the electron density difference. 
+
 
 \citeauthor{Wang2009a} mentioned that amorphous \ce{WO3} can only be used in lithium-based electrolytes due to its in-compact structure and high dissolution rate in acidic electrolyte solutions. Electrochromic materials that can endure acidic electrolytes without degradation should be developed. Crystalline \ce{WO3} nanostructures with their much denser structures and small particle sizes are promising to be used as suitable electrochromic material in acidic electrolytes.
 
@@ -247,30 +316,7 @@ Raman assignment of \ce{WO3}
 XRD assignment of \ce{WO3}
 
 raman assign
-\begin{table}[htb]
-\centering
-\caption{Symmetry assignment of \ce{WO3}}\label{tab:woram}
-\begin{tabular}{cccc}
-\toprule
-Raman shift (\si{cm^{-1}}) & Symmetry &  Ref.   & Remarks   \\
-\midrule
-131(m)   & $B_{2g}$    &           & $T_c$    \ce{WO3} \\
-265(m)   & $B_{3g}$    &           & $T_c$    \\
-327(m)   & $A_g/B_{1g}$&           & $T_b$   \\
-711(s)     & $B_{2g}$    & $\tau$    &          \\
-803(vs)     & $A_g$       &           & $R_c$    \\
-\midrule
-230(m)   & $B_{3g}$     & $\delta$ & \ce{O=Mo=O}  \ce{WO3.H2O} \\
-380(w)   & $B_{1g}$     & $\delta$ & \ce{O-Mo-O}  & scissor  \\
-428(w)   & $A_g$        & $\nu_{as}$ & \ce{O-Mo-O}  & stretch,bend  \\
-650(s)  & $B_{2g},B_{3g}$ & $\nu_{as}$  & \ce{O-Mo-O}  & stretch  \\
-816(vs)   & $A_g$        & $\nu_{as}$  & \ce{O=Mo}  & stretch  \\
-946(vw)      & $A_g$         & $\nu_{as}$  & \ce{O=Mo}  & stretch  \\
-\bottomrule
-\end{tabular}
 
-vw-very weak; w-weak; m-medium; s-strong; vs-very strong
-\end{table}
 
 
 \begin{table}[htb]
@@ -289,8 +335,8 @@ h-\ce{WO3}  & 162(m), 253(m), 320(m), 645, 690(s), 817(vs) &  \cite{Daniel1987}\
 \ce{WO3.2H2O}  & 235, 268(m), 380(w), 662(s), 685(vs), 960(vs) & \cite{Daniel1987} \\
 \ce{Na2WO4}  & 94(w), 314(vw), 377(m), 813(m), 930(vs) &  \cite{Lima2011} \\
 \ce{Na2W2O7}  & 381(w), 422(w), 763(w), 835(s), 886(m), 948(m), 957(vs) &  \cite{Knee1979} \\
-\ce{Na4W4O13} & &\\
-\ce{Na5W14O44} & & this work
+\ce{Na2W4O13} & &\\
+\ce{Na5W14O44} & & this work\\
 \bottomrule
 \end{tabular}
 Materials in solid state, 
@@ -306,7 +352,7 @@ oxygen vacancies in \ce{WO_{3-x}}.\cite{Wang2011b}  Coloration and electron cond
 
 The Raman spectra of \ce{WO_x} is rare because of the difficulty of preparing pure suboxides phase and the strong shielding of \ce{WS2}. Yet it does exhibit distinct Raman spectra. \cite{Tenne2005} The 870 line is attributed to \ce{W3O8}.\cite{Hardcastle1995}
 
-Delichere1988coloured states
+Delichere1988 coloured states
 
 \ce{W18O49} reflectivity, carrier density $1.87\times10^{22}$ \si{cm^{-3}}, quasi-free carrier reflection of Drude type, \cite{Brandt1981} 
 
@@ -367,7 +413,7 @@ During the test of ECD, constant current source is often used. The total charge 
 
 Characterization of ECD (work like a thin-film batteries) includes transmission measurement and associated EC calculation, charge-discharge time, current-time curve and the fitting of obtained data.
 
-The coloration efficiency (CE) represents the change in the optical density (OD) per unit charge density ($Q/A$ in unit of \si{\coulomb}\per\cm^2) during switching and can be calculated according to the formula:
+The coloration efficiency (CE) represents the change in the optical density (OD) per unit charge density ($Q/A$ in unit of \si{\coulomb \per cm^2} during switching and can be calculated according to the formula:
 \begin{equation}
 CE = \frac{\Delta~OD}{(Q/A)} [cm^2/C],
 \end{equation}

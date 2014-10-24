@@ -98,6 +98,8 @@
 
 %------- bibliography and citation ------
 
+%%http://tex.stackexchange.com/questions/32930/is-it-possible-to-suppress-a-specific-field-from-bibtex-bbl-in-biblatex
+%%
 
 \usepackage[style=numeric-comp,
 		    sorting=nty,
@@ -109,9 +111,17 @@
             maxcitenames=2,
             maxbibnames=4,
             block=none,
-            backend=bibtex,
+            backend=biber,
             natbib=true]{biblatex}
 % \usepackage[bibencoding=latin1]{biblatex}
+\DeclareSourcemap{
+    \maps[datatype=bibtex]{
+        \map{
+            \step[fieldset=abstract,null]
+        }
+    }
+}
+
 
 \DefineBibliographyStrings{english}{%
     backrefpage  = {see p.}, % for single page number
@@ -180,7 +190,7 @@ urlcolor=black
 % pdfstartview:
 \hypersetup{pdfstartview={XYZ null null 1.00}}
 %http://tex.stackexchange.com/questions/128879/defined-acronymname-is-not-used-in-toc-but-the-standard-acronyms-why
-\usepackage[acronym]{glossaries} % loaded after hyperref
+\usepackage[acronym,toc,nonumberlist,nopostdot,nogroupskip]{glossaries} % loaded after hyperref
 \renewcommand{\acronymname}{LIST OF ABBREVIATIONS}
 
 \iffalse

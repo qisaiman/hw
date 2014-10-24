@@ -1,0 +1,100 @@
+   \newacronym{ald}{ALD}{atomic layer deposition}
+   \newacronym{afm}{AFM}{atomic force microscopy}
+   
+   \newacronym{bse}{BSE}{backscattering electron}
+   
+   \newacronym{cvd}{CVD}{chemical vapor deposition}
+   \newacronym{ccd}{CCD}{charge coupled device}
+   \newacronym{cft}{CFT}{crystal-field theory}
+   \newacronym{cnt}{CNT}{carbon nanotube}
+   \newacronym{cb}{CB}{conduction band}
+   \newacronym{cbm}{CBM}{conduction band minimum}
+   \newacronym{cs}{CS}{crystallographic shearing}
+   \newacronym{cl}{CL}{cathodoluminescence}
+   \newacronym{cdw}{CDW}{charge density wave}
+   \newacronym{cbed}{CBED}{convergent electron beam diffraction}
+   
+   \newacronym{dp}{DP}{diffraction pattern}
+   \newacronym{drs}{DRS}{diffuse reflection spectroscopy}
+   
+   \newacronym{ecd}{ECD}{electrochromic device}
+   \newacronym{ec}{EC}{electrochromic}
+   \newacronym{ebeam}{E-beam}{electron beam}
+   \newacronym{eels}{EELS}{electron energy loss spectroscopy}
+   \newacronym{edx}{EDX}{Energy Dispersive X-ray Spectroscopy}
+   
+   \newacronym{fl}{FL}{few-layer}
+   \newacronym{fet}{FET}{field effect transistor}
+   \newacronym{fwhm}{FWHM}{full width at half maximum}
+   
+   \newacronym{her}{HER}{hydrogen evolution reaction}
+   
+   \newacronym{hrtem}{HRTEM}{high resolution TEM}
+   
+   \newacronym{kmt}{KMT}{Kubelka-Munk theory}
+   
+   \newacronym{ml}{ML}{mono-layer}
+   \newacronym{mwnt}{MWNT}{multiple-walled nanotube}
+   \newacronym{mfp}{MFP}{mean free path}
+   
+   \newacronym{np}{NP}{nanoparticle}
+   \newacronym{nw}{NW}{nanowire}
+   \newacronym{nhe}{NHE}{normal hydrogen electrode}
+   \newacronym{nni}{NNI}{National Nanotechnology Initiative}
+   
+   \newacronym{pmma}{PMMA}{Poly[methylmethacrylate]}
+   \newacronym{pdms}{PDMS}{polydimethylsiloxane}
+   \newacronym{pl}{PL}{photoluminescence}
+   \newacronym{pec}{PEC}{photoelectrochemical}
+   \newacronym{pvd}{PVD}{physical vapor deposition}
+   
+   \newacronym{sem}{SEM}{Scanning Electron Microscopy}
+   \newacronym{se}{SE}{secondary electron}
+   \newacronym{sers}{SERS}{surface-enhanced Raman scattering}
+   \newacronym{saed}{SAED}{selected area electron diffraction}
+   \newacronym{swnt}{SWNT}{single-walled nanotube}
+   \newacronym{sccm}{sccm}{standard cubic centimeters per minute}
+   
+   \newacronym{tmo}{TMO}{transition metal oxide}
+   \newacronym{tmdc}{TMDC}{transition metal dichalcogenide}
+   \newacronym{tem}{TEM}{Transmission Electron Microscopy}
+   
+   \newacronym{vb}{VB}{valence band}
+   \newacronym{vbm}{VBM}{valence band maximum}
+   \newacronym{vs}{VS}{vapor-solid}
+   \newacronym{vls}{VLS}{vapor-liquid-solid}
+   \newacronym{vss}{VSS}{vapor-solid-solid}
+   
+   \newacronym{xrd}{XRD}{X-ray Diffraction}
+   \newacronym{zzz}{ZZZZZZZZZZZZZZZZ}{X-ray Diffraction}
+   
+
+   \newglossaryentry{electrochromic}{
+   name=electrochromic,
+   description={a phenomenon that materials be colored with positive voltage and bleached with reverse voltage}}
+
+   \newglossaryentry{nanotechnology}{
+   name=nanotechnology,
+   description={is science, engineering, and technology conducted at the nanoscale, which is about 1 to 100 nanometers.}}
+
+   \newglossaryentry{ceramics}{
+   name=ceramics,
+   description={compounds often including oxides, nitrides and  carbides}}
+
+   \makeglossaries
+   
+
+\newglossarystyle{mysuper3col}{%
+  \renewenvironment{theglossary}%
+    {\tablehead{}\tabletail{}%
+     \begin{supertabular}{rp{0.1\textwidth}p{\glsdescwidth}}}%
+    {\end{supertabular}}%
+  \renewcommand*{\glossaryheader}{}%
+  \renewcommand*{\glsgroupheading}[1]{}%
+  \renewcommand*{\glossaryentryfield}[5]{%
+    \glstarget{##1}{##2} &  & ##3\\}%
+  \renewcommand*{\glsgroupskip}{}%
+}
+
+%% https://github.com/bhulliger/CRF/blob/master/doc/UserManual/glossary-super.sty
+%% 
