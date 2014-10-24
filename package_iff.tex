@@ -117,7 +117,13 @@
 %bibencoding=latin1 error.
 % safeinputenc : still error 
 % bibencoding=ascii, error 
-
+\DeclareSourcemap{
+    \maps[datatype=bibtex]{
+        \map{
+            \step[fieldset=abstract,null]
+        }
+    }
+}
 \DefineBibliographyStrings{english}{%
     backrefpage  = {see p.}, % for single page number
     backrefpages = {see pp.} % for multiple page numbers
@@ -168,6 +174,7 @@ postbreak=\raisebox{0ex}[0ex][0ex]{\ensuremath{\color{red}\hookrightarrow\space}
 \usepackage[inline]{enumitem}
 \setlist{nolistsep} % or \setlist{noitemsep}
 %\setlist[1]{\labelindent=\parindent}
+\usepackage{mdframed}
 
 %% -- links ---
 \usepackage{hyperref}
