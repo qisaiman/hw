@@ -1,0 +1,74 @@
+
+\gls{fl} materials attracts intensive research efforts recently. This study also made some efforts using liquid exfoliation method to prepare \gls{fl} \ce{MoO3}. The exfoliated \ce{MoO3} was characterized using UV-Vis and TEM. The optical contrast of \gls{fl} \ce{MoO3} on \ce{SiO2}-Si is also calculated, which could serve as a guideline to identify \gls{fl} \ce{MoO3} using optical microscope.
+
+The exfoliation solution is 30\% isopropanol (IPA) in DI water, which has been proved to work well on other layered compounds.\cite{Halim2013} After 20 min sonication, the dispersion appears milky. The transmission spectra of this dispersion immediately upon sonication and after 40 h of gravity sedimentation were measured and compared in Fig.~\ref{fig:moabs}. The t0 line mainly arise from the scattering of flakes in the dispersion. There are two scattering mechanisms: Rayleigh scattering and Tyndall scattering. Rayleigh scattering, which occurs when particles are comparable to wavelength, is inversely proportional to the fourth power of wavelength; while Tyndall scattering, which occurs when the particles are larger, is inversely proportional to the square of the wavelength. To fully evaluate the true absorbance of the sample itself, one needs to decouple the scattering part from apparent absorbance. Generally, one part of spectrum away from absorption edge is selected and assumed it is only caused by scattering. Then an empirical dependence shown in Eq.~\ref{eq:sca2} is used in the polynomial fitting model.
+
+\begin{align}
+Abs_{sca}  & = a\times \lambda^{n}  \label{eq:sca1}\\
+\log{Abs_{sca}} & = \log{a} + n*\log{\lambda} \label{eq:sca2}
+\end{align}
+
+After least-squares fitting, the coefficients $a$ and $n$ can be used to estimated the scattering in other wavelengths. The fitting of $n$ usually falls between -2 and -4. The author examined the t40h line in Fig.~\ref{fig:moabs} and found the scattering part is almost zero. Therefore no scattering fitting was performed.
+
+\begin{figure}[htb]
+\centering
+\subfloat[]{\label{fig:moabs}\includegraphics[width=0.45\textwidth]{MoO3-abs}}\hspace{0.04\textwidth}
+\subfloat[]{\label{fig:mobg}\includegraphics[width=0.45\textwidth]{MoO3-bg}}
+\caption[UV-Vis spectra of exfoliated \ce{MoO3}]{UV-Vis spectra of exfoliated \ce{MoO3}. (a) UV-Vis absorbance spectra of exfoliated \ce{MoO3}. Dashed line (t0) represents measurement immediately after sonication, and solid line (t40h) is obtained after sitting for 40 h. The dot dashed line is reference spectrum of the 30\% IPA. (b) Band gap estimation}
+\label{fig:mouv}
+\end{figure}
+
+According to the corrected absorbance spectrum, optical bandgap can be deduced, which is known as Tauc Plot.\cite{Tauc1972} The procedure is recapitulated here briefly. Eq.~\ref{eq:tauc} is given to empirically relate optical band gap to absorption.
+
+\begin{equation}\label{eq:tauc}
+ (h\nu \alpha)^{\frac{1}{n}} = B(h\nu - E_g^{opt}),
+\end{equation}
+where B is a proportional coefficient, $\alpha$ is absorption coefficient\footnote{The absorbance $A = 0.4343\alpha*l$, where l is the optical path} and $E_g^{opt}$ is defined as optical bandgap. The value n is correlated to the nature of optical transition.
+\begin{itemize}
+\item For direct allowed transition, n = 1/2;
+\item For direct forbidden transition, n = 3/2;
+\item For indirect allowed transition, n = 2;
+\item And for indirect forbidden transition, n = 3.
+\end{itemize}
+
+When the transition nature of sample is not well known, one should apply each to check which one provide the best fit. Depending on the synthesis methods and \ce{MoO3} morphologies, the transition phenomena might vary. On the \ce{MoO3} films, \citeauthor{Bouzidi2003} assumed a direct gap (n = 1/2)\cite{Bouzidi2003} while \citeauthor{Szekeres2002} used an indirect gap.\cite{Szekeres2002} The author use n = 2 in this work, plot $\sqrt{(h\nu \alpha)}$ versus photon energy, and extrapolate the linear part onto $h\nu$ axis. The intercept is used as $E_g^{opt}$ then. The estimated energy gap and some results from previous studies is summarized in Table.~\ref{tab:mobg}.
+
+\begin{table}[htb]
+\centering
+\caption{Optical band gaps of \ce{MoO3}}\label{tab:mobg}
+\begin{tabular}{lccr}
+\toprule
+&\multicolumn{2}{c}{Band gap} \\
+\cmidrule(l){2-3}
+Reference & value(eV) & orientation & material states\\
+\midrule
+\cite{Deb1968}   & 2.96  & $E\parallel c_0$ & single crystal\\
+\cite{Deb1968}   & 2.80  & $E\perp c_0$ & single crystal \\
+\cite{Julien1995} & 2.8$\sim$ 3.2 & NA & films\\
+ this work  & 3.1  & NA & nanoflakes\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+An alternative approach is a) define $Y = \alpha E=\alpha h\nu$, and obtain $Y' = \frac{\partial Y}{\partial E}$, then b) plot $Y'/Y$ versus $h\nu$. The band gap value can be obtained from the intercept of extrapolated line on photo energy axis.\cite{Choopun} This approach is not difficult to comprehend as long as we notice from Eq.~\ref{eq:tauc}, $Y = B (h\nu - E_g^{opt})^n$ and $Y' = B n(h\nu - E_g^{opt})^{n-1}$. The advantage is one can also estimate n without using assumption.
+
+The dielectric constants\footnote{Not a constant at all, instead, it has complicated dependence on photon energy} ($\epsilon = \epsilon_1 + i*\epsilon_2$) of \ce{MoO3} have been studied in several reports.\cite{Deb1968,Sabhapathi1995,Miyata1996,Abdellaoui1997,Mondragon1999} The author extracted $\epsilon_1$ from Ref.~\cite{Itoh2001a} due to the wide photon energy range utilized there. Notice that $\epsilon_2$ is approximately zero when $h\nu$ is less than 4 eV. Since this study is primarily concerned with the optical contrast of few-layered \ce{MoO3} in visible wavelength region ($h\nu < 3$ eV), the refractive indices $n$ is calculated from $n = \sqrt{\epsilon_1}$. Due to the orthorhombic phase, \ce{MoO3} exhibit birefringence, that is there are two refractive indices, $n_c$ and $n_a$, as shown in Fig.~\ref{fig:moind}. The refractive index is between $ 2.2\sim 2.4$ along $a$ axis, and $ 2.5\sim 2.8$ along $c$ axis.
+
+\begin{figure}[htb]
+\centering
+\subfloat[]{\label{fig:moind}\includegraphics[width=0.45\textwidth]{n_MoO3}}\hspace{0.04\textwidth}
+\subfloat[]{\label{fig:mocon}\includegraphics[width=0.45\textwidth]{MoO3_1L}}
+\caption[Refractive indices of \ce{MoO3}]{Refractive indices of \ce{MoO3}. (a) Refractive indices of \ce{MoO3} Dashed line is n along $a$ axis while solid line is along $c$ axis. (b) optical contrast mapping of 1L \ce{MoO3} on \ce{SiO2}-Si. The $x$ axis is \ce{SiO2} thickness, $y$ axis is wavelength. It is assumed that the incident light is polarized along $c$ axis of \ce{MoO3}.}
+\label{fig:mofl}
+\end{figure}
+
+Fig.~\ref{fig:mocon} illustrates the optical contrast mapping of 1L \ce{MoO3} on \ce{SiO2}-Si when the incident light is polarized along $c$ axis of \ce{MoO3}. One can see that there is a pseudo-periodical trend with either wavelength or \ce{SiO2} thickness fixed. The positive extreme occur at around 80 nm and 240 nm \ce{SiO2} layer, slightly less than the optimum for observing graphene. The refractive indices of Si and \ce{SiO2} within visible wavelengths and MATLAB source code for optical contrast calculation is included in Appendix~\ref{app:matlab}, with which one can readily evaluate the few layers \ce{MoO3} scenarios and the circumstance when incident light is polarized along $a$ axis.
+
+The dimension and phase of exfoliated \ce{MoO3} is examined using TEM. Fig.~\ref{fig:motem} shows the size of exfoliated \ce{MoO3} is about 500 nm. High-resolution TEM (HRTEM) image was taken to assess the \ce{MoO3} crystallinity. The clearly resolved lattices indicate high crystal quality of these exfoliated \ce{MoO3}.
+\begin{figure}[htb]
+\centering
+\includegraphics[width=0.8\textwidth]{exf_moo3.jpg}
+\caption[TEM images of exfoliated \ce{MoO3}]{TEM images of exfoliated \ce{MoO3}. (a) TEM image and (b) HRTEM image of FL \ce{MoO3} obtained by liquid sonication method.}
+\label{fig:motem}
+\end{figure}
+Nevertheless, identifying these few layer \ce{MoO3} under optical microscope is still difficult due to both the small flake size and low contrast.\footnote{Human eye threshold contrast (contrast sensitivity)$^{-1}$ is about 10\%.} One need to improve the liquid exfoliation process to obtain larger dimension and high yield. This is, however, beyond the scope of current study.

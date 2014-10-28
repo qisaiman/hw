@@ -1,6 +1,6 @@
 %\input{../header.tex} %  comment out when assembling
 
-\chapter{IMPURITY EFFECTS ON THE GROWTH OF TUNGSTEN OXIDE NANOWIRES}
+\chapter{IMPURITY EFFECTS ON TUNGSTEN OXIDE NANOWIRES}
 
 \input{./ch-wox/part1}
 
@@ -23,11 +23,11 @@ Name & purity & average size & vendor info\\
 \end{tabular}
 \end{table}
 
-In a typical ordinary transport experiment (Fig.~\ref{fig:wogrow}), about 2 g tungsten powder was positioned in the upstream end of a quartz boat and downstream about 2.5 inch the substrate was stationed. The substrates were p-type, boron-doped and [100]-orientated silicon with about 1 $\mu$m thermally-grown silicon oxide layer on the polished side. The cleaning procedures have been elucidated on page.~\pageref{ch2sub}. The boat was then loaded into reaction chamber in a way that the powder source was placed in the center of heating zone, and the substrate upstream end was aligned at 6.5 inch.\footnote{As defined in Fig.~\ref{fig:wogrow}} After pumping down, 1 \gls{sccm} \ce{O2} and 10 sccm Ar were admitted into the chamber, respectively, after which the overall pressure read approximately 110 mTorr. The temperature ramped up to 1000 \si{\degreeCelsius} in 30 min and lasted for 4 h, and subsequently the apparatus was allowed to naturally cool down to room temperature.
+In a typical ordinary transport experiment (Fig.~\ref{fig:wogrow}), about 2 g tungsten powder was positioned in the upstream end of a quartz boat and downstream about 2.5 inch the substrate was stationed. The substrates were p-type, boron-doped and [100]-orientated silicon with about 1 $\mu$m thermally-grown silicon oxide layer on the polished side. The cleaning procedures have been elucidated on page~\pageref{ch2sub}. The boat was then loaded into reaction chamber in a way that the powder source was placed in the center of heating zone, and the substrate upstream end was aligned at 6.5 inch.\footnote{As defined in Fig.~\ref{fig:wogrow}} After pumping down, 1 \gls{sccm} \ce{O2} and 10 sccm Ar were admitted into the chamber, respectively, after which the overall pressure read approximately 110 mTorr. The temperature ramped up to 1000 \si{\degreeCelsius} in 30 min and lasted for 4 h, and subsequently the apparatus was allowed to naturally cool down to room temperature.
 % cvd NW growth
 \begin{figure}[htb]
 \centering
-\includegraphics[width=0.7\textwidth]{CVD_and_temp.jpg}
+\includegraphics[width=0.6\textwidth]{CVD_and_temp.jpg}
 \caption[\ce{WO3} NW CVD growth]{\ce{WO3} NW CVD growth and the temperature profile. The nominal NWs growth temperature were estimated according to the interpolation data. Zero inch location is defined at the upstream edge of furnace.}
 \label{fig:wogrow}
 \end{figure}
@@ -127,6 +127,31 @@ Fitted center (\si{cm^{-1}}) & length (\AA) & Fitted center (\si{cm^{-1}}) & len
 788.4 & 1.834 &   965.4 & 1.728 \\
 \bottomrule
 \end{tabular}
+\end{table}
+For a comprehensive comparison purpose, the Raman fingerprints of various tungsten oxides and tungstate is shown in Table.~\ref{tab:woram2}. 
+\begin{table}[htb]
+\centering
+\caption{Raman fingerprints of tungsten oxides and sodium tungsten compounds}\label{tab:woram2}
+\begin{tabular}{lp{3in}r}
+\toprule
+Phase & Raman Shift (\si{cm^{-1}}) &  Reference   \\
+\midrule
+\ce{WO2}  & 287(s), 334(w), 514(m), 600(w), 621(w), 785(vs) & \cite{Ma2005} \\
+\ce{W18O49}  & broad bands from 750 to 780 & \cite{Guo2012} \\
+             &  267(s), 778(s), 969(m) & \cite{Liu2013d} \\
+m-\ce{WO3}  & 131(m), 265(m), 327(m), 715(s), 807(vs) &  \cite{Salje1975a,Daniel1987} \\
+h-\ce{WO3}  & 162(m), 253(m), 320(m), 645, 690(s), 817(vs) &  \cite{Daniel1987}\\
+\ce{WO3.H2O}  & 230(m), 377(w), 428(w), 650(s), 816(vs), 946(vs) &  \cite{Daniel1987} \\
+\ce{WO3.2H2O}  & 235, 268(m), 380(w), 662(s), 685(vs), 960(vs) & \cite{Daniel1987} \\
+\ce{Na2WO4}  & 94(w), 314(vw), 377(m), 813(m), 930(vs) &  \cite{Lima2011} \\
+\ce{Na2W2O7}  & 381(w), 422(w), 763(w), 835(s), 886(m), 948(m), 957(vs) &  \cite{Knee1979} \\
+\ce{Na2W4O13} & 263(w), 272(w), 311(w), 366(w), 777(vs), 794(s), 949(m) &\cite{Fomichev1992}\\
+\ce{Na5W14O44} & 107(s),695(m), 765(vs), 913(w), 943(m), 965(m)& this work\\
+\bottomrule
+\end{tabular}
+
+Materials in solid state, 
+vw-very weak; w-weak; m-medium; s-strong; vs-very strong
 \end{table}
 
 Heated at elevated temperatures, the W precursor, quartz tube, and quartz boat were three possible sources for Na. The sodium concentration in 3N source was 20 ppm as provided by vendor.\footnote{Due to the non-uniform distribution of foreign elements, detection of sodium by EDX is possible although the concentration is below the limit of typical EDX capacity.} The Na concentrations in quartz tube and quartz boat (GE 214 quartz, Wilmad Labglass) were 1 ppm and 0.7 ppm, respectively. To verify the major source of Na content coming from 3N powder, control experiments were employed by using W source with higher purities (4N5 or 5N). These ultra-high purity W sources produced pure tungsten oxide deposition and no Na content was detected by EDX. These results verified the Na content was mainly from the 3N W powders. In the OT growth experiments, the W source was first slowly oxidized at 1000 \si{\degreeCelsius} with 1 sccm \ce{O2} and the oxidized source was then evaporated producing \ce{WO3} and other sub-stoichiometric tungsten oxide vapors. The tungsten oxide vapors produced this way were limited by the slow oxidation, as indicated by
