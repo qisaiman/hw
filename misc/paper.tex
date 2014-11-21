@@ -48,11 +48,13 @@ symmetry-breaking mechanism,
 
 low energy ion doping of graphene.\cite{Ahlgren2011}
 
-\section{misc}
+\section{misc: vls, crystal,}
 
 E-beam spatial coherence.\cite{Morishita2013} phase contrast transfer function, coherence estimated by the visibility of double slits interference fringes, an effective diameter in specimen plane.  Image is a result of convolution between object and lens, point source on the focal plane, after lens the EM wavefront intersect image plane at different angle $\theta = d/f$, 
 
 nucleation and film growth \cite{Hanbucken1984}
+
+lateral growth, \cite{Zhang2014c}
 
 \section{solar cell}
 
@@ -86,6 +88,18 @@ vacuum back filling.
 
 
 \section{job related paper}
+
+arixv: 1411.3774: current transport across metal-semi interface treated as thermionic emission:
+\[
+J(V_D) = J_S(\exp\frac{qV_D}{nkT}-1)
+\]
+where 
+\[
+J_S = \frac{4\pi q m^* k^2T^2}{h^3}\exp(-\frac{q\Phi_B}{kT})
+\]
+
+arix: 1411.2815: graphene on Cu. 
+
 
 The invention of efficient blue LEDs has led to white light sources for illumination. When exciting a phosphor material with a blue LED, light is emitted in the green and red spectral ranges, which, combined with the blue light, appears as white. 
 
@@ -136,6 +150,7 @@ so sheet resistivity $\rho$ is obtained as
 
 \section{The physics of semiconductor}
 
+by Kevin
 
 quantum well devices exploit spatial quantization effects to increase the efficiency as well as alter the lasing threshold, and novel semiconductor is made to emit light at wavelengths different from those possible when only bulk material is used.
 
@@ -148,9 +163,16 @@ transmissivity coupled in multiple quantum well structure.
 band structures=potential energy diagrams.
 
 \textbf{junctions}
-p-n homojunctions, p-n or n-n heterojunctions, metal-semi junctions, most important types: Schottky barriers, or ohmic contact.
+\begin{itemize}
+\item p-n homojunctions,
+\item p-n or n-n heterojunctions,
+\item metal-semi junctions, 
+\item metal-insulator-semi 
+\end{itemize}
 
-chemical potential (Fermi level) as a measure of particle concentration.  Fermi level at 0K is equal to Fermi energy, which is defined as the energy of the topmost filled orbital. In equilibrium, the Fermi level $E_f$ is uniform throughout the material. n electron carrier, p holes carrier.
+most important types: Schottky barriers, or ohmic contact.
+
+chemical potential (Fermi level) as a measure of particle concentration.  Fermi level at 0K is equal to Fermi energy, which is defined as the energy of the topmost filled orbital. In equilibrium, the Fermi level $E_f$ is uniform throughout the material. n electron carrier, p holes carrier. concentration gradient, 
 
 band diagram represents the electron's potential energy.
 
@@ -166,8 +188,146 @@ ohmic contact forms if the work function of the metal is less than that of the s
 
 metal-oxide-semi as MIS structures is capacitive in nature since no dc current flows under bias.
 
+The built-in potential for a homojunction is equal to the full amount of band bending in equilibrium. 
+
+Gaussian surface and space charge neutral, 
+
 ch11.5 nonequilibrium conditions
 quasi-fermi level $\phi_n$ or $\phi_p$.
+
+A simple python script for this task can be found at \url{http://pythonhosted.org/eq_band_diagram/}. 
+
+
+\section{Semiconductor Statistics}
+
+Band theory: broadening of the discrete quantized energy levels or the collective electron point of view. 
+Drude's model:
+\[
+\kappa/\sigma = 3 (\frac{k}{e})^2T
+\]
+
+infinitesimal range $dp$, the absence of a ground state in orthohelium; for a system of indistinguishable particles which occupy quantum states in accordance with the Pauli principle, the thermal equilibrium probability of occupancy for a state of energy E is 
+\[
+f(E) = (1+\exp(\frac{E-\phi}{kT}))^(-1).
+\]
+
+Only for energies within a few $kT$ of $\phi$ is the probability of occupancy appreciably different from zero or unity. $\phi$ is determined by the condition that the number of occupied states at all energies must be equal to the total number of electrons present:
+\[
+n_0 = \int_{-\infty}^{\infty} f(E)g(E)dE
+\]
+
+At 0 K, Fermi level is given by 
+\[
+\phi_0 = \frac{h^2}{2m}(\frac{3n_0}{8\pi})^{2/3},
+\]
+whic is about 5 eV for monovalent metal. 200 times of $kT$ for RT. Only electrons near Fermi level contribute significantly to conductivities. separation of the concepts of free electron and conduction electron, where in the energy range $\partial f/\partial E$ is finite can be regarded as conduction electrons. 
+
+band theory based on a single electron approximation. crystal potential into Schrodinger Equation:
+\[
+\psi = U_k(r)\cdot\exp(ikr),
+\]
+
+In perfect crystal, $\psi$ with imaginary $k$ is discard, like the evanescent wave with decay, and the corresponding energy range is forbidden energy bands. For E with real $k$, plane wave solution exists forming permitted electron bands. The permitted wave function $\psi$ are the same in every unit cell of a periodic lattice, and the electron wave is not attenuated, i.e., an infinite mean free path emerging naturally in a perfect crystal. Scattering occurs due to defects, grain boundaries, imperfections developing localized energy states within the forbidden gaps, lattice vacancies, and the modulation of interatomic spacing be thermal vibration. 
+
+Brillouin zone drawing. Each BZ occupies the same volume of k-space, accommodating 2N electron states, where N is the total number of atoms in the crystal. Inner shell electrons are closely associated with a single nucleus; whereas the outermost electrons belong to the crystal as a whole. 
+
+electron can interchange states, with no observable result. electron and hole as real particles, 
+
+donor center moves or not? 
+
+multi-electron theories validate all the qualitative feature of simple band theory. How much does an electron deform the lattice in its vicinity? This is the question of the distinction between a free electron and a polaron. 
+
+One-electron band theory ignores multiplet structure: exciton, and orbital overlapping. 
+
+electrical properties of some metal and semiconductors are virtually unchanged in melting, suggesting a band structure is preserved even though there is no long range order. The dividision of permitted electron states into groups is dicated by the nature of short-range order, which hold in highly ordered crystal, in an amorphous phase or liquid phase of the same solid. 
+
+group velocities of an electron wave-packet in space is 
+\[
+v = \frac{\hbar}{\Delta_k E}
+\]
+, electron energy E(k) can be plotted as a multi-value function within the first BZ. 
+
+effective mass tensor has positive principal values at the lowest energy in a band, and negative ones at the top of a band. In both tight binding method and nearly free electron method, the E dispersion on wave-vector k can be written as 
+\[
+E = E_c + \frac{\hbar^2(k-k_c)^2}{2m_c}
+\]
+just above the bottom of a band; and 
+\[
+E = E_v - \frac{\hbar^2(k-k_v)^2}{2m_v}
+\]
+near the top of a band. 
+
+General expression of DOS is 
+\[
+g(E) =  \int \frac{dS}{4\pi^3\Delta_kE}
+\]
+and using effective mass renormalization, the wave-functions can be solved by
+\[
+\frac{\hbar^2}{2m^*} \Delta^2\psi + E\psi = 0
+\]
+
+Si conduction band minimum along [100] direction, about 25\% near the edge. Flaw encompasses foreign atoms, vacancies, interstitials. 
+
+When $n_0$ is large and $T$ is small, electron distribution is degenerate, all states are occupied up to an energy one or two kT short of the Fermi level; when $n_0$ is small and $T$ is not too low, occupied state lie within three or four kT above Ec, and Fermi level below Ec. 
+
+tabulation of Fermi-Dirac integral, 
+
+\[
+n_0 = N_c F_{1/2}(\eta) = 2(2\pi mkT/h^2)^{3/2}F_{1/2}(\frac{\phi - E_c}{kT})
+\]
+
+For classical or non-degenerate semiconductor, the total number of electrons in CB is given by
+\[
+n_0 = N_c\exp(\frac{\phi - E_c}{kT})
+\]
+and $N_c$ acts as effective density of states. In analog, hole density can be written as
+
+\[
+p_0 = N_v\exp(\frac{-\phi - E_v}{kT})
+\]
+
+To evaluate the Fermi level dependency on $T$ at non-degenerate conditions, 
+\[
+\frac{d\phi}{d(kT)} \approx - (3/2 + \log(N_c/n_0))
+\]
+
+For intrinsic semiconductor, $n_0= p_0 = n_i$ set the position of Fermi level, which is the root of equation
+\[
+ N_c F_{1/2}(\eta) =  N_v F_{1/2}(-E_i - \eta)
+\]
+In non-degenerate limiting form, 
+\[
+\phi_i = E_c - 1/2E_i + 3/4kT\log(N_v/N_c)
+\]
+based on thermal equilibrium, where the same electrochemical potential should be experienced by all states. 
+
+degeneracy occurs when $E_c - \phi$ became negative. 
+
+For extrinsic situation, 
+\[
+\frac{n_0p_0}{n_i^2} \leq 1
+\]
+
+Define $N_r = n_0 - p_0$ as the difference between densities of impurity states, then in terms of $n_i$ and $N_r$, at low temperature when intrinsic excitation is feeble, 
+\begin{align}
+n_0 &\approx N_r + n_i^2/N_r\\
+p_0 &\approx n_i^2/N_r
+\end{align}
+
+
+minimum energy and maximum entropy, electrical neutrality, iterative technique, 
+
+$N_d$ donor impurity atoms per unit volume, $N_di$ density of ionized donor atoms, wave function of s character, 
+
+Electron trapped in ground state and excited states, anisotropic elastic strain, attacked piecemeal, 
+
+extrinsic semiconductor is always partially compensated; $N_a$ total density of electron for acceptors. elementary manipulation leads to; rearranged to read as
+
+a donor impurity is electrically neutral whether it has an electron bound in the ground state at Ec - Ed or in an excited state closer to the conduction band. 
+
+semilogarithmic plot, donor states impacted by excited states, split ground states, anisotropic strain, 
+
+amphoteric impurities, either donor or acceptor depending on F level, such as Au in germanium. 
 
 \section{Gary semiconductor fabrication} 
 
@@ -189,10 +349,68 @@ black body radiation power density $S$ is about 1 \si{kW\per m^2}, the balanced 
 ray tracing in vector form as $n^{\prime} r^{\prime} \times n = n r \times n$, invariant $na\theta$, 
 
 
+\section{Transparent conductive oxides}
+
+set the scene, ingredient, synthetic chemical routes, be of value, TCO, creep into, . \cite{Edwards2004}
+
+$\sigma = ne\mu$, with $n$ as \si{cm^{-3}}, $e$ as C, and $\mu$ in \si{cm^2\per V\per s}. Then $\sigma$ in unit of \si{A\per V \per cm}. 
+
+A materials sorting map based on $n-\mu$. ITO with $\mu\sim10^4$ \si{\per\ohm cm^{-1}}. If the conductivity is sufficiently high, the thermal emittance is accordingly low. High $\sigma$ in ITO is related to the presence of shallow donor or impurity states ($\sim kT$) located close to the \ce{In2O3} CB, produced via \ce{Sn4+} doping for \ce{In3+} or oxygen vacancy. Thermal ionization promote the excess or donor electron into CB, giving rise to far-infrared absorption. At the same time, the host band gap is left intact. 
+
+nonmetal-to-metal transition, itinerant-electron scattering, 
+
+\ce{SnO2} into \ce{In2O3} as substitutional dopant, Sn with outer-shell electron configuration as $5s^25p^2$, and In as $5s^25p^1$. The Schrodinger wave solutions gives Bohr radius, $a_H \sim 13$ \si{\angstrom} for isolated ions, a large orbit extending many crystal cells, but localized at donor center?
+
+\[
+n^{1/3}\cdot a_H = \text{const.}
+\]
+or 
+\[
+k_Fl_e \approx 1
+\]
+where Fermi wavenumber $k_F = (3\pi^2n)^{1/3}$, $le$ is the mean free path.
+ 
+The conductivity when $T\rightarrow 0K$ is used to discern metal from nonmetal, where the former always display finite conductivity, and the latter presumably extrapolated to zero. 
+
+optical window for ITO is set at short wavelength by direct band gap and at longer wavelength by its plasma edge, determined by the $n$. 
+
+In essence, the role of host matrix in (Metal-to-Nonmetal)MNM transition is important primarily in that it determines the form of the radial distribution of localized impurity state.\cite{Edwards1978}
+
+\[
+n_c^{1/3}\cdot a_H = K
+\]
+
+Isotropic Bohr radius is calculated from experimental ionization energy of localized state via $e^2/2\epsilon_{st} E_{expt}$.
+The critical density $n_c$ for \ce{WO3:Na} is estimated to be $4\times 10^{22}$ \si{cm^{-3}}, with experimental value $a_H^* = 1.3$ \si{\angstrom}. 
+
+W as the unperturbed bandwidth of an array of one-electron state, and U as the intradonor Coulomb repulsion energy, which is the primary driving force in transition from metallic to insulating states. 
 
 
+\begin{align}
+\psi(r) &= \sum_j \alpha_j F_j(r)\phi_j(r)\\
+F(r) &= (\pi a_H^{*3})^{-1/2} \exp(-r/a_H^*)
+\end{align}
+
+An overlap-correlation problem, 
+
+delicate interpretation of experimental findings, strong dependency of RM m-\ce{WO_{3-x}} electronic properties on $V_O$ concentration and crystallographic direction along which $V_O$ is created.\cite{Wang2011b} 
+
+Coloration and electron conductivity changes. \citeauthor{Wang2011b} found strong dependence of WO3-x electronic properties on $V_O$ concentration and the the crystallographic direction on which O is removed. DFT band gap calculation is close to experimental value. Vacancy levels are found at 2.1 eV. When $V_O$ is in x axis, the associated electronic state is about 1 eV below CBM, 
+
+\section{ZnTe}
+
+Zn rich suppress NW growth, Zeiss U55 SEM, XF3050 silicon drift detector, Quantax software from Bruker.EDX mapping show uniform Zn and Te distribution along NW, no atomic ratio is inferred. \cite{Rueda-Fonseca2014} 
+
+ZnTe, p type, band gap 2.25 eV. I_LO intensity ratio: area or height? 
+
+PL 1.88 eV, O impurity substituted isoelectronically. second order scattering, energy of scattered photons differs from the incident ones by two vibrational quanta.  \cite{Irwin1970}
+
+photon occupation number, $n_j = (\exp(h\nu/kT) - 1)^{-1}$, 
 
 
+The coupling strength of the electron-phonon interaction can be evaluated by comparing the relative intensities of the overtones to the fundamental Raman band. DUring the steady-state Raman measurement, the trapped charge would build up producing a local electric field, which polarize the exciton. \cite{Zhang2012}
+
+integrated intensities. 
 
 
 
