@@ -3,8 +3,8 @@
 
 In this study, the nanostructures were grown in a home-built chemical vapor deposition system and characterized using both electron microscopy and optical spectroscopy methods, including \gls{sem}, \gls{xrd}, \gls{edx}, \gls{tem}, Raman and UV-Vis. Other sample and substrate preparation methods are also briefly introduced. A detailed introduction will be given to the \gls{cvd} system. For other mature techniques, the contents will be limited to the extent where experienced material researchers could repeat the experiments performed here. Particular attentions will also be mentioned for properly characterizing the nanostrucutres synthesized in this work. This chapter is concluded with data processing discussion. 
 
-\section{Synthesis Equipments}
-\subsection{Home-built CVD System}
+\section{Synthesis Equipments and Processes}
+\subsection{Home-built Chemical Vapor Deposition System}
 The syntheses were accomplished in a home-made hot-wall \gls{cvd} system. The reaction chamber part and a schematic drawing of whole system can be visualized in Fig.~\ref{fig:ch2cvd}.  The reaction chamber consists of fused silica tube and a thermal furnace. The furnace is made by two semi-cylindrical ceramic fiber heaters (WATLOW, Inc.) with power density from 0.8 to 4.6 \si{W cm^{-2}}. Quartz tube (Quartz Sci, Inc.) of 1 in diameter was inserted into the furnace serving as reaction chamber. A mechanical pump was connected to maintain the low pressure environment inside the chamber. The length of uniform heating zone is 6 in, with cooling zone extending outward. Carriers gas argon (Ar) and reactant gas oxygen (\ce{O2}) was regulated by mass flow controllers.
 
 \begin{figure}[htb]
@@ -12,7 +12,7 @@ The syntheses were accomplished in a home-made hot-wall \gls{cvd} system. The re
 \subfloat[]{\includegraphics[width=0.7\textwidth]{CVD_d346.jpg}}
 
 \subfloat[]{\includegraphics[width=0.9\textwidth]{CVD_model.jpg}}
-\caption[Home-built low-pressure chemical vapor deposition system]{Home-built low-pressure chemical vapor deposition system. (a) Photograph of reaction chamber. (b) Sketch of CVD system, where A1: quartz tube; B1: bubbler; C1-2: gas cylinders; E1: mechanical pump; H1-2: ceramic heater; MFC: flow controller; P1: pressure gauge; V1-4: valves; V5-7: butterfly valves.}
+\caption[Home-built low-pressure chemical vapor deposition system]{Home-built low-pressure chemical vapor deposition system. (a) Photograph of reaction chamber. (b) Sketch of CVD system, where A1: quartz tube; B1: bubbler; C1-2: gas cylinders; E1: mechanical pump; H1-2: ceramic heater; MFC: flow controller; P1: pressure gauge; V1-4: needle valves; V5-7: butterfly valves.}
 \label{fig:ch2cvd}
 \end{figure}
 
@@ -40,7 +40,7 @@ The heating temperature $T$ profile measured at different settings in ambient en
 \begin{figure}[htb]
 \centering
 \includegraphics[width=0.7\textwidth]{temp_profile.pdf}
-\caption{Temperature profile of home-built CVD in ambient environment.}
+\caption[Temperature profile of home-built CVD in ambient environment]{Temperature profile of home-built CVD in ambient environment.}
 \label{fig:ch2temp}
 \end{figure}
 
@@ -49,12 +49,12 @@ The substrates were mostly positioned just outside the downstream heating zone s
 
 \subsection{Substrates Treatments}\label{ch2sub}
 
-Silicon and silicon dioxides on Si wafer ($p$-Si(100), University Wafer Inc.) were primarily used, and other substrates, i.e., Mica\footnote{\ce{K(Al2)(Si3Al)O10(OH)2}}, glass (Fisher Scientific, microscope slide, 12-549),\footnote{Typical composition is 72.6\% \ce{SiO2}, 0.8\% \ce{B2O3}, 1.7\% \ce{Al2O3}, 4.6\% \ce{CaO}, 3.6\% \ce{MgO} and 15.2\% \ce{Na2O}} stainless steel, were also employed. Si and \ce{SiO2}-Si substrates were first cut into rectangular pieces of certain size and then ultrasonically cleaned (Branson 1510R-MTH) with acetone and alcohol for about 15 min, each followed by blow-drying with nitrogen gas. After solution cleaning, the substrate surface is usually hydrophobic. Depending on the specific experimental requirement, a hydrophilic surface may be required. A plasma cleaner (Kurt J Lesker, Plasma-Preen 862) was used to render a hydrophilic Si surface, where reaction among $e$, \ce{O+}, \ce{O2+}, \ce{O^-},\ce{O2} occurs, and \ce{OH}-terminated surface followed.\cite{Habib2010} The treatment proceeds at 2 Torr \ce{O2} for 3 min. Glass substrates cleaning is the same as that of Si. Mica is cleaved right before the growth without extra cleaning steps. In addition, substrates can be coated with a thin layer of metal before growth. This process will be covered in Sec.~\ref{sec:mag}.
+Silicon (Si) and 1 $\mu$m silicon dioxides on Si wafer (\ce{SiO2}-Si) (University Wafer Inc.) were primarily used, and other substrates, i.e., Mica\footnote{\ce{K(Al2)(Si3Al)O10(OH)2}}, glass (Fisher Scientific, microscope slide, 12-549),\footnote{Typical composition is 72.6\% \ce{SiO2}, 0.8\% \ce{B2O3}, 1.7\% \ce{Al2O3}, 4.6\% \ce{CaO}, 3.6\% \ce{MgO} and 15.2\% \ce{Na2O}} stainless steel, were also employed. Si and \ce{SiO2}-Si substrates were first cut into rectangular pieces of certain size and then ultrasonically cleaned (Branson 1510R-MTH) with acetone and alcohol for about 15 min, each followed by blow-drying with nitrogen gas. After solution cleaning, the substrate surface is usually hydrophobic. Depending on the specific experimental requirement, a hydrophilic surface may be required. A plasma cleaner (Kurt J Lesker, Plasma-Preen 862) was used to render a hydrophilic Si surface, where reaction among $e$, \ce{O+}, \ce{O2+}, \ce{O^-},\ce{O2} occurs, and \ce{OH}-terminated surface followed.\cite{Habib2010} The treatment proceeds at 2 Torr \ce{O2} for 3 min. Glass substrate cleaning procedure is the same as that of Si. Mica substrates are cleaved right before the growth without extra cleaning steps. In addition, substrates can be coated with a thin layer of metal before growth. This process will be covered in Sec.~\ref{sec:mag}.
 
 \subsection{Magnetron Sputtering}\label{sec:mag}
 Sputtering, a process in which atoms are ejected from a solid target material by bombarding it with energetic particles, is a well established \gls{pvd} process with a high degree of controllability. The high energy and controllable parameters of sputtering can result in the growth of well-structured and crystalline films. Further, sputtering can be easily implemented as a roll-to-roll process for large-scale manufacturing. It is widely utilized for deposition of \ce{WO_x} in industry.
 
-In this work, magnetron sputtering (Denton Vacuum Desk IV) was used to coat thin layers of metals onto cleaned substrates, such as W, Mo, Au, Ag, Pd, and Pt. As shown in Fig.~\ref{fig:ch2magsp}, a high potential created between the target (cathode) and substrate ionizes the argon molecules. These ions are accelerated to bombard the target foils, knocking out active atoms which subsequently deposit onto the substrates. A magnetic field is applied to confine electrons to the vicinity of the foils. These electrons in turn increase the ionization yield. 
+In this work, magnetron sputtering (Denton Vacuum Desk IV) was used to coat thin layers of metals onto cleaned substrates. As shown in Fig.~\ref{fig:ch2magsp}, a high potential created between the target (cathode) and substrate ionizes the argon molecules. These ions are accelerated to bombard the target foils, knocking out active atoms which subsequently deposit onto the substrates. A magnetic field is applied to confine electrons to the vicinity of the foils. These electrons in turn increase the ionization yield. 
 \begin{figure}[htb]
 \centering
 \includegraphics[width=0.7\textwidth]{magsp.jpg}
@@ -62,7 +62,7 @@ In this work, magnetron sputtering (Denton Vacuum Desk IV) was used to coat thin
 \label{fig:ch2magsp}
 \end{figure}
 
-Sputtering is a better PVD technique than e-beam deposition since it alleviates the adverse effects in the latter. \ce{Ar+} ions are accelerated to target foils. The pressure of \ce{Ar+} has two functions: to sputter off the target ions, and to influence the \gls{mfp}. These collisions between target ions and \ce{Ar+} leads to almost all arrival angle, thus uniform coverage. The sputter yield is number of target ions released per ions hitting on target. If \ce{Ar+} ion energy is less than 100 eV, the yield is zero; If larger than 10 keV, implantation of \ce{Ar+} into target foils occurs. Usually yield between 1 and 2 is desired. The \gls{mfp} in sputtering is on order of 3 cm (assuming pressure 30 mTorr), with source-to-substrate distance as 5 cm, average number of collisions is about 5/3$\sim$2. 
+Sputtering is a better PVD technique than \gls{ebeam} deposition since it alleviates the adverse effects in the latter. \ce{Ar+} ions are accelerated to target foils. The pressure of \ce{Ar+} has two functions: to sputter off the target ions, and to influence the \gls{mfp}. These collisions between target ions and \ce{Ar+} leads to almost all arrival angle, thus uniform coverage. The sputtering yield is number of target ions released per ions hitting on target. If \ce{Ar+} ion energy is less than 100 eV, the yield is zero; If larger than 10 keV, implantation of \ce{Ar+} into target foils occurs. Usually yield between 1 and 2 is desired. The \gls{mfp} in sputtering is on order of 3 cm (assuming pressure 30 mTorr), with source-to-substrate distance as 5 cm, average number of collisions is about 5/3$\sim$2. 
 
 \section{Characterization Tools}
 \subsection{Scanning Electron Microscopy (SEM)}\label{sec:sem}
@@ -72,11 +72,11 @@ The SEM instrument used in this study is JEOL JSM-6480. The \gls{ebeam} source i
 \begin{figure}[htb]
 \centering
 \includegraphics[width=0.5\textwidth]{sem_sch.png}
-\caption[Schematic drawing of electron materials interaction in SEM]{Schematic drawing of electron materials interaction in SEM. Some process is not shown, such as Auger emission.}
+\caption[Schematic drawing of electron-matter interactions in SEM]{Schematic drawing of electron-matter interactions in SEM.\cite{Good2000} Some processes are not shown, such as Auger emission.}
 \label{fig:ch2sem}
 \end{figure}
 
-In this study, secondary electron images were mainly used to reveal the morphology of the samples. Unless otherwise noticed, the SEM images in this work were all acquired using 10 kV acceleration voltage, 10 mm working distance and 30 spot size.
+In this study, secondary electron images were mainly used to reveal the morphology of the samples. Unless otherwise noticed, the SEM images in this work were acquired using 10 kV acceleration voltage, 10 mm working distance and 30 spot size.
 
 Charge effect could arise on the samples grown in this study, leading to anomalous contrast on the images. Several measures could be taken to alleviate this adverse influence, including adjusting the acceleration voltage, tilting the specimen, and coating a thin layer of metal. Sometimes when an area is scanned for a long time at high magnification, the surrounding region could appear brighter after switching to a lower magnification. This is a sample contamination, due to the \gls{ebeam} induced polymerization and deposition of hydrocarbon molecules in the vicinity of that smaller area. 
 
@@ -99,7 +99,7 @@ Crystal structures of the as-synthesized specimens in this study were characteri
 \begin{figure}[htb]
 \centering
 \includegraphics[width=0.5\textwidth]{xrd_2theta.png}
-\caption{Bragg-Brentano geometry used in XRD configuration}
+\caption[Bragg-Brentano geometry used in XRD configuration]{Bragg-Brentano geometry used in XRD configuration.\cite{Good2000}}
 \label{fig:ch2theta}
 \end{figure}
 When striking onto the crystal, these photons are scattered by the lattices. Since the wavelength of X-ray is similar to the lattice spacing, the scattering events interact coherently. Only at specific angles constructive interference occurs, and a diffraction peak registers when the detector is scanned across that angle.  
@@ -126,13 +126,13 @@ The 1D nanostructures in this study usually grew with preferred orientation; the
 
 \subsection{Transmission Electron Microscopy (TEM)}
 
-TEM qualifies as a powerful and versatile tool for material characterization. Akin to the electron-materials interaction introduced in Sec.~\ref{sec:sem}, various signals are generated when the thin specimen was radiated by electron beam. Besides the \gls{saed} pattern and \gls{hrtem} imaging, other TEM based techniques include \gls{cbed}, EDX, \gls{eels} and \gls{cl}, etc. Therefore, TEM is essentially a signal-generating and detecting tool. Fundamental physics of electron is needed to obtain a comprehensive understanding of these TEM related techniques. Only a brief summary is given here.
+TEM qualifies as a powerful and versatile tool for material characterization. Akin to the electron-materials interaction introduced in Sec.~\ref{sec:sem}, various signals are generated when the thin specimen was radiated by electron beam. Besides the \gls{saed} pattern and \gls{hrtem} imaging, other TEM based techniques include \gls{cbed}, EDX, \gls{eels} and \gls{cl}, etc. Therefore, TEM is essentially a signal-generating and detecting tool.\cite{Williams2009} Fundamental physics of electron is needed to obtain a comprehensive understanding of these TEM related techniques. Only a brief summary is given here.
 
 Electron scattering was dictated by Coulomb interaction, and can be characterized by the following four aspects: the cross section (scattering probability), differential cross section (scattering angle), mean free path, and inelastic or elastic scattering. The cross section $\sigma$ in \si{m^2}, which when divided by area of targeting atom, represents a probability that scattering event will occur. Differential cross section for an isolated atom is 
 \[
 \frac{d\sigma}{d\Omega} = \frac{1}{2\pi \sin\theta} \frac{d\sigma}{d\theta},
 \] 
-where $\theta$ is scattering angle in radians, $\Omega$ is solid angle in steradians (sr), and $\theta$ is half of the scattering angle. The total cross section is just $\sigma$ times atom numbers in unit volume. The mean free path is the inverse of $\sigma_{total}$, that is $\lambda_{MFP} = 1/\sigma_{total}$. 
+where $2\theta$ is scattering angle in radians, $\Omega$ is solid angle in steradians (sr), and $\theta$ is half of the scattering angle. The total cross section is just $\sigma$ times atom numbers in unit volume. The mean free path is the inverse of $\sigma_{total}$, that is $\lambda_{MFP} = 1/\sigma_{total}$. 
 
 The spatial distribution of scattering is observed as contrast in images, and angular distribution is viewed in form of diffraction patterns. The positions of diffracted E-beams are determined by size and shape of unit cell, and intensities governed by distribution, number, and types of atoms in the specimen. 
 
@@ -178,9 +178,9 @@ In the transmission mode, the reflection from materials phase boundary has been 
 
 In fact, there have been ongoing efforts to retrieve particle size profile from the dynamic light scattering, a technique also known as photon correlation spectroscopy. The experimental principle is as following: the sample in liquid solution is illuminated by a laser source and the fluctuations of the scattered light are detected at a known scattering angle $\theta$ by a fast photon detector. The fluctuations arise from the Brownian motion of small particles, equivalent to a random variation of scatter distance. By auto-correlation analysis, the decay rate of scattering intensity correlation can be related to the diffusion coefficient of small particles in the solvent.\cite{Maret1987} This approach, however, will not be pursued in this work. Instead, the scattering effect is partially circumvented by using diffuse reflection technique. 
 
-\Gls{drs} serves as another tool to estimate the sample band gap using \gls{kmt}.\cite{Tandon1970} The original KM theory was proposed in 1931,\cite{Kubelka1931} and has been popular in the color-related industry, such as painting, pigments, and paper. This method is useful for the analysis of samples of difficultly soluble substances and for samples that will react with the solvents upon being dissolved. It is also particularly applicable when single crystals of the material could not be obtained. Some key points were recapitulated in this thesis.
+Diffuse reflectance spectroscopy (DRS) serves as another tool to estimate the sample band gap using \gls{kmt}.\cite{Tandon1970} The original KM theory was proposed in 1931,\cite{Kubelka1931} and has been popular in the color-related industry, such as painting, pigments, and paper. This method is useful for the analysis of samples of difficultly soluble substances and for samples that will react with the solvents upon being dissolved. It is also particularly applicable when single crystals of the material could not be obtained. Some key points were recapitulated in this thesis.
 
-The sample is under isotropic diffuse illumination. And the upward flux $J$ and downward flux $I$ are characterized by the K-M scattering and absorption coefficients denoted as $S$ and $K$, respectively; that is
+The sample is under isotropic diffuse illumination. And the upward flux $J$ and downward flux $I$ are characterized by the KM scattering and absorption coefficients denoted as $S$ and $K$, respectively; that is
 \begin{align}
 \ud I &= - (K + S)I \ud z + SJ\ud z,\\
 \ud J &= + (K + S)J \ud z - SI\ud z.
@@ -202,7 +202,4 @@ where $n$ depends on the nature of electronic transition. The diffuse reflection
 \label{fig:ch2uvvis}
 \end{figure}
 
-In this thesis, UV-Vis and diffuse reflectance spectra were recorded using Schimadzu, UV2600Plus, with schematic measurement setup shown in Fig.~\ref{fig:ch2uvvis}. For UV-Vis measurement in transmission mode, the as-synthesized sample was removed from substrates by light sonication(Branson 1510R-MTH, 70W) in ethanol or DI water for 15 seconds. The dispersion was left for 12 h to enable the possible sedimentation. Then the dispersion was transferred into one 10 mm quartz cuvette (Thorlabs, W005654) for absorption measurement with another paired cuvette containing pairing liquid only. To carry out diffuse reflectance measurement, integrating sphere (ISR2600Plus) was used with an incident angle of 0 degree. The baseline reflectance was first recorded with the standard white plate (barium sulfate powder, \ce{BaSO4}) placed at the exit window on the sample path side, then the target sample was set in for relative reflectance measurement. The \ce{BaSO4} powder should be replaced periodically, otherwise the surface might turn yellow. To replace the \ce{BaSO4} powder, one should supply new powder into the sample holder for several time, each followed by a compact pressing using the glass rod. Chemical wrapping paper can be inserted between the glass rod and \ce{BaSO4} powder to prevent the powder sticking. Nanostructured sample on transparent substrates, i.e., quartz, could be mounted directly with the growth substrate, or ground and spread evenly onto \ce{BaSO4} surface.
-
-
-
+In this thesis, UV-Vis and \gls{drs} were recorded using Schimadzu, UV2600Plus, with schematic measurement setup shown in Fig.~\ref{fig:ch2uvvis}. For UV-Vis measurement in transmission mode, the as-synthesized sample was removed from substrates by light sonication (Branson 1510R-MTH, 70W) in ethanol or DI water for 15 seconds. The dispersion was left for 12 h to enable the possible sedimentation. Then the dispersion was transferred into one 10 mm quartz cuvette (Thorlabs, W005654) for absorption measurement with another paired cuvette containing pairing liquid only. To carry out diffuse reflectance measurement, an integrating sphere (ISR2600Plus) was used with an incident angle of 0 degree. The baseline reflectance was first recorded with the standard white plate (barium sulfate powder, \ce{BaSO4}) placed at the exit window on the sample path side, then the target sample was set in for relative reflectance measurement. The \ce{BaSO4} powder should be replaced periodically, otherwise the surface might turn yellow. To replace the \ce{BaSO4} powder, one should supply new powder into the sample holder for several time, each followed by a compact pressing using the glass rod. Chemical wrapping paper can be inserted between the glass rod and \ce{BaSO4} powder to prevent the powder sticking. Nanostructured sample on transparent substrates, i.e., quartz, could be mounted directly with the growth substrate, or ground and spread evenly onto \ce{BaSO4} surface.
