@@ -5,8 +5,7 @@
 \input{./ch-wox/part1}
 
 \section{Experimental}
-
-Metallic tungsten powders were utilized as source materials in this work. Four kinds of W powder were used in total, as summarized in Table~\ref{tab:powder}. Two growth configurations were explored, namely ordinary transport and seeded growth.
+Metallic tungsten powders were utilized as source materials in this work. Four kinds of W powder were used in total, as summarized in Table~\ref{tab:powder}. Two growth configurations were explored, namely non-seeded growth and seeded growth.
 % Tungsten powders size and purity
 \begin{table}[htb]
 \centering
@@ -23,7 +22,9 @@ Name & purity & average size & vendor info\\
 \end{tabular}
 \end{table}
 
-In a typical ordinary transport experiment (Fig.~\ref{fig:wogrow}), about 2 g tungsten powder was positioned in the upstream end of a quartz boat and downstream about 2.5 inch the substrate was stationed. 
+\subsection{Non-seeded growth}
+
+In a typical non-seeded experiment (Fig.~\ref{fig:wogrow}), about 2 g tungsten powder was positioned in the upstream end of a quartz boat and downstream about 2.5 inch the substrate was stationed. 
 % cvd NW growth
 \begin{figure}[htb]
 \centering
@@ -31,8 +32,14 @@ In a typical ordinary transport experiment (Fig.~\ref{fig:wogrow}), about 2 g tu
 \caption[\ce{WO3} NW CVD growth]{\ce{WO3} NW CVD growth and the temperature profile. The nominal NWs growth temperature were estimated according to the interpolation data. Zero inch location is defined at the upstream edge of furnace.}
 \label{fig:wogrow}
 \end{figure}
-The substrates were p-type, boron-doped and [100]-orientated silicon with about 1 $\mu$m thermally-grown silicon oxide layer on the polished side. The cleaning procedures have been elucidated on page~\pageref{ch2sub}. The boat was then loaded into reaction chamber in a way that the powder source was placed in the center of heating zone, and the substrate upstream end was aligned at 6.5 inch.\footnote{As defined in Fig.~\ref{fig:wogrow}} After pumping down, 1 \gls{sccm} \ce{O2} and 10 sccm Ar were admitted into the chamber, respectively, after which the overall pressure read approximately 110 mTorr. The temperature ramped up to 1000 \si{\degreeCelsius} in 30 min and lasted for 4 h, and subsequently the apparatus was allowed to naturally cool down to room temperature.
+The substrates were p-type, boron-doped and [100]-orientated silicon with about 1 $\mu$m thermally-grown silicon oxide layer on the polished side. The substrate cleaning procedures have been elucidated on page~\pageref{ch2sub}. The boat was then loaded into reaction chamber in a way that the powder source was placed in the center of heating zone, and the substrate upstream end was aligned at 6.5 inch as defined in Fig.~\ref{fig:wogrow}. After pumping down, 1 \gls{sccm} \ce{O2} and 10 sccm Ar were admitted into the chamber, respectively, after which the overall pressure read approximately 110 mTorr. The temperature ramped up to 1000 \si{\degreeCelsius} in 30 min and lasted for 4 h, and subsequently the apparatus was allowed to naturally cool down to room temperature.
 
+\subsection{Seeded growth}
+In the seeded growth, additional tungsten powders was used on the substrate serving as local seed, on which dense \ce{WO3} NW array grew. For the tungsten seed particles, 3N powders were used in typical NW growth, and other tungsten powders with different sizes were employed in control experiments including 3N5, 4N5, and 5N. All reactants were employed as received without further processing.
+ 
+In a typical growth, high purity tungsten source was positioned at the upstream end of a quartz boat, with the substrate located ca. 65 mm downstream. The quartz boat was then transferred into the reaction chamber in a way that the tungsten source was located at the center of the reaction chamber. During the growth, the tungsten source was heated at 1000 \si{\degreeCelsius}, while the substrate temperature ranged from 800 \si{\degreeCelsius} to 400 \si{\degreeCelsius}. After the reaction chamber was pumped down to an ultimate pressure of $\sim8$ mTorr, 1 sccm oxygen (\ce{O2}) and 10 sccm argon (Ar) were introduced into the chamber, respectively. The heating temperature was ramped to 1000 \si{\degreeCelsius} in 30 min and lasted for 240 min. Subsequently, the apparatus was allowed to naturally cool down to room temperature. 
+
+To study the growth mechanism, controlled experiments were performed on the oxidation of the tungsten seed particles dispersed on the substrate. In a typical oxidation experiment, tungsten powders were loaded into the uniform heating zone and the sealed chamber was pumped down to an ultimate pressure of $\sim8$ mTorr. Then oxygen flow varying between 1 sccm to 10 sccm was admitted from upstream inlet. With 10 sccm UHP Ar (99.999\%) as carrier gas, the overall pressure reached to about 100 mTorr. The heating temperature (500 to 750 \si{\degreeCelsius}) was ramped up in 30 min and lasted for 30 min. Then the heating power was turned off and the chamber was allowed to naturally cool down to room temperature.
 
 \section{Results and Discussion on 1D Nanowire Growth}
 \subsection{Tungsten Oxides: Impurities and Residual Effects}\label{sec:nawox}
@@ -80,7 +87,7 @@ The sodium contents in 3N powders fundamentally change the deposition in ordinar
 \begin{figure}[htb]
 \centering
 \includegraphics[width=0.7\textwidth]{nawox_semedx.jpg}
-\caption[SEM and EDX on \ce{Na_xWO3}]{SEM images of (a) dense array of the as-synthesized ultra-long nanowires on \ce{SiO2}-Si substrate and (b) rectangular microplates grow among the nanowires. (c) EDS and (d) XRD spectra showing the chemical compositions and phases of the deposition.}
+\caption[SEM, EDX and XRD on sodium tungsten oxides sample]{SEM images of (a) dense array of the as-synthesized ultra-long nanowires on \ce{SiO2}-Si substrate and (b) rectangular microplates grow among the nanowires. (c) EDS and (d) XRD spectra showing the chemical compositions and phases of the deposition.}
 \label{fig:nawoxsemedx}
 \end{figure}
 
@@ -89,7 +96,7 @@ XRD measurements revealed the overall structure of the specimen. To obtain detai
 \begin{figure}[htb]
 \centering
 \includegraphics[width=0.8\textwidth]{nawox_tem.jpg}
-\caption[TEM analyses on sodium tungsten oxide sample]{TEM images at low-magnification, HRTEM images, and EDS spectra of a \ce{Na5W_{14}O_{44}} NW (a, b, c), a \ce{WO3} NW (d, e, f), and a \ce{Na2W4O_{13}} microplate (g, h, i).}
+\caption[TEM analyses on sodium tungsten oxides sample]{TEM images at low-magnification, HRTEM images, and EDS spectra of a \ce{Na5W_{14}O_{44}} NW (a, b, c), a \ce{WO3} NW (d, e, f), and a \ce{Na2W4O_{13}} microplate (g, h, i).}
 \label{fig:nawoxtem}
 \end{figure}
 
@@ -98,7 +105,7 @@ Micro-Raman spectroscopy was also carried out at room temperature in ambient atm
 \begin{figure}[htb]
 \centering
 \includegraphics[width=0.7\textwidth]{nawox_raman_series}
-\caption[Raman spectra on \ce{Na_xWO3}]{Raman spectra of (a) microplates matching the reported peak positions of the \ce{Na2W4O_{13}} phase, and (b) nanowires with comparisons to the reported major peak positions of \ce{WO3} (shown by black line) and \ce{Na2W4O_{13}} (shown by red line) phases.}
+\caption[Raman spectra on sodium tungsten oxides sample]{Raman spectra of (a) microplates matching the reported peak positions of the \ce{Na2W4O_{13}} phase, and (b) nanowires with comparisons to the reported major peak positions of \ce{WO3} (shown by black line) and \ce{Na2W4O_{13}} (shown by red line) phases.}
 \label{fig:nawoxram}
 \end{figure}
 Based on the correlation of Raman spectra and crystallographic data of a variety of tungsten bronze, an empirical formula to relate the Raman peaks and \ce{W-O} bonding lengths has been found as
@@ -181,7 +188,7 @@ For the first growth (Fig.~\ref{fig:nawoxsemall}a-c) in a new clean reaction cha
 \begin{figure}[htb]
 \centering
 \includegraphics[width=0.9\textwidth]{nawox_sch.jpg}
-\caption[Schematic drawings of residual \ce{Na_xWO3} growth]{Schematic drawings showing (a) growth with tungsten source in a new tube, (b) enhanced growth with both residue deposition and tungsten source, and (c) growth with residue deposition only.}
+\caption[Schematic drawings of residual sodium tungsten oxides growth]{Schematic drawings showing (a) growth with tungsten source in a new tube, (b) enhanced growth with both residue deposition and tungsten source, and (c) growth with residue deposition only.}
 \label{fig:nawoxsch}
 \end{figure}
 
@@ -257,13 +264,11 @@ It is worth pointing out that there are some NWs growth in low temperature end a
 
 \subsection{Tungsten Oxides: Seeded Growth}\label{sec:sgfg}
 
-As mentioned in Sec.~\ref{sec:nawox}, growth using higher purity tungsten powders primarily produces thin film deposition, and growth using 3N powder is plagued with the impurity effect producing sodium tungsten oxide NW instead of tungsten oxide NW. New growth method was thus explored to obtain \ce{WO3} NWs. In this study, a seeded growth approach was developed and proved to be a successful alternative way. In the seeded growth, additional tungsten powders was used on the substrate serving as local seed, on which dense \ce{WO3} NW array grew. 
+As mentioned in Sec.~\ref{sec:nawox}, growth using higher purity tungsten powders primarily produces thin film deposition, and growth using 3N powder is plagued with the impurity effect producing sodium tungsten oxide NW instead of tungsten oxide NW. New growth method was thus explored to obtain \ce{WO3} NWs. In this study, a seeded growth approach was developed and proved to be a successful alternative way. 
 
 Understanding the oxidation of tungsten powder is the key to obtain high yield in seeded growth. Oxidation of tungsten have been investigated under diverse conditions, such as at elevated temperature (\textgreater 1100 \si{\degreeCelsius}) and oxygen pressure on the order of Torr,\cite{Base1965} and at temperatures ranging from 20 to 500 \si{\degreeCelsius} under atmosphere pressure.\cite{Warren1996} \ce{WO_x} NWs were readily found when tungsten (foil, wire, or powder) is oxidized under various conditions.\cite{Zhu1999,Karuppanan2007,Hsieh2010} However the study on tungsten powder oxidation behavior between intermediate temperature range and under low pressure is still rare. This thesis studied the oxidation of tungsten powders with diverse size within temperature range from 500 to 1000 \si{\degreeCelsius} and under several mTorr oxygen partial pressure. It was illustrated that using tungsten powder as seed is an economic approach to obtain high yield of \ce{WO3} nanowires at relatively lower temperature. It was also demonstrated that there was an optimal tungsten powder size under current experimental conditions for seeded growth. This observation will provide some insight on the role of tungsten powder as source material in CVD growth of \ce{WO_x}.
 
 Commercial available tungsten powders with different size are usually associated with purity variation as well. Four kinds of tungsten powders were used as precursor to prepare \ce{WO3} NWs, as already summarized in Table~\ref{tab:powder}. The dimensions of tungsten powder were obtained by measuring the average size in SEM graphs. A systematic investigation was performed on the oxidation behavior of tungsten powder to evaluate the temperature effect, size-dependence and influence of oxygen partial pressure.
-
-In a typical oxidation experiment, tungsten powders were loaded into the uniform heating zone and the sealed chamber was pumped down to an ultimate pressure of $5\sim8$ mTorr. Then oxygen flow varying between 1 sccm to 10 sccm was admitted from upstream inlet. With 10 sccm UHP Ar (99.999\%) as carrier gas, the overall pressure reached to about 100 mTorr. The heating temperature (500 to 750 \si{\degreeCelsius}) was ramped up in 30 min and lasted for 30 min. Then the heating power was turned off and the chamber was allowed to naturally cool down to room temperature.
 
 % seed optimal
 \begin{figure}[htb]
@@ -341,11 +346,11 @@ TEM specimen was prepared by using carbon grid to slightly scratch the as-grown 
 \label{fig:woseedtem2}
 \end{figure}
 
-In regarding to the formation of NWs on tungsten powder itself, this study assumes the driving force is related to interfacial strain between W and \ce{WOx}. Oxidation of tungsten proceed slowly at room temperature and an oxide layer of 100 \si{\angstrom} was found on the surface of tungsten foils.\cite{Warren1996} The tungsten powder used in current study would be covered by a thin oxide layer as well. During oxidation, different oxidation rates exist for different crystallographic orientations on the tungsten powder. Oxidation occurring at boundaries and defects are preferred thermodynamically.\cite{You2010} Compressive strain will gradually accumulate at the tungsten oxide/tungsten interface, which might limit the diffusion rate of oxygen at temperature lower than 500 \si{\degreeCelsius}.\cite{tungsten1999} At elevated temperature, cracks will primarily occur, as observed in Fig.~\ref{fig:pdtemp}. When heated up, tungsten and the oxide shell will probably relax the strain by converting into sub-stoichiometric NWs, a similar process as suggested by \citeauthor{Klinke2005} in the chemically induced strain growth of tungsten oxide NWs.\cite{Klinke2005} It is worth noting that tungsten oxide nanowires could also formed when \ce{WO3} is reduced.\cite{Sarin1975} The elongation of \ce{WO_x} is thermodynamically favorable during the conversion from metallic tungsten to tungsten oxide as well. Local evaporation-condensation process might also contribute to the formation of NWs on tungsten powder.
+In regarding to the formation of NWs on tungsten powder itself, this study assumes the driving force is related to interfacial strain between W and \ce{WO_x}. Oxidation of tungsten proceed slowly at room temperature and an oxide layer of 100 \si{\angstrom} was found on the surface of tungsten foils.\cite{Warren1996} The tungsten powder used in current study would be covered by a thin oxide layer as well. During oxidation, different oxidation rates exist for different crystallographic orientations on the tungsten powder. Oxidation occurring at boundaries and defects are preferred thermodynamically.\cite{You2010} Compressive strain will gradually accumulate at the tungsten oxide/tungsten interface, which might limit the diffusion rate of oxygen at temperature lower than 500 \si{\degreeCelsius}.\cite{tungsten1999} At elevated temperature, cracks will primarily occur, as observed in Fig.~\ref{fig:pdtemp}. When heated up, tungsten and the oxide shell will probably relax the strain by converting into sub-stoichiometric NWs, a similar process as suggested by \citeauthor{Klinke2005} in the chemically induced strain growth of tungsten oxide NWs.\cite{Klinke2005} It is worth noting that tungsten oxide nanowires could also formed when \ce{WO3} is reduced.\cite{Sarin1975} The elongation of \ce{WO_x} is thermodynamically favorable during the conversion from metallic tungsten to tungsten oxide as well. Local evaporation-condensation process might also contribute to the formation of NWs on tungsten powder.
 
 The enhanced yield of NWs obtained via seeded growth could be explained by a vapor-solid (VS) mechanism. External supply of growth species will condense onto the powders and substrate simultaneously, promoting the elongation of NWs on power as well as resulting island-layer growth on substrate. The local NW density in oxidation experiment was much higher than that of seeded growth. It is reasonable to presume that during seeded growth, several NWs in a small region on powder will coalescence, as evidenced by the bundled structures. At last, the author would like to point out that when low purity tungsten powder (3N) was used as source, sodium tungsten oxide nanowires were found to be dominant in the final product. The details have been published.\cite{Sheng2014} It seems surprising that when 3N powder was used as seeds, only \ce{WO3} nanowires were obtained. This result was attributed to the lower temperature and significantly reduced amount of 3N powder used in the seeded growth, compared with the conditions used in Ref.\cite{Sheng2014}. The source material in seeded growth is not limited to high purity tungsten powder. Instead, any material that could produce appropriate growth vapor could be employed, indicating the versatility of this approach.
 
-\subsection{Tungsten Oxides: Other Methods}
+\subsection{Tungsten Oxides: Other Method}
 
 Another interesting approach for \ce{WO3} NW growth were also found in this study, producing \ce{WO3} NWs of high crystalline quality. The method was supposed to be related to the vapor flow dynamic in the deposition region. 
 % fg sem
