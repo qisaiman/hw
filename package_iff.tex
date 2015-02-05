@@ -106,7 +106,7 @@
 		    sorting=none,
             hyperref=true,
             url=false,
-            isbn=false,
+            isbn=true,
             doi=false,
             backref=true,
             maxcitenames=2,
@@ -136,7 +136,10 @@
 \renewcommand{\finentrypunct}{}
 % removes pagination (p./pp.) before page numbers
 \DeclareFieldFormat{pages}{#1}
-
+% remove month and issn
+\AtEveryBibitem{\ifentrytype{article}{\clearfield{issn}}{}}
+\AtEveryBibitem{\clearfield{month}}
+\AtEveryCitekey{\clearfield{month}}
 
 \providecommand*{\bibpath}{E:/spring2012/Ubuntu/Latex/Mendeley_Bib_lib}
 \bibliography{\bibpath/ECD.bib,\bibpath/tungsten_newandgood.bib,\bibpath/ACSnano.bib,%
