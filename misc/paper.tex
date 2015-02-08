@@ -89,6 +89,8 @@ vacuum back filling.
 
 \section{job related paper}
 
+electrowetting (EW), eleectrofluidic (EFD), Laplace pressure, electromechnical pressure, hydrophobic surface, \cite{Yang2010a}
+
 arixv: 1411.3774: current transport across metal-semi interface treated as thermionic emission:
 \[
 J(V_D) = J_S(\exp\frac{qV_D}{nkT}-1)
@@ -411,6 +413,204 @@ photon occupation number, $n_j = (\exp(h\nu/kT) - 1)^{-1}$,
 The coupling strength of the electron-phonon interaction can be evaluated by comparing the relative intensities of the overtones to the fundamental Raman band. DUring the steady-state Raman measurement, the trapped charge would build up producing a local electric field, which polarize the exciton. \cite{Zhang2012}
 
 integrated intensities. 
+
+\section{electrochemistry} 
+
+potentiostat is an electronic instrument controlling the potential difference between WE and RE, and measuring the current between WE and CE. working electrode, counter electrode, and reference electrode. Two-electrode setups for energy devices, batteries, fuel cells, and super caps; three-electrode setups, the RE is positioned close to WE. four-electrode setup, for impedance measurement, solution resistance; another specialized one is zero resistance ammeter, where WE and CE are shorted. 
+
+the Fermi level is that same as the electrochemical potential of the solid. potential is measured versus a RE; positive voltage is oxidative, and negative voltage is reductive. 
+
+DSSC is photoelectrochemical cell.
+
+The electrochemical bandgap is slightly larger than the corresponding optical bandgap due to the interfacial barrier for charge injection
+
+potential measured between WE and RE, current between WE and CE.\cite{Anon2003} 
+
+
+Cyclic voltammetry, triangle waveform potential applied to WE, and WE current is recorded. CE also known as substrate, back contact, auxiliary electrode. The total surface area of CE (sink of electrons) must be higher than that of WE, so that it will not become a limiting factor in the kinetics of electrochemical process.  
+
+the reaction on an electrode surface, standard reduction reaction all relative to the \ce{H2}/\ce{H+} reaction at 298 K and pH 0. 
+
+voltammetric, voltammegram, 2.303 RT/F = 59 mV. 
+
+KMT for thin film. \cite{Murphy2007}
+
+flat band potential (FBP) vs open circuit potential (OCP)
+
+FBP defined as difference between Fermi level and redox level, 
+flat-band condition represents the extrapolated voltage at which the space-charge would be infinitely thin (infinite capacitance).
+
+\url{http://ecee.colorado.edu/~bart/book/flatband.htm}
+
+OCP of an electrode is a thermodynamic parameter which tells about the thermodynamic tendency of that electrode to participate in the electrochemical corrosion reactions with the surrounding medium. it is the potential of the electrode at which the cathodic and anodic reaction rates are equal under the absence of applied potential. in a given corrosive environment, an electrode with nobler OCP is more thermodynamically stable than an electrode with less noble OCP. That means an electrode with an OCP of 150 mV is more thermodynamically stable (shows less tendency to participate in the corrosion reactions) than an electrode with 110mV OCP in a given environment.
+
+flat band potential is the characteristic of the space charge region of a semiconducting electrode. it is the potential at which the Fermi energy level of the semiconducting electrode (a metal electrode with an overlying semiconducting film) and the fermi energy level (redox potential) of the electrolyte/ aqueous corrosion medium are equal. At flat band potential, there is no band bending.
+
+Thus OCP is the characteristic of a metal electrode whereas the flat band potential is the characteristic of a semiconducting electrode.
+
+In SC, the workfunction is not directly accessible; photoelectric method measured the ionization energy, from VBM to vacuum. 
+
+surface state on covalently bonded SC; a positive space charge is formed below the surface of an n-type SC, b/c electrons are transferred to the surface states. A positive space charge means lower ele density, accordingly the energy distance between Fermi level and the conduction band is increased at the surface, leading to upwards band bending. 
+
+the efficiency of a majority (ele in n-SC) carrier transfer. 
+
+how to relate the external applied voltage U on a pn junction to the quasi Fermi level difference. 
+
+SC-liquid junctions, 
+electrolyte: ions as charge carriers
+\[
+\sigma = F(z_1\mu_+ + z_2\mu_-)c/1000
+\]
+
+Diffusion constant related to the mobility by the Einstein relation $D = \frac{kT}{e} \mu$. 
+
+solvation, dissociation energy compensated by the hydration energy. 
+
+electrochemical potential vs chemical potential, 
+\[
+\bar{\mu} = \mu + nF\phi
+\]
+and the reference point is those two equal to each other. 
+
+electrode potential vs NHE $U_E$. 
+
+NHE related to vacuum level by $E_{ref} = -4.5$ eV. 
+
+adsorption due to electrostatic attraction or bond formation; \ce{TiO2} form bonds with \ce{H+}, \ce{WS2} tends to be hydrophobic, only at the steps, a free valency of metal may cause bonding to hydroxyl group of water. hydroxylated surface; Helmholtz layers forms due to these two kinds of interactions. \cite{Memming2000}
+
+For metal electrode, the counter charge just below the surface; for SC, the counter charge distribute a considerable distance; 
+the potential across a single solid-liquid interface cannot be measured. These Helmholtz layers modeled as parallel-plate capacitor.
+
+The equivalent capacity of diffuse layer can be neglected given a high concentration ions ($\leq 10^{-2}$M). In SC, the space charge region, $C_{sc}$ differential capacity, and Mott-Schottky relation
+\[
+\frac{1}{C_{sc}^2} = (\frac{2L}{\epsilon\epsilon_0})^2(\frac{e\delta\phi_{sc}}{kT} - 1)
+\]
+
+SC electrode interface potential
+\[
+U_E = \delta\phi_{sc} + \delta\phi_H + \text{const.}
+\]
+
+Variation of electrode potential occurs across the space layer region, and the potential of the H double layer remains constant. This is a very important result, meaning that the external applied voltage only occurs on the space charge layer. 
+
+From the capacity potential curve, the minimum value corresponds to a potential, defined as flat band potential $U_{fb} (\delta\phi_{sc} = 0)$, meaning there is no band bending when $U_{fb}$ is applied onto where? $U_{fb}$ for many SC electrode depends on pH, indicating SC surface exhibit reaction with \ce{H2O}. The TMDC basal plane should much less activity, no pH dependence has been found on \ce{WSe2}. It is possible that the \ce{WS2}-\ce{WO3} core shell structure can also benefit from this fact, shielding the \ce{WO3} from external solvent. Further study of flat band potential dependence on pH is needed to verify this hypothesis. 
+
+Comparison of Mott-Schottky curves and $U_{fb}$ as obtained with n and p type electrodes with the same SC is of interest. 
+\[
+\delta\phi_{n} + \delta\phi_{p} \sim E_g
+\]
+can be anticipated. 
+
+Upon illumination, $U_{fb}$ shifts. The origin is manifold, one being surface states, where the accumulation of charger carriers changes the band structures on space layer region. 
+
+electron transfer reaction is an activated and not a spontaneous process. 
+
+surface radical (dangling bond), 
+ 
+argument in favor of 
+
+
+The impact of SC on electrochemistry.\cite{Gerischer1990} charge be adsorpted, losing part of the solvation shell, interface between metal and electrolyte as a capacitor; depletion layer or accumulation layer in term of electron. differential capacitance measurement tells the variation of charge distribution, DOS in unit of \si{cm^{-3}eV^{-1}}; to be cont.
+
+
+In energy band structure of $E-k$, the zero energy is chosen at the top of VB, so the $E$ here should be chemical potential, \cite{Sze2006} 
+When defining the Fermi level, the follow integral is used
+\[
+n = \int_{E_C}^\infty N(E)f(E)dE
+\]
+So the Fermi level is again compared to the VBM. 
+
+The ionization energy of acceptor is measured against valence band edge;
+zero electron or hole current requires $\frac{dE_F}{dx} = 0$. 
+
+Deviation of SC-Metal barrier due to 1) interface layer, 2) surface state, and 3) image force. 
+
+\url{http://physics.stackexchange.com/questions/70341/fermi-level-alignment-and-electrochemical-potential-between-two-metals?rq=1}
+
+\begin{table}
+  \centering
+  \caption{A table with notes}  \label{tbl:notes}
+  \begin{tabular}{lp{4in}}
+    \toprule
+    Term      & Definition \\
+    \midrule
+    electrochemical potential      & the total free energy of the system per electron \\
+    electric potential             &  \\
+    galvani potential              & the integral of electric (E) field\\
+    electrostatic potential        &  \\
+    (inner) chemical potential     & partial molar free energy, \\
+    redox potential                & for electrolyte $E_{redox}$, a counterpart of Fermi level for solid SC\\
+    band bending                   & \\
+    overpotential                & \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+\[
+\bar{\mu} = \mu + zF\phi
+\]
+where $\mu$ is chemical potential, $\phi$ is electrostatic potential; 
+
+Flat-band potentials strongly depend on ion absorption (protonation of surface hydroxyl groups), crystallographic orientation of the exposed surface, surface defects, and surface oxidation processes.\cite{Osterloh2008} For photoelectrochemical water reduction to occur, the flat-band potential of the semiconductor (for highly doped semiconductors, this equals to the bottom of the conductance band) must exceed the proton reduction potential of 0.0 V vs \gls{nhe}.
+
+To do Mott-Schottky measurement, SC is subjected to reverse bias--a voltage to increase the potential step across the junction--and the differential capacity is determined as a function of applied potential V. The equation
+\[
+1/(C_{sc})^2 = 2(\delta\phi RT/F)/(\epsilon\epsilon_0 N_d)
+\]
+Where $C_{sc}$ is the spece charge capacity in unit of , $\delta\phi = V - U_{fb}$.
+
+The width of band gap is a measure of the chemical bond strength.\cite{Gratzel2001} Nano-engineering SC exhibits following benefits: 
+depletion or accumulation layer cannot formed in nanostructure, then the voltage remain small under reverse bias. As a result, there is no local electric field to assis in the separation of photogenerated charge carriers. The photoresponse of the nano-SC electrode is then determined by the rate of reactions of these charge carriers with the electrolyte. It is confirmed that the same nanocrystalline film could show n-type or p-type behaviors depending on the nature of the hole or electron scavenger present in electrolyte phase.\cite{Hodes1992}
+
+
+On the concept of chemical potential, a tendency to change of location, of chemical composition or state of aggregation.\cite{Job2006} The perishing of chemicals in sealed bottles. in unit of Joule per mole. Gravito-chemical potential 
+\[
+\bar{\mu} = \mu + M\cdot\psi
+\]
+Similar to the electric potential acts along with chemical potential. 
+The net drive force $\Delta\bar{\mu} = 0$ when electro-chemical equilibrium is reached. 
+
+$\mu$ in the grand canonical density operator is the uniquely correct definition of chemical potential (c.p.) valid for all finite systems.\cite{Kaplan2006} $\phi$ is not encouraged. 
+
+PV cells depend on creation of ephs and the separation.\cite{Hodes1992} LJ, liquid junction; charge separation did not occur by a space-charge field. 
+
+
+Graphene electrode, BN as barrier, and TMDC as SC.\cite{Withers2015} 
+
+The coexistence of discrete and continuum states on NWs is a centural feature of the electronic structure.  and DOS from pseudopotential calculation found deviation from conventional model (Effective mass approximation). Angular momentum states,  \cite{Wang2014n}
+
+
+Basic operations and several growth recipes using the home-built \gls{cvd} system are included in Appendix.
+
+the TEM specimen was prepared either by directly scratching the as-synthesized sample using TEM grid (Cu, lacy carbon, 300 mesh), or dispersed into aqueous or organic solutions, then drop-cast onto TEM grid. 
+
+
+The enhancement arises from the structure composed of a conductive layer and an insulating layer that are laminated therein.\cite{Shingaya2013}
+
+It is well known that in lamellar flow region, there is a velocity boundary above the side wall.
+
+Raman band assignment for \ce{A2MO4} is well grounded. Alkali metal cations with octahedral coordination occur below 230 cm$^{-1}$. For \ce{A2M_nO_{3n+1}}, exact assignment is not available yet due to the complicated \ce{MO6} octahedra.
+
+Based on the \gls{vls} process, it is known that a eutectic state is the key to promote preferred growth direction
+The melting of \ce{Na2MoO4} was highly possible when taking into account of its size as well.\cite{Bruggemann1997} 
+
+
+\item When no Mo powder was used while growth was performed in an old tube or oxygen flow is limited to a extreme small value, circular particle-like solid were found and Mo, Na and O were detected, suggesting the existence of VLS mechanism. Using Mo coated substrate and subsequent NaOH treatment, similar particles formation was repeated. No discernible XRD pattern emerged, illustrating the amorphous nature of liquid catalyst.
+\item 30 min growth: belts growth begin (500 microns long, grow rate is estimated to be 0.5 $\mu$ m/s), tower structures show up as well, but much less than belt. Two kinds of belts found, tapering and non-tapering. The former one seems to have particles mostly associated with sidewalls of the top part.
+\item In reduced time or less oxygen supply growth, Na-containing site was found located onto the sidewall of belts instead of the usual expected tip. XRD pattern indicated the existence of \ce{Na_xMoO3} phase. And \ce{MoO3} XRD pattern is dominated by (0k0) peaks, indicating a 2D layer-by-layer growth with lateral rate exceeding that of axial direction.
+\item 2 h growth: there are crossed tapering belts at downstream boundary, with more than one particle located along the interface of two perpendicular belts, EDX confirmed high Na content.
+
+
+
+people used chamber pot when there was no running water system. 
+This difference presumably vanished when nanotube diameter exceeded 100 nm. considering the integration into current microelectronic process, which was found higher for film prepared without an intermediate Ni coating
+
+This thesis then conjectured that the substrate cleaning in Ref.\cite{Peimyoo2013} should be similar to that in Ref.\cite{VanderZande2013}, yet the source-to-substrate layout and growth pressure were still needed to be optimized with respect to the home-built CVD apparatus. No 1L vs nL statistic is available.
+
+
+15 optical modes e allowed assuming 6 atoms in primitive cell.
+
+
 
 
 

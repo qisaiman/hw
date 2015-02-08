@@ -87,3 +87,41 @@ morphologies and structures, and measured the optical properties of the as-prepa
 `a ref <https://staff.washington.edu/fox/tex/uwthesis.shtml>`_
 * the toc figure caption and others
 * 
+
+\usepackage[style=numeric-comp,
+		    sorting=none,
+		    date=year,
+            hyperref=true,
+            url=false,
+            isbn=true,
+            doi=false,
+            backref=true,
+            maxcitenames=2,
+            maxbibnames=4,
+            block=none,
+            backend=biber,
+            natbib=true]{biblatex}
+% \usepackage[bibencoding=latin1]{biblatex}
+\DeclareSourcemap{
+    \maps[datatype=bibtex]{
+        \map{
+            \step[fieldset=abstract,null]
+        }
+    }
+}
+\AtEveryBibitem{\ifentrytype{article}{\clearfield{issn}}{}}
+\AtEveryBibitem{\clearfield{month}}
+\AtEveryCitekey{\clearfield{month}}
+
+\DefineBibliographyStrings{english}{%
+    backrefpage  = {see p.}, % for single page number
+    backrefpages = {see pp.} % for multiple page numbers
+}
+% suppress 'in:'
+\renewbibmacro{in:}{%
+  \ifentrytype{article}{}{\printtext{\bibstring{in}\intitlepunct}}}
+% document preamble
+% removes period at the very end of bibliographic record
+\renewcommand{\finentrypunct}{}
+% removes pagination (p./pp.) before page numbers
+\DeclareFieldFormat{pages}{#1}

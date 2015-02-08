@@ -101,41 +101,13 @@
 %%http://tex.stackexchange.com/questions/32930/is-it-possible-to-suppress-a-specific-field-from-bibtex-bbl-in-biblatex
 %%
 
-\usepackage[style=numeric-comp,
-		    sorting=nty,
-            hyperref=true,
-            url=false,
-            isbn=false,
-            doi=false,
-            backref=true,
-            maxcitenames=2,
-            maxbibnames=4,
-            block=none,
-            backend=biber,
-            natbib=true]{biblatex}
-% \usepackage[bibencoding=latin1]{biblatex}
-\DeclareSourcemap{
-    \maps[datatype=bibtex]{
-        \map{
-            \step[fieldset=abstract,null]
-        }
-    }
-}
 
+\usepackage[backend=biber,style=nature,isbn=true,doi=false,url=false]{biblatex}
 
-\DefineBibliographyStrings{english}{%
-    backrefpage  = {see p.}, % for single page number
-    backrefpages = {see pp.} % for multiple page numbers
-}
-% suppress 'in:'
-\renewbibmacro{in:}{%
-  \ifentrytype{article}{}{\printtext{\bibstring{in}\intitlepunct}}}
-% document preamble
-% removes period at the very end of bibliographic record
+\AtEveryBibitem{\ifentrytype{article}{\clearfield{issn}}{}}
+\AtEveryBibitem{\clearfield{month}}
+\AtEveryCitekey{\clearfield{month}}
 \renewcommand{\finentrypunct}{}
-% removes pagination (p./pp.) before page numbers
-\DeclareFieldFormat{pages}{#1}
-
 
 \providecommand*{\bibpath}{E:/spring2012/Ubuntu/Latex/Mendeley_Bib_lib}
 \bibliography{\bibpath/ECD.bib,\bibpath/tungsten_newandgood.bib,\bibpath/ACSnano.bib,%
