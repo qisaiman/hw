@@ -95,14 +95,19 @@
 \usepackage{siunitx}
 \DeclareSIUnit \torr{Torr}
 
-
 %------- bibliography and citation ------
 
 %%http://tex.stackexchange.com/questions/32930/is-it-possible-to-suppress-a-specific-field-from-bibtex-bbl-in-biblatex
 %%
 
-
 \usepackage[backend=biber,style=nature,isbn=true,doi=false,url=false]{biblatex}
+\DeclareSourcemap{
+    \maps[datatype=bibtex]{
+        \map{
+            \step[fieldset=abstract,null]
+        }
+    }
+}
 
 \AtEveryBibitem{\ifentrytype{article}{\clearfield{issn}}{}}
 \AtEveryBibitem{\clearfield{month}}
@@ -112,9 +117,8 @@
 \providecommand*{\bibpath}{E:/spring2012/Ubuntu/Latex/Mendeley_Bib_lib}
 \bibliography{\bibpath/ECD.bib,\bibpath/tungsten_newandgood.bib,\bibpath/ACSnano.bib,%
 \bibpath/tungsten_old.bib,\bibpath/Raman.bib,\bibpath/Molybdenum.bib,%
-\bibpath/tungsten_cl.bib,\bibpath/optics,\bibpath/CVD.bib,\bibpath/sodium.bib,\bibpath/VLS.bib,\bibpath/thesis.bib,\bibpath/arix.bib}
+\bibpath/tungsten_cl.bib,\bibpath/optics,\bibpath/CVD.bib,\bibpath/sodium.bib,\bibpath/VLS.bib,\bibpath/thesis.bib,\bibpath/arix.bib, My_Collection.bib}
 
-%-- for works around, packages conflicts----
 
 %-- redefine toc macros ------
 % pdflatex and lualatex all ignore list of abbre
@@ -181,8 +185,37 @@ or move to the other template using titlesec
 http://tex.stackexchange.com/questions/58775/somethings-wrong-with-tocloft
 
 
+\DeclareFieldFormat{url}{\url{#1}}
+\DeclareFieldFormat[article]{pages}{#1}
+\DeclareFieldFormat[inproceedings]{pages}{\lowercase{pp.}#1}
+\DeclareFieldFormat[incollection]{pages}{\lowercase{pp.}#1}
+\DeclareFieldFormat[article]{volume}{\mkbibbold{#1}}
+\DeclareFieldFormat[article]{number}{\mkbibparens{#1}}
+\DeclareFieldFormat[article]{title}{\MakeCapital{#1}}
+\DeclareFieldFormat[article]{url}{}
+\DeclareFieldFormat[inproceedings]{title}{#1}
+\DeclareFieldFormat{shorthandwidth}{#1}
+\DeclareFieldFormat{extrayear}{}
 
 
+
+% Bibliography categories
+\def\makebibcategory#1#2{\DeclareBibliographyCategory{#1}\defbibheading{#1}{\section*{#2}}}
+\makebibcategory{books}{Books}
+\makebibcategory{papers}{Refereed research papers}
+\makebibcategory{chapters}{Book chapters}
+\makebibcategory{conferences}{Papers in conference proceedings}
+\makebibcategory{techreports}{Unpublished working papers}
+\makebibcategory{bookreviews}{Book reviews}
+\makebibcategory{editorials}{Editorials}
+\makebibcategory{phd}{PhD thesis}
+\makebibcategory{subpapers}{Submitted papers}
+\makebibcategory{curpapers}{Current projects}
+
+\nocite{*}
+%-- for works around, packages conflicts----
+\addtocategory{papers}{Sheng2014, Sheng2015, Sheng2015b}
+\addtocategory{conferences}{Sheng2012, Sheng2013, Sheng2014b}
 
 
 \fi
