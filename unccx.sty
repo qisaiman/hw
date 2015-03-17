@@ -43,18 +43,29 @@
 \RequirePackage{setspace} % for double spacing
 \RequirePackage{comment}
 %\RequirePackage{epsfig}
+\doublespacing
 
 \usepackage{sectsty}
 \usepackage[us,12hr]{datetime}
 \usepackage{etoolbox}
+
+\apptocmd\normalsize{%
+ \abovedisplayskip=10pt plus 2pt minus 9pt
+ \abovedisplayshortskip=0pt plus 3pt
+ \belowdisplayskip=10pt plus 2pt minus 9pt
+ \belowdisplayshortskip=7pt plus 3pt minus 4pt
+}{}{}
+
 \BeforeBeginEnvironment{equation}{\begin{singlespace}}
 \AfterEndEnvironment{equation}{\end{singlespace}\noindent\ignorespaces}
 \BeforeBeginEnvironment{align}{\begin{singlespace}}
 \AfterEndEnvironment{align}{\end{singlespace}\noindent\ignorespaces}
 
+\usepackage{calc}
 \usepackage{geometry}
-\geometry{verbose,letterpaper,tmargin=1in,bmargin=1in,lmargin=1.5in,rmargin=1in}
-\doublespacing
+%geometry{verbose,paper=letterpaper,tmargin=1in,lmargin=1.5in,rmargin=1in,bmargin=1in}
+\geometry{verbose,paper=letterpaper,textheight=27\baselineskip+\topskip,tmargin=1in,lmargin=1.5in,rmargin=1in}
+
 % verbose, print the page layout info in console.
 
 % Adjust the abstract title to include author and advisor.
@@ -243,8 +254,8 @@ in partial fulfillment of the requirements\\
 \renewcommand{\ps@myheadings}{
   \renewcommand{\@oddhead}{ \thepage} % put page number into header
   \renewcommand{\@evenhead}{ \thepage}
-  \renewcommand{\@oddfoot}{Complied on \hfill \today \hfill at \currenttime} % for version control 
-  %\renewcommand{\@oddfoot}{}
+  %\renewcommand{\@oddfoot}{Complied on \hfill \today \hfill at \currenttime} % for version control 
+  \renewcommand{\@oddfoot}{}
   \renewcommand{\@evenfoot}{}
 }
 % http://www.personal.ceu.hu/tex/pagestyl.htm
@@ -289,6 +300,7 @@ in partial fulfillment of the requirements\\
 %\newcommand\sectionTitleStyle{\normalfont\normalsize\centering\UNCCHeadingStyle} % section title centering
 \newcommand\sectionTitleStylep{\normalfont\normalsize\textsc}
 
+%from sectsty package
 \sectionfont{\sectionTitleStyle}
 \subsectionfont{\sectionTitleStyle}
 \subsubsectionfont{\sectionTitleStyle}
@@ -300,18 +312,18 @@ in partial fulfillment of the requirements\\
 % Looks like 1.5ex is the magic.  The indentation of the first paragraph
 % is controlled by \afterindentfalse and \afterindenttrue.  In other words,
 % the first paragraph IS indented.
-%
+% From book cls
 \renewcommand\section{\@startsection {section}{1}{\z@}%
                                    {-1.5ex \@plus -1ex \@minus -.2ex}%
-                                   {1.5ex \@plus .2ex}%
+                                   {1.0ex \@plus .2ex}%
                                    {\sectionTitleStyle}}
 \renewcommand\subsection{\@startsection{subsection}{2}{\z@}%
                                      {-1.5ex\@plus -1ex \@minus -.2ex}%
-                                     {1.5ex \@plus .2ex}%
+                                     {1.0ex \@plus .2ex}%
                                      {\sectionTitleStyle}}
 \renewcommand\subsubsection{\@startsection{subsubsection}{3}{\z@}%
                                      {-1.5ex\@plus -1ex \@minus -.2ex}%
-                                     {1.5ex \@plus .2ex}%
+                                     {1.0ex \@plus .2ex}%
                                      {\sectionTitleStyle}}
 \renewcommand\paragraph{\@startsection{paragraph}{4}{\z@}%
                                     {1.5ex \@plus1ex \@minus.2ex}%
@@ -509,11 +521,13 @@ in partial fulfillment of the requirements\\
 
 % For LOF
 \setlength{\cftbeforeloftitleskip}{-.325in}
-\setlength{\cftafterloftitleskip}{5.0ex}
+%\setlength{\cftafterloftitleskip}{5.0ex}
+\setlength{\cftafterloftitleskip}{2.5ex}
 
 % For LOT
 \setlength{\cftbeforelottitleskip}{-.325in}
-\setlength{\cftafterlottitleskip}{5.0ex}
+%\setlength{\cftafterlottitleskip}{5.0ex}
+\setlength{\cftafterlottitleskip}{2.5ex}
 
 % Adjust the left margin, slightly. Just 1/16''.
 \setlength{\cftfigindent}{0.0in}

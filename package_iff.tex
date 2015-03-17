@@ -71,15 +71,24 @@
 
 \usepackage{graphicx} % support the \includegraphics command and options
 % check pdftex option
+\renewcommand{\textfraction}{0.15}
+\renewcommand{\topfraction}{0.85}
+\renewcommand{\bottomfraction}{0.65}
+\renewcommand{\floatpagefraction}{0.60}
+
 \usepackage{placeins} % for float and \FloatBarrier command
 
 \usepackage{subfig} % inconsistent with subcaption package
 \usepackage{float} % for images
  \graphicspath{{./gallery/}} %--added by author
 
-\usepackage[font=small]{caption}
-%\usepackage[font=small, labelfont=bf]{caption}
+\usepackage[font={small,onehalfspacing}]{caption}
+\captionsetup[table]{belowskip=0pt}
+\captionsetup[figure]{belowskip=-10pt}
 %\usepackage{subcaption} % for multi floats in figure or minipage environments
+%\setlength{\intextsep}{14pt plus 4pt minus 2pt}% lead to text overlap
+%\setlength{\belowcaptionskip}{-\baselineskip}\addtolength{\belowcaptionskip}{2.5ex}
+%\addtolength{\abovecaptionskip}{1.0ex}
 
 % It supplies a landscape environment, and anything inside is basically rotated.(http://en.wikibooks.org/wiki/LaTeX/Page_Layout)
 %\usepackage{lscape}
@@ -201,6 +210,7 @@ urlcolor=black
 % However, this workaround may have pagenumbering issues for long list of abbre
 %\usepackage[acronym,nonumberlist]{glossaries} % loaded after hyperref
 \usepackage[acronym,toc,nonumberlist,nopostdot,nogroupskip]{glossaries} % loaded after hyperref
+%\renewcommand*{\glsclearpage}{\clearpage}
 
 %% http://tex.stackexchange.com/questions/30812/two-column-glossary
 %% http://tex.stackexchange.com/questions/197222/formatting-for-glossaries

@@ -1,15 +1,16 @@
-\documentclass[12pt,twoside]{book}
+\documentclass[12pt,oneside]{book}
    \usepackage{unccx} % uncc format specification seems this style should be loaded before other packages
    \input{package_iff.tex} % additonal packages and tweaking
    \input{./FrontMatter/abbre}
 
 \begin{document}
     \input{./FrontMatter/FrontMatter}
-    \include{./ch-intro/ch-intro}
-    \include{./ch-intro/ch-instr}
-    \include{./ch-wox/ch-wox}
-    \include{./ch-moox/moox} % no tex needed, otherwise there is error
-    \include{./ch-tms/tms}
+   \include{./ch-intro/ch-intro}
+   \include{./ch-intro/ch-instr}
+   \include{./ch-wox/ch-wox}
+   \include{./ch-moox/moox} % no tex needed, otherwise there is error
+   \include{./ch-tms/tms}
+
 %\appendix
   % \glsaddallunused
    %\include{./BackMatter/app1}
@@ -25,4 +26,5 @@
 
 \end{document}
 
-moo3 uvvis results, scattering part
+should check how other template deals with before after section skip
+ the belowcaptionskip is \the\belowcaptionskip, and the above is \the\abovecaptionskip, the intextsep is \the\intextsep. and the baselineskip is \the\baselineskip.

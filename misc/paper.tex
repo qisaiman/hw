@@ -596,28 +596,199 @@ Covalent SC surface has high peak density of surface states, and the neutral lev
 
 For ionic SC, the barrier height depends strongly on the metal. 
 
+\section{Solid State Chemistry}
+
+strain is linearly proportional to the magnitude of stress. 
+\[
+\sigma = E \epsilon
+\]
+where strain has no units, $E$, directly related to the strength of the bonds, is Young's modulus. 
+
+Poisson's ratio
+\[
+\nu = - \frac{\partial\epsilon_y}{\partial\epsilon_x}
+\]
+
+Strain energy $E_v = 1/2\sigma\epsilon$. 
+
+\textbf{thermodynamics of surfaces} Competition between adopting the lowest energy (internal energy) and adopting an energy state that is more probable (entropy) dictates the ...
+
+Gibbs energy change reflect this point
+\[
+\Delta G= \Delta H - T\Delta S = \Delta H - kT\Delta ln\phi
+\]
+
+Surface energy in unit of energy per area
+\[
+\gamma = \frac{\partial G}{\partial A}_{T,P}
+\]
+
+Energy required to break bonds to increase the area. Increase surface area means increasing the number of unsaturated atoms. 
+
+Surface molecular density of many simple crystals is of the order $1\times 10^{15}$. 
+
+Surface tension and surface energy can be used interchangeably for liquids but not for solids.
+
+\[
+\tau = \frac{\partial(\gamma A)}{\partial A}|_{T,P} = \gamma + A\frac{\partial(\gamma)}{\partial A}|_{T,P}
+\]
+
+like dissolves like. 
+
+Formation of alloy requires:
+\begin{itemize}
+\item crystal structure criteria: two metallic elements can only be fully soluble in one another if each has the same crystal structure
+\item Atomic radii criteria: 
+\item valency criteria: a metal will dissolve a metal of higher valency to a greater extent than one of lower valency.
+\end{itemize}
+
+Boron: electron deficient bonds. 
+
+An electron in orbits define by quantum numbers, n, l, m, and spin. 
+
+\begin{enumerate}
+\item n = 1, 2, 3, K, L, M shell
+\item l angular momentum, 0, 1, 2, 3, s, p, d, f orbit
+\item m magnetic number, $\pm l$
+\item s $\pm 1/2$
+\end{enumerate}
+
+metallic bonding, Van der Waals bonding, 
+
+covalent, electron-pair bond, can be attributed to the complex mutual attraction of two positively charged nuclei by the shared pair of electrons. The resulting electron pair with its zero spin momentum interacts less strongly with its surroundings than do two independent electrons. 
+
+The evidence of hydrogen molecule. 
+
+\ce{H^{\sigma +}}-\ce{Cl^{\delta -}}, polar bond and permanent dipole moment,
+
+potential energy lowering (more difficult to remove one electron from two nearby nuclei than from one), 
+
+Secondary bonding involves:
+\begin{itemize}
+\item dipole-dipole interaction
+\item dipole-induced dipole interaction
+\item London Dispersion Forces (existence even in system of no permanent dipole), temporary dipole, fluctuating dipole interaction
+\item Hydrogen bonding
+\end{itemize}
+
+Metal specific heat, restrictions as to the number of electrons with identical energy. 
+
+Energy band theory proposed by Bloch is a molecular-orbital model of metallic crystals: the orbitals characteristic of the whole crystal are obtained as linear combinations of the atomic orbitals of the individual atoms. 
+
+LCAO (linear combination of atomic orbitals) the total number of molecular orbital states is always the same as the total number of original atomic states (conservation of electronic states). 
+
+phase: the stability of different states of aggregations.
+
+phase diagrams: 
+
+eutectic has four meaning:
+\begin{enumerate}
+\item reversible, isothermal reaction
+\item the composition of the alloy which undergoes the reversible reaction
+\item the temperature at which the eutectic reaction occurs
+\item one of the specific microstructures formed by the reaction
+\end{enumerate}
+
+vapor pressure of S at 400 K is ca. 0.1 Torr. 30 sccm Ar pressure 200 mTorr. Mean free path of sulfur molecules estimated as 
+\[
+\lambda = 5\times 10^{-3}/0.3 = 166 
+\]
+in unit of $\mu$m. The diameter of tube is 2.54 mm, and therefore average collision number is 15.
+
+\section{thin films}
+\subsection{epitaxy}
+
+extended single-crystal film formation on top of a crystalline substrate. left laboratory and assume importance in device processing. Homoepitaxy: Si, because epilayer is freer of defects, can be doped independently. Heteroepitaxy: \ce{AlAs} on \ce{GaAs}, heteroepitaxial film. Interfacial bond straining, Grow an epitaxial film on top of an amorphous sub: Si on inculator, i.e., \ce{SiO2}. Selvedge, relax in such a way as to preserve the symmetry parallel to the surface but not normal to it. Give unit meshes corresponding to a two-dimensional surface. (100) $P(2\times 1)$ overlayer where P indicates the unit cell is primitive, and $b_1 = 2 a_1, b_2 = a_2$. (100) $R45^{\circ}(\sqrt{2}\times 2\sqrt{2})$. The reciprocal lattice appears as the visible image in diffraction patterns. These patterns can serve as the basis, on which complex pattern is built. 
+
+$(HKL)\parallel(hkl);[UVW]\parallel[uvw]$ to define the epitaxial geometry. lattice-strained but defect-free (commensurate) epitaxy, dislocation-relaxed (discommensurate). 
+
+Five defect categories:
+\begin{enumerate}
+\item propagation of defects from sub. into the epitaxial layer. Today the sub are largely dislocation-free, with the absence of grain boundaries or twins. 
+\item stacking faults: common in GaAs on Si 
+\item precipitate due to supersaturation of impurities. 
+\item low-angle grain boundaries and twins.
+\item formation of misfit dislocations
+\end{enumerate}
+
+Silicon-based heteroepitaxy, 
+
+\ce{WO3} LEED, surface unit mesh, 
+
+
+\section{Si Photonics}
+
+Active Si modulator: a low-loss phase-shifting mechanism based on refractive index change.\cite{Soref1987} $\delta\alpha$ and $\delta$n related by KKR. Electroabsorption means $\delta\alpha$ versus $E$ field, which arise from field-induced tunneling b/w VB and CB states (Franz-Keldysh effect). 
+
+carrier effects on optical property
+\begin{itemize}
+\item free carrier absorption
+\item bandfilling leading to blueshift of absorption
+\item Coulombic interaction of carriers with impurities leading to redshift.
+\end{itemize}
+In crystalline Si, absorption redshift is observed, indicating Coulombic effect acting stronger than bandfilling.
+
+$n$ will increase when carriers are depleted from doped materials; the index will decrease when carries are injected. The modulation is polarization independent. depletion mode is expected to offer picoseconds range response time. The response in practice is limited by the RC constants. 
+
+DWDM for Si photonics. \cite{Narasimha2007} Three cascaded interferometer are continuously tuned by maximizing the output power from each channel using an iterative algorithm.
+
+test: electrical probe station, surface-normal optical interface (grating couplers)
+
+mode-size converter, weak guided optical mode in glass fiber and a typical mode size of 8$\mu$m; large index contrast in Si wg and small mode size. power budget.\cite{Moerman1997} high alignment and increased packaging cost. 
+
+
+\begin{table}[htb]
+\centering
+\caption{Materials in Si photonics}
+\begin{tabular}{lcp{3in}r}
+\toprule
+Composition & Function &  Property & Ref   \\
+\midrule
+Si          &    &   direct gap 3.4 eV,     &    \\
+Si          &  waveguide  &   $n=3.47$@1550 nm,     &    \\
+Si          &  modulator  &  $\chi^{(2)}$ 122 pm/V  &    \\
+\ce{LiNbO3} &  modulator  &  $\chi^{(2)}$ 360 pm/V  &    \\
+InP         &  detector  &   footprint 50 $\mu m^2$, 33 GHz        &    \\
+SiGe        &  detector    &  0.7 eV, up to 1.7 $\mu$m        &    \\
+cobalt salicide  &     &         &    \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+
+\begin{table}[htb]
+\centering
+\caption{Detector in Si photonics}
+\begin{tabular}{lccr}
+\toprule
+structure & quantum efficiency &  response time & noise   \\
+\midrule
+Schottky metal-SC-metal &   low$^a$     &           &  5 nA  \\
+p-i-n                   &    &    & 100 pA to 1 nA  \\
+avalanche               &    &    &    \\
+III-V              &    &    &  low   \\
+\bottomrule
+\end{tabular}
+a: due to leakage photon flux 
+
+\end{table}
+
+metal bonding between III-V and SOI, butt-joint coupling, Si of thickness 1.5 $\mu$m for polarization insensitive? wafer scale co-processed III-V and Si, SiGe-on-SOI for detector.
+
+what metal, epitaxy or not; dimension parameters, 
+
+mode size, effective index, 2D field solver, 
+
+SOI to reduce parasitic device capacitance, SOS (silicon on sapphire) for RF applications. challenges: metrology to probe buried oxide layer, and differential stress in the topmost silicon layer; 
 
 
 
+\section{vocabulary}
 
+model also is applicable to ..., more probable, 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+Proof-of-concept device
+Expansion of functionality set 
 
 
 
