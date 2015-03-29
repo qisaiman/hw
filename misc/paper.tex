@@ -736,6 +736,60 @@ test: electrical probe station, surface-normal optical interface (grating couple
 
 mode-size converter, weak guided optical mode in glass fiber and a typical mode size of 8$\mu$m; large index contrast in Si wg and small mode size. power budget.\cite{Moerman1997} high alignment and increased packaging cost. 
 
+taper design beam propagation method and FDTD,\cite{Almeida2003} mode field resides in the \ce{SiO2} cladding region, 
+
+Low temp. oxygen-plasma assisted wafer bonding for hybrid Si laser.\cite{Park2005} Process:
+\begin{enumerate}
+\item \ce{SiO2} mask layer formation on SOI by 2 h at 1050 C
+\item Silicon rib waveguide by inductively coupled plasma etching with \ce{Cl2}/\ce{BCl3}
+\item cleaning
+\item oxygen-plasma assisted wafer bonding: annealing at 300 C, 1.5 MPa for 12 h
+\item InP removal by HCl at 250 C
+\item diced, polished, and coated with \ce{SiO2}/\ce{Ta2O5}
+\item n-contact: Ni/AuGe/Ni/Au
+\item p-contact: Pd/Ti/Pd/Au
+\end{enumerate}
+
+Electrically pumped hybrid Si laser.\cite{Fang2006} 0.5 mW fiber coupled power and 70 C operating temp. for commercial transmitters. yield dominated by waveguide chipping and bond delamination during facets polishing. 
+
+DFB Si laser.\cite{Fang2008} 
+
+\begin{enumerate}
+\item grating formation: 50 nm PECVD \ce{SiO2} patterned with e-beam lithography and inductively coupled plasma dry etching; 
+\item 
+\end{enumerate}
+
+Hybrid laser development history.\cite{Bowers2010} 650 C bonding led to cracks. 300 C plasma-activated approach with vertical outgassing channel. Cleaving yielded stepped facets due to incorrect orientation of silicon. current could not be passed through the bonded interface due to thin oxide layer formation increasing the junction resistance. DFB laser were important because they removed the need for polished facets and enable single wavelength operation capability that is needed in DWDM. 
+
+
+design principles:
+\begin{enumerate}
+\item taper angle small to prevent coupling from low order mode to high order ones.
+\item 
+\item 
+\end{enumerate}
+
+wg on SOI.\cite{Kurdi1988} high density of carriers reduces the refraction index. SOI formation: high dose of oxygen ions implantation ($10^{18}$ ions/cm2) on sub. held at a temp. range of 450 to 600 C; abbreviated as SIMOX. postannealing at a temperature $T>1250$ C, defect densities can be as low as $10^5$ cm-2 when SIMOX samples annealed at $T=1300$ C. The top layer Si thickness can be increased by a subsequent epitaxial growth. For 200 nm top Si, the loss of TE0 mode is 1 dB/cm when \ce{SiO2} thickness reached 500 nm. High order modes suffer orders of magnitude higher attenuation. 
+
+InP electrical conductivity tuning by proton bombardment.\cite{Boudinov2001} Carrier trap center creation and thermal activation. 
+
+Single-mode SOI wg.\cite{Vivien2002} birefringence either due to effective index difference or group index difference between TE and TM modes. $n_g = n_{eff} - \lambda \frac{\partial n_{eff}}{\partial\lambda}$. 
+
+Plasma-Assisted InP-Si bonding.\cite{Pasquariello2002} Gallium arsenide, indium phosphide. bonding thermally mismatched materials cause degradation. thermal stress. wafer bonding requires surface roughness below 1 nm. eutectic bonding as alternative, indium-gold eutectic bonding. use Pd to form an ohmic contact in between InP and Si or GaAs. Anodic bonding; Hydrophilic wafer bonding; Hydrophobic surface obtained on HF treated InP and Si, and HCl or \ce{NH4OH} treated GaAs. Fluorine may be still on the surfaces. 
+
+Plasma is a partially ionized gas with equal charges. Electron are more mobile, thus the plasma potential is always positive. An ion current formed between the plasma and the chamber wall. Oxygen plasma is attractive for surface pretreatment in wafer bonding since it is efficient in removing hydrocarbon and water related species. 
+
+Pressure of 0.25 MPa on 2 inch wafer, nearly 50 kg. 
+
+Short cavity length DFB laser on Si with high efficiency, direct modulation.\cite{Zhang2014d} First order grating on Si defined with e-beam lithography; transmission line measurement for n- and p-contact resistance. grating pitch. Low thermal conductivity of BOX layer. 12.5 GB/s with 3 dB eye diagram demonstrated.
+
+A path to PIC. \cite{Bowers2014}
+\begin{enumerate}
+\item III-V chips bonded on Si.
+\item epitaxial growth of III-V layers on Si using buffer layers (Ge or strained supperlattices); however, this dislocation filter layers are absorptive and thick, limiting the efficient coupling into Si wg.
+\item a 
+\end{enumerate}
+
 
 \begin{table}[htb]
 \centering
@@ -749,6 +803,8 @@ Si          &  waveguide  &   $n=3.47$@1550 nm,     &    \\
 Si          &  modulator  &  $\chi^{(2)}$ 122 pm/V  &    \\
 \ce{LiNbO3} &  modulator  &  $\chi^{(2)}$ 360 pm/V  &    \\
 InP         &  detector  &   footprint 50 $\mu m^2$, 33 GHz        &    \\
+InP         & gain medium  &   thermal $4.8\times 10^{-6}$ K        &    \\
+Si         &  sub  &   thermal $2.6\times 10^{-6}$ K        &    \\
 SiGe        &  detector    &  0.7 eV, up to 1.7 $\mu$m        &    \\
 cobalt salicide  &     &         &    \\
 \bottomrule
@@ -781,14 +837,89 @@ mode size, effective index, 2D field solver,
 
 SOI to reduce parasitic device capacitance, SOS (silicon on sapphire) for RF applications. challenges: metrology to probe buried oxide layer, and differential stress in the topmost silicon layer; 
 
+\subsection{EAM thesis}
+
+Frequency chirping from directly modulated lasers, where the pulse becomes broadening after transmitting through a dispersive fiber. External modulation also show chirping, but at a much lower magnitude. Time division multiplexing: Optical TDM, mode-locking source, time delay, the return-to-zero signal requires double bandwidth than do the non-return-to-zero signal. Electrical TDM. 
+
+\begin{itemize}
+\item Electro-optic effect: change of refraction index by E field
+\item Electroabsorption: change of absorption in the presence of E field. Franz-Keldysh effect in bulk and quantum confined Stark effect in QW. 
+\item FK effect: below-bandgap photon-assisted tunneling of electrons from VB to CB. In bulk materials with E field applied, exciton ionization occurs predominately.
+\item QCSE: when E field applies, optical absorption redshift, and exciton remains due to the large binding energy in QW. 
+\end{itemize}
+
+Using traveling wave electrode configuration, the reflection at the load end is diminished significantly, thus bypassing the RC limitation. Increasing well thickness leads to stronger QCSE and a lower driving voltage. The QW has to be designed with an absorption edge just slightly shorter than operation wavelength, such as 1490 nm for 1550 operation; a closer wavelength causes higher residual absorption without bias, and a shorter wavelength requires larger bias voltage. 
+
+Heavy hole transitions related to absorption of TE; and light hole related to TM. 
+Heavy- and light-hole degeneracy is sufficient to ensure the polarization insensitivity of absorption for MQW using QCSE. Photo-generated holes accumulated in the wells, screening the applied field. 
+
+Traveling wave electrode design: carrier sweep out time and optical-electrical group velocity mismatch. 
+
+Transmission line. three modes in microstrip: dielectric quasi-TEM mode, skin-effect mode and slow-wave mode. 
+
+mesa, epoxy,  
+
+ref 30
+
+\begin{table}[htb]
+\centering
+\caption{Comparison of modulator}
+\begin{tabular}{cccc}
+\toprule
+Material   & Voltage &  Bandwidth   & Remarks   \\
+           & (V)     &  (GHz)      &    \\
+\midrule
+\ce{LiNbO3}&  3-5     &  40   &    EO MZ      \\
+InP, MQW   &  2-4     &  10   &    EO MZ      \\
+InGaAs   &  1.5-3     &  30   &    EAM        \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\section{edx nanoelectronics}
+
+Previously, diffusive random walk; current flow in nanoscale: ballistic, resistance calculation depending on the device length vs. mean free path. resistance associated with voltage drop. 
+
+Entropy driven process and mechanics force driven; 
+
+\[
+G = \frac{q^2}{h}M\times\frac{\lambda}{L+ \lambda} \text{Ballistic conductance}
+\]
+
+positive voltage lower the electrochemical potential by amount of $qV$. conductance occurs only near the Fermi level. Current flow driven by E field? 
+
+Ballistic: no lost of momentum. Elastic: no lost of energy?  
+For low bias (small than kT), conductance approximately as
+\[
+G = \int_{-\infty}^{+\infty} dE -\frac{\partial f_0}{\partial E}G(E)
+\]
+
 
 
 \section{vocabulary}
 
-model also is applicable to ..., more probable, 
+model also is applicable to ..., more probable, material degradation, 
 
 Proof-of-concept device
 Expansion of functionality set 
+
+
+
+You can't make a silk purse out of a sow's ear 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

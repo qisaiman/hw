@@ -194,7 +194,8 @@
 \RequirePackage{epsfig}
 
 \usepackage{setspace}
-%\usepackage[nodisplayskipstretch]{setspace}
+\doublespacing
+%\usepackage[nodisplayskipstretch]{setspace} % option clash 
 \usepackage{sectsty}
 
 \usepackage{etoolbox}
@@ -204,10 +205,10 @@
 \AfterEndEnvironment{align}{\end{singlespace}\noindent\ignorespaces}
 
 
-
+\usepackage{calc}
 \usepackage{geometry}
-\geometry{verbose,letterpaper,tmargin=1in,bmargin=1in,lmargin=1.5in,rmargin=1in}
-\doublespacing
+\geometry{verbose,paper=letterpaper,textheight=27\baselineskip+\topskip,tmargin=1in,lmargin=1.5in,rmargin=1in}
+
 % verbose, print the page layout info in console.
 
 
@@ -495,13 +496,13 @@ in partial fulfillment of the requirements\\
 % the first paragraph IS indented.
 %
 \renewcommand\section{\@startsection {section}{1}{\z@}%
-                                   {-1.5ex \@plus -1ex \@minus -.2ex}%
-                                   {1.5ex \@plus .2ex}%
+                                   {-1.25ex \@plus -1ex \@minus -.2ex}%
+                                   {1.0ex \@plus .2ex}%
                                    {\sectionTitleStyle}}
                                    
 \renewcommand\subsection{\@startsection{subsection}{2}{\z@}%
-                                     {-1.5ex\@plus -1ex \@minus -.2ex}%
-                                     {1.5ex \@plus .2ex}%
+                                     {-1.25ex\@plus -1ex \@minus -.2ex}%
+                                     {1.0ex \@plus .2ex}%
                                      {\sectionTitleStyle}}
 \renewcommand\subsubsection{\@startsection{subsubsection}{3}{\z@}%
                                      {-1.5ex\@plus -1ex \@minus -.2ex}%
