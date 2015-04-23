@@ -197,6 +197,7 @@
 \doublespacing
 %\usepackage[nodisplayskipstretch]{setspace} % option clash 
 \usepackage{sectsty}
+\usepackage[us,12hr]{datetime}
 
 \usepackage{etoolbox}
 \BeforeBeginEnvironment{equation}{\begin{singlespace}}
@@ -436,8 +437,8 @@ in partial fulfillment of the requirements\\
 
 % Hey maybe we want the UNCC crown on each page.
 %  \renewcommand{\@oddfoot}{\resizebox{1in}{!}{\includegraphics{UNCClogo.eps}} \hfill \thepage \hfill \@author}
-
-  \renewcommand{\@oddfoot}{}
+  \renewcommand{\@oddfoot}{Complied on \hfill \today \hfill at \currenttime}
+  %\renewcommand{\@oddfoot}{}
   \renewcommand{\@evenfoot}{}
 }
 % http://www.personal.ceu.hu/tex/pagestyl.htm
